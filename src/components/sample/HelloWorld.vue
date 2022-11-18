@@ -1,3 +1,9 @@
+<!-- 
+本体
+htmlみたいに最初の記述は要らん(おまじないは自動補完)
+scriptとtempleteの順番はどっちでもいいが，プロジェクト内の統一を推奨
+-->
+
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
@@ -32,6 +38,7 @@
 
 <script>
 export default {
+  // nameはファイル名と同一にする
   name: 'HelloWorld',
   props: {
     msg: String
@@ -39,7 +46,9 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
+<!-- Add "scoped" attribute to limit CSS to this component only 
+コンポーネントの中のcssは基本分けなくていい(てか別の場所に事前に定義してて書かない)
+-->
 <style scoped>
 h3 {
   margin: 40px 0 0;
