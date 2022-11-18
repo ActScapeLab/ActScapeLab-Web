@@ -10,6 +10,11 @@ npm install
 npm run serve
 ```
 
+### Compiles and minifies for production
+```
+npm run build
+```
+
 
 # 開発指針
 
