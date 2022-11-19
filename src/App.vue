@@ -1,22 +1,28 @@
-<!-- テンプレートで使うプログラムを定義 Javascriptとかをかける プログラムの部分はscript -->
-<script>
-import HelloWorld from './components/sample/HelloWorld.vue'
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
-</script>
-
-
 <!-- 中身の定義(htmlとか) -->
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
+  <Header></Header>
   <!-- ここが引数とれるようになってる -->
-  <HelloWorld msg="コロッケ サービス券"/>
+  <Home title="大山研究室"/>
+  <Update></Update>
+  <Footer></Footer>
 </template>
 
+<!-- テンプレートで使うプログラムを定義 Javascriptとかをかける プログラムの部分はscript -->
+<script>
+import Header from './components/base/Header.vue';
+import Home from './components/Home.vue';
+import Update from './components/Update.vue';
+import Footer from './components/base/Footer.vue';
+export default{
+  name: 'App',
+  components: {
+    Home,
+    Header,
+    Footer,
+    Update
+}
+}
+</script>
 
 <!-- CSS -->
 <style>
