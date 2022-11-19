@@ -4,6 +4,6 @@
 
 <script>
 export default {
-    name: 'HomeTitle',
+    name: 'HomeFoot',
 }
 </script>

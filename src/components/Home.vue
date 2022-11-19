@@ -5,25 +5,31 @@ Homeとheader(一回見せる) -> CSS(コピるだけ)
 -->
 
 <template>
-    <div class="title">
-        <h1>大山研究室</h1>
-        <p>芝浦工業大学 土木工学科</p>
-    </div>
+    <pageTitle main="大山研究室" sub="芝浦工業大学 土木工学科"/>
+    
     <p>より良い都市環境の設計に向けて,空間と人の行動とのポジティブな相互作用について研究しています.</p>
 
-    <!-- うまくいかないのでApp.vueに直書した -->
-    <!-- <ul class="slider">
-        <li><img src="src/assets/bench.png"></li>
-        <li><img src="src/assets/tojo.png"></li>
-        <li><img src="src/assets/bench.png"></li>
-        <li><img src="src/assets/murakami.png"></li>
-    </ul> -->
+    <ul class="slider">
+        <li><img src="@/assets/Home/bench.png"></li>
+        <li><img src="@/assets/Home/murakami.png"></li>
+        <li><img src="@/assets/Home/tsukechi.png"></li>
+        <li><img src="@/assets/Home/tojo.png"></li>
+    </ul>
+
+    <Update/>
 
 </template>
 
 <script>
+import Update from "@/components/Home/Update.vue";
+import pageTitle from "@/components/parts/pageTitle.vue"
+
 export default {
     name: 'HomeTitle',
+    components: {
+        pageTitle,
+        Update,
+    }
 }
 </script>
 <!-- <script src="./src/components/js/slideshow.js"></script> -->

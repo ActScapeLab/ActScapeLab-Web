@@ -1,55 +1,54 @@
 <!-- 中身の定義(htmlとか) -->
 <template>
-  <Header></Header>
+  <HomeHeader/>
   <!-- ここが引数とれるようになってる -->
-  <Home></Home>
-  <ul class="slider">
-      <li><img src="./assets/tsukechi.png"></li>
-      <li><img src="./assets/tojo.png"></li>
-      <li><img src="./assets/bench.png"></li>
-      <li><img src="./assets/murakami.png"></li>
-  </ul>
-  <Update></Update>
-  <Footer></Footer>
+  <Home/>
+  <HomeFoot/>
 </template>
 
 <!-- テンプレートで使うプログラムを定義 Javascriptとかをかける プログラムの部分はscript -->
 <script>
-import Header from './components/base/Header.vue';
+import HomeHeader from './components/base/HomeHeader.vue';
 import Home from './components/Home.vue';
-import Update from './components/Update.vue';
-import Footer from './components/base/Footer.vue';
-export default{
+import HomeFoot from './components/base/HomeFoot.vue';
+
+export default {
   components: {
+    HomeHeader,
     Home,
-    Header,
-    Footer,
-    Update
-}
+    HomeFoot
+  }
 }
 </script>
 
 <!-- CSS -->
 <style>
+/* このWebページ全体にかかる設定 */
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  margin-top: 0px;
+}
+a {
+  text-decoration: none;
 }
 
-.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-    width:94%;
-     margin:0 auto;
-  }
-  
-  .slider img {
-     width:30%;/*スライダー内の画像を横幅100%に*/
-     height:auto;
-  }
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
 
+.slider img {
+  width: 30%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+}
+
+@import "./css/Home.css"
 </style>
 
 <!-- 
