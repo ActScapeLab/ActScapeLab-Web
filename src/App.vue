@@ -2,7 +2,13 @@
 <template>
   <Header></Header>
   <!-- ここが引数とれるようになってる -->
-  <Home title="大山研究室"/>
+  <Home></Home>
+  <ul class="slider">
+      <li><img src="./assets/tsukechi.png"></li>
+      <li><img src="./assets/tojo.png"></li>
+      <li><img src="./assets/bench.png"></li>
+      <li><img src="./assets/murakami.png"></li>
+  </ul>
   <Update></Update>
   <Footer></Footer>
 </template>
@@ -14,7 +20,6 @@ import Home from './components/Home.vue';
 import Update from './components/Update.vue';
 import Footer from './components/base/Footer.vue';
 export default{
-  name: 'App',
   components: {
     Home,
     Header,
@@ -34,6 +39,17 @@ export default{
   color: #2c3e50;
   margin-top: 60px;
 }
+
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+    width:94%;
+     margin:0 auto;
+  }
+  
+  .slider img {
+     width:30%;/*スライダー内の画像を横幅100%に*/
+     height:auto;
+  }
+
 </style>
 
 <!-- 
