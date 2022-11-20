@@ -1,62 +1,49 @@
-<!-- 中身の定義(htmlとか) -->
-<template>
-  <HomeHeader/>
-  <!-- ここが引数とれるようになってる -->
-  <Home/>
-  <HomeFoot/>
-</template>
+<!-- TODO: ヘッダーやフッター，メニューなど，全ページで共通の要素を定義 -->
+<script setup lang="ts">
+// import は一番上に書く
+import MenuItemVue from '@/components/App/menuItem.vue'
 
-<!-- テンプレートで使うプログラムを定義 Javascriptとかをかける プログラムの部分はscript -->
-<script>
-import HomeHeader from './components/base/HomeHeader.vue';
-import Home from './components/Home.vue';
-import HomeFoot from './components/base/HomeFoot.vue';
-
-export default {
-  components: {
-    HomeHeader,
-    Home,
-    HomeFoot
-  }
-}
+// 変数の宣言方法
+const leftDrawerOpen = false
 </script>
 
-<!-- CSS -->
-<style>
-/* このWebページ全体にかかる設定 */
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 0px;
-}
-a {
-  text-decoration: none;
-}
+<template>
+  <q-layout view="lHh Lpr lFf">
+    <q-header elevated class="glossy">
+      <q-toolbar>
+        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
 
-.slider {
-  /*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 94%;
-  margin: 0 auto;
-}
+        <q-toolbar-title>
+          ActScapeLab
+        </q-toolbar-title>
 
-.slider img {
-  width: 30%;
-  /*スライダー内の画像を横幅100%に*/
-  height: auto;
-}
+        <div>Quasar v{{ $q.version }}</div>
+      </q-toolbar>
+    </q-header>
 
-@import "./css/Home.css"
-</style>
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-2">
+      <q-list>
+        <q-item-label header>Essential Links</q-item-label>
 
-<!-- 
-・プログラムが長くなりそうなら分ける
-・よく変更するとか短めなコードはここに書く
-コンポーネント（Webページを構成するパーツ）. ページの中身はコンポーネントに作る．App.vueは親ページ
-パーツごとにほんとに分ける（メニューバーで一個，Updateで一個みたいな感じ. 本体部分）
+        <!-- TODO: <@cvlSitt> linkとavatarの変数化がうまくいかない問題の解決 -->
+        <MenuItemVue link="/main" avatar="school" label="HOME"/>
+        <!-- TODO: 各ページのリンクを修正 -->
+        <MenuItemVue link="/main" avatar="school" label="MEMBER"/>
+        <MenuItemVue link="/main" avatar="school" label="NEWS"/>
+        <MenuItemVue link="/main" avatar="school" label="RESEARCH"/>
+        <MenuItemVue link="/main" avatar="school" label="PUBLICATION"/>
+        <MenuItemVue link="/main" avatar="school" label="CONTACT"/>
+      </q-list>
+    </q-drawer>
 
-親ページには中身は書かない．親ページは事前に定義したものを使う
-最初のうちはとりあえずコンポーネントを宣言する（慣れてきたら使い分けを考える）
--->
+    <q-page-container>
+      <router-view></router-view>
+    </q-page-container>
+
+    <q-footer elevated>
+      <q-toolbar>
+        <q-toolbar-title>@ 2022 ActScapeLab</q-toolbar-title>
+      </q-toolbar>
+    </q-footer>
+  </q-layout>
+</template>
