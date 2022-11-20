@@ -26,7 +26,6 @@ const leftDrawerOpen = ref(false)
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
 
-        <!-- TODO: <@cvlSitt> linkとavatarの変数化がうまくいかない問題の解決 -->
         <MenuItemVue link="/main" avatar="school" label="HOME"/>
         <!-- TODO: 各ページのリンクを修正 -->
         <MenuItemVue link="/main" avatar="school" label="MEMBER"/>

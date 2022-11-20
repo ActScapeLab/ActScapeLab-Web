@@ -10,9 +10,9 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-item to="/main">
+  <q-item :to="link">
     <q-item-section avatar>
-      <q-icon name=school />
+      <q-icon :name="avatar" />
     </q-item-section>
     <q-item-section>
       <q-item-label>{{label}}</q-item-label>
