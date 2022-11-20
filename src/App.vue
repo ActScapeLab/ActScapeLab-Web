@@ -1,10 +1,11 @@
-<!-- TODO: ヘッダーやフッター，メニューなど，全ページで共通の要素を定義 -->
+<!-- ヘッダーやフッター，メニューなど，全ページで共通の要素を定義 -->
 <script setup lang="ts">
 // import は一番上に書く
 import MenuItemVue from '@/components/App/menuItem.vue'
+import { ref } from 'vue';
 
 // 変数の宣言方法
-const leftDrawerOpen = false
+const leftDrawerOpen = ref(false)
 </script>
 
 <template>

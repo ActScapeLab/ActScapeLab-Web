@@ -6,9 +6,10 @@ Homeとheader(一回見せる) -> CSS(コピるだけ)
 <script setup lang="ts">
 import Update from "@/components/Home/Update.vue";
 import pageTitle from "@/components/parts/pageTitle.vue"
+import { ref } from "vue";
 
-const slide = 1
-const autoplay = true
+const slide = ref(1)
+const autoplay = ref(true)
 
 </script>
 
