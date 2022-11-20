@@ -1,10 +1,12 @@
 <template>
   <h1>Update</h1>
   <ul>
+    <!-- TODO: 内部リンクの書き換え -->
     <selectionItem
       title="November 12-13,2022"
       description="土木計画学秋大会に参加してきました"
       link="news/jsce2022fall.html"/>
+    
     <selectionItem
       title="November 10, 2022"
       description="論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました"
@@ -36,13 +38,6 @@
   </ul>
 </template>
 
-<script>
+<script setup lang="ts">
 import selectionItem from "@/components/parts/selectionItem.vue"
-
-export default {
-  name: 'HomeTitle',
-  components: {
-    selectionItem
-  }
-}
 </script>

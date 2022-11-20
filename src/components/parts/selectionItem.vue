@@ -1,21 +1,22 @@
 <!-- リストとして表示するアイテムの体裁を定義 -->
+<script setup lang="ts">
+interface Props {
+  title: string,
+  description: string,
+  link: string
+}
+
+const props = defineProps<Props>();
+</script>
+
 <template>
   <li>
     <h1 class="selectionTitle">{{title}}</h1>
-    <p class="selectionContents"><a href={{link}}>{{description}}</a></p>
+    <p class="selectionContents">
+      <a :href="props.link" target="_blank">{{description}}</a>
+    </p>
   </li>
 </template>
-
-<script>
-export default {
-  name: "selection-item",
-  props: {
-    title: String,
-    description: String,
-    link: URL
-  }
-}
-</script>
 
 <style>
 h1.selectionTitle {
