@@ -3,12 +3,19 @@
   <h1>{{main}} | {{sub}}</h1>  
 </template>
 
-<script>
-export default {
-  name: "page-title",
-  props: {
-    main: String,
-    sub: String
-  }
+<script setup lang="ts">
+interface Props {
+  main: string;
+  sub : string;
 }
+
+const prop = defineProps<Props>();
 </script>
+
+<style>
+h1 {
+  /* TODO: フォントの決定 */
+  /* タイトルだけでなく，ページ全体で全て同じなら styles/quasar.variables.scss に記述しても良い */
+  font-family: inherit;
+}
+</style>
