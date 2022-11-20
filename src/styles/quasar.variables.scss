@@ -12,8 +12,23 @@ $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
 
+@media (min-width: 992px) {
+    div.outline {
+        margin-left: 25%;
+        width: 50%;
+    }
+}
+
+div.outline {
+    padding: 4em 0;
+}
+
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0px;
 }
 
 @import '~quasar-variables-styl'

@@ -1,5 +1,5 @@
 <template>
-  <h1>Update</h1>
+  <pageTitle main="Updates" />
   <ul>
     <!-- TODO: 内部リンクの書き換え -->
     <selectionItem
@@ -39,5 +39,6 @@
 </template>
 
 <script setup lang="ts">
+import pageTitle from "@/components/parts/pageTitle.vue"
 import selectionItem from "@/components/parts/selectionItem.vue"
 </script>
