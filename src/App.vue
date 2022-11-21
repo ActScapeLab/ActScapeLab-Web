@@ -26,13 +26,13 @@ const leftDrawerOpen = ref(false)
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
 
-        <MenuItemVue link="/main" avatar="school" label="HOME"/>
-        <!-- TODO: 各ページのリンクを修正 -->
-        <MenuItemVue link="/main" avatar="school" label="MEMBER"/>
-        <MenuItemVue link="/main" avatar="school" label="NEWS"/>
-        <MenuItemVue link="/main" avatar="school" label="RESEARCH"/>
-        <MenuItemVue link="/main" avatar="school" label="PUBLICATION"/>
-        <MenuItemVue link="/main" avatar="school" label="CONTACT"/>
+        <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->
+        <MenuItemVue link="/"            avatar="school"       label="HOME"/>
+        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
+        <MenuItemVue link="/news"        avatar="newspaper"    label="NEWS"/>
+        <MenuItemVue link="/research"    avatar="biotech"      label="RESEARCH"/>
+        <MenuItemVue link="/publication" avatar="auto_stories" label="PUBLICATION"/>
+        <MenuItemVue link="/contact"     avatar="call"         label="CONTACT"/>
       </q-list>
     </q-drawer>
 
