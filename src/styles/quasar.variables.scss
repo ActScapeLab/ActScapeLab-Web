@@ -12,24 +12,4 @@ $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
 
-// PC版の特殊設定
-@media (min-width: 992px) {
-    div.outline {
-        margin-left: 25%;
-        width: 50%;
-    }
-}
-
-div.outline {
-    padding: 4em 1em;
-}
-
-a {
-    text-decoration: none;
-}
-
-p {
-    margin: 0px;
-}
-
 @import '~quasar-variables-styl'
