@@ -13,12 +13,9 @@ const leftDrawerOpen = ref(false)
     <q-header elevated class="glossy">
       <q-toolbar>
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
-
         <q-toolbar-title>
-          ActScapeLab
+          ACTSCAPELAB
         </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
       </q-toolbar>
     </q-header>
 
@@ -47,3 +44,24 @@ const leftDrawerOpen = ref(false)
     </q-footer>
   </q-layout>
 </template>
+
+<style>
+
+  @font-face {
+    font-family: 'icomoon', 'Noto Sans JP', sans-serif;
+    src: url("../src/font/icomoon.eot");
+    src: url("../src/font/icomoon.eot") format("embedded-opentype"), url("../src/font/icomoon.ttf") format("truetype"), url("../src/font/icomoon.woff") format("woff"), url("../src/font/icomoon.svg") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .glossy {
+    background: #ffffff;
+    font-size: 18px;
+    font-family: "Roboto", 'Noto Sans JP', sans-serif;
+    line-height: 1.8;
+    font-weight: 300;
+    color: #b2b8c2;
+  }
+
+</style>

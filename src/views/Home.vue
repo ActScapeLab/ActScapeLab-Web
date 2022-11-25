@@ -17,7 +17,7 @@ const autoplay = ref(true)
   <div class="outline">
     <pageTitle main="大山研究室" sub="芝浦工業大学 土木工学科" />
   
-    <p>より良い都市環境の設計に向けて,空間と人の行動とのポジティブな相互作用について研究しています.</p>
+    <p class="comment">より良い都市環境の設計に向けて,空間と人の行動とのポジティブな相互作用について研究しています.</p>
   
     <div class="q-pa-md">
       <q-carousel
@@ -54,4 +54,22 @@ const autoplay = ref(true)
     max-height: 250px;
   }
 }
+
+
+.q-pa-md {/*横幅94%で左右に余白を持たせて中央寄せ*/
+  width:94%;
+   margin:0 auto;
+}
+
+.q-pa-md img {
+   width:100%;/*スライダー内の画像を横幅100%に*/
+   height:auto;
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.q-pa-md .slick-slide {
+   margin:0 10px;
+}
+
 </style>
