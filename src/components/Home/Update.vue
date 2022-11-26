@@ -1,5 +1,5 @@
 <template>
-  <pageTitle main="Updates" />
+  <pageTitle main="UPDATES" />
   <ul>
     <!-- TODO: 内部リンクの書き換え -->
     <selectionItem

@@ -28,10 +28,17 @@ const prop = defineProps<Props>();
 </script>
 
 <style>
+/* srcがいっぱいあるのは,各ブラウザに対応しているフォントを自動で検出するため */
+@font-face {
+    font-family:'Abel', 'Noto Sans JP', sans-serif;
+    src: url("../../font/Abel-Regular.ttf") format("truetype") url("../../font/icomoon.ttf") format("truetype") ;
+    font-weight: normal;
+    font-style: normal;
+  }
+
 .pageTitle {
   /* TODO: フォントの決定 */
   /* タイトルだけでなく，ページ全体で全て同じなら styles/quasar.variables.scss に記述しても良い */
-  font-family: inherit;
   margin: 1.414em 0 0.5em;
   padding: 0;
   line-height: 1.2;  
@@ -39,22 +46,15 @@ const prop = defineProps<Props>();
 
 h1.pageTitle {
   background: #ffffff;
-  font-family: "Roboto", 'Noto Sans JP', sans-serif;
-  line-height: 1.4;
+  font-family: "Abel", "Noto Sans JP", sans-serif;
+  font-size: 20px;
+  line-height: 1.2;
   font-weight: 300;
-  color: #b2b8c2;
-  font-size: 1.424em;
+  color: #4a525d;
 }
 span.pageTitle {
   font-size: 0.64em;
 }
 
-@font-face {
-    font-family: 'icomoon', 'Noto Sans JP', sans-serif;
-    src: url("../../font/icomoon.eot");
-    src: url("../../font/icomoon.eot") format("embedded-opentype"), url("../../font/icomoon.ttf") format("truetype"), url("../../font/icomoon.woff") format("woff"), url("../../font/icomoon.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
 
 </style>

@@ -9,7 +9,7 @@ const leftDrawerOpen = ref(false)
 </script>
 
 <template>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout view="lHh Lpr lFf" class="header">
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
@@ -46,22 +46,18 @@ const leftDrawerOpen = ref(false)
 </template>
 
 <style>
-
   @font-face {
-    font-family: 'icomoon', 'Noto Sans JP', sans-serif;
-    src: url("../src/font/icomoon.eot");
-    src: url("../src/font/icomoon.eot") format("embedded-opentype"), url("../src/font/icomoon.ttf") format("truetype"), url("../src/font/icomoon.woff") format("woff"), url("../src/font/icomoon.svg") format("svg");
+    font-family:'Abel';
+    src: url("../src/font/Abel-Regular.ttf") format("truetype");
     font-weight: normal;
     font-style: normal;
   }
 
-  .glossy {
-    background: #3d0707;
-    font-size: 18px;
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  .header{
+    font-size: 15px;
+    font-family: "Abel", sans-serif;
     line-height: 1.8;
     font-weight: 300;
-    color: #b2b8c2;
+    color: #0157e1;
   }
-
-</style>
+  </style>

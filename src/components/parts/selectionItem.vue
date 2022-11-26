@@ -19,13 +19,19 @@ const props = defineProps<Props>();
 </template>
 
 <style>
+
+li {
+  font-family: "Roboto", sans-serif;
+  color: #4a525d;
+}
+
 h1.selectionTitle {
-  font-weight: lighter;
-  font-size: 14pt;
+  font-size: 12pt;
   text-align: left;
   margin: 0px;
   line-height: normal;
 }
+
 p.selectionContents {
   text-align: left;
   margin-top: 5px;
