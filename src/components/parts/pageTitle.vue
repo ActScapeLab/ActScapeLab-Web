@@ -46,8 +46,8 @@ span.pageTitle {
 
 @font-face {
     font-family: 'icomoon', 'Noto Sans JP', sans-serif;
-    src: url("/Users/ah18087/Desktop/repositories/ActScapeLab-Web/src/font/icomoon.eot");
-    src: url("/Users/ah18087/Desktop/repositories/ActScapeLab-Web/src/font/icomoon.eot") format("embedded-opentype"), url("/Users/ah18087/Desktop/repositories/ActScapeLab-Web/src/font/icomoon.ttf") format("truetype"), url("/Users/ah18087/Desktop/repositories/ActScapeLab-Web/src/font/icomoon.woff") format("woff"), url("/Users/ah18087/Desktop/repositories/ActScapeLab-Web/src/font/icomoon.svg") format("svg");
+    src: url("../../font/icomoon.eot");
+    src: url("../../font/icomoon.eot") format("embedded-opentype"), url("../../font/icomoon.ttf") format("truetype"), url("../../font/icomoon.woff") format("woff"), url("../../font/icomoon.svg") format("svg");
     font-weight: normal;
     font-style: normal;
   }
