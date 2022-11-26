@@ -32,12 +32,17 @@ const prop = defineProps<Props>();
   /* TODO: フォントの決定 */
   /* タイトルだけでなく，ページ全体で全て同じなら styles/quasar.variables.scss に記述しても良い */
   font-family: inherit;
-  
   margin: 1.414em 0 0.5em;
   padding: 0;
   line-height: 1.2;  
 }
+
 h1.pageTitle {
+  background: #ffffff;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  line-height: 1.4;
+  font-weight: 300;
+  color: #b2b8c2;
   font-size: 1.424em;
 }
 span.pageTitle {
@@ -50,15 +55,6 @@ span.pageTitle {
     src: url("../../font/icomoon.eot") format("embedded-opentype"), url("../../font/icomoon.ttf") format("truetype"), url("../../font/icomoon.woff") format("woff"), url("../../font/icomoon.svg") format("svg");
     font-weight: normal;
     font-style: normal;
-  }
-
-  .pageTitle {
-    background: #ffffff;
-    font-size: 18px;
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    line-height: 1.8;
-    font-weight: 300;
-    color: #b2b8c2;
   }
 
 </style>
