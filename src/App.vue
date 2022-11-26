@@ -55,13 +55,4 @@ const leftDrawerOpen = ref(false)
     font-style: normal;
   }
 
-  .glossy {
-    background: #3d0707;
-    font-size: 18px;
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    line-height: 1.8;
-    font-weight: 300;
-    color: #b2b8c2;
-  }
-
 </style>
