@@ -10,7 +10,7 @@ const leftDrawerOpen = ref(false)
 
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="glossy">
+    <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
         <q-toolbar-title>
@@ -56,7 +56,7 @@ const leftDrawerOpen = ref(false)
   }
 
   .glossy {
-    background: #ffffff;
+    background: #3d0707;
     font-size: 18px;
     font-family: "Roboto", 'Noto Sans JP', sans-serif;
     line-height: 1.8;
