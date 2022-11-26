@@ -19,9 +19,10 @@ const props = defineProps<Props>();
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 
 li {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", "Noto Sans JP" ,sans-serif;
   color: #4a525d;
 }
 

@@ -2,7 +2,7 @@
 <template>
   <h1 class="pageTitle">
     {{main}}<span class="pageTitle">{{getSub(sub)}}</span>
-  </h1>  
+  </h1>
 </template>
 
 <!--
@@ -25,13 +25,15 @@ function getSub(sub?:string) {
 // defineProps<Props>(); だけで良い. これがないとクラス宣言しただけになる.
 //  Typescriptに慣れよう
 const prop = defineProps<Props>();
+
 </script>
 
 <style>
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
 /* srcがいっぱいあるのは,各ブラウザに対応しているフォントを自動で検出するため */
 @font-face {
     font-family:'Abel', 'Noto Sans JP', sans-serif;
-    src: url("../../font/Abel-Regular.ttf") format("truetype") url("../../font/icomoon.ttf") format("truetype") ;
+    src: url("../../font/Abel-Regular.ttf") format("truetype") url("../../font/NotoSansJP-Thin.otf") format("truetype") ;
     font-weight: normal;
     font-style: normal;
   }
