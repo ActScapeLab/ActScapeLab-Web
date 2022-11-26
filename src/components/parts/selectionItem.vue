@@ -24,6 +24,7 @@ h1.selectionTitle {
   font-size: 14pt;
   text-align: left;
   margin: 0px;
+  line-height: normal;
 }
 p.selectionContents {
   text-align: left;
