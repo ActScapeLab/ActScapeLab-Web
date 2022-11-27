@@ -18,6 +18,11 @@ p {
     margin: 0px;
 }
 
+div {
+    font-family: "Roboto", 'Noto Sans JP', sans-serif;
+    color: #4a525d
+}
+
 
 @import './quasar.variables.scss';
 @import '~quasar-styl';

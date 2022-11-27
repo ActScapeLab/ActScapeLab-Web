@@ -1,33 +1,28 @@
 <template>
+  <pageTitle main="Updates"/>
   <div class="q-px-lg q-pb-md">
     <q-timeline color="secondary">
-      <q-timeline-entry heading>
-        Updates
-      </q-timeline-entry>
+      <!-- TODO: 内部リンクの書き換え -->
+      <selectionItem
+        date="November 12-13,2022"
+        description="土木計画学秋大会に参加してきました"
+        link="news/jsce2022fall.html"/>
+      
+      <selectionItem
+        date="November 10, 2022"
+        description="論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました"
+        link="https://authors.elsevier.com/c/1g3SE,oML19xKG"/>
 
-      <q-timeline-entry
-        title="土木計画学秋大会に参加してきました"
-        subtitle="November 12-13,2022"
-      >
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました"
-        subtitle="November 10, 2022"
-      >
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="行動モデル夏の学校＠東大で総合一位になりました!"
-        subtitle="September 23-25, 2022"      >
-      </q-timeline-entry>
-
-      <q-timeline-entry
-        title="Oyama, Hara and Akamatsu (2022) Markovian traffic equilibrium assignment based on network generalized extreme value model がTransportation Research Part Bで公開されました．"
-        subtitle="November 30, 2021"
-      >
-      </q-timeline-entry>
-
+      <selectionItem
+        date="September 23-25, 2022"
+        description="行動モデル夏の学校＠東大で総合一位になりました!"
+        link="news/summerschool2022.html"/>
+      
+      <selectionItem
+        date="November 30, 2021"
+        description="Oyama, Hara and Akamatsu (2022) Markovian traffic equilibrium assignment based on network generalized extreme
+          value model がTransportation Research Part Bで公開されました．"
+        link="https://www.sciencedirect.com/science/article/pii/S0191261521001934"/> 
     </q-timeline>
   </div>
 </template>
