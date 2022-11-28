@@ -43,7 +43,9 @@ h1.pageTitle {
   /* タイトルだけでなく，ページ全体で全て同じなら styles/quasar.variables.scss に記述しても良い */
   margin: 1.414em 0 0.5em;
   padding: 0;
-  line-height: 1.2;  
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-transform: uppercase; 
 }
 
 span.pageTitle {
