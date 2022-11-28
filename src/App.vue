@@ -11,28 +11,24 @@ const leftDrawerOpen = ref(false)
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated class="bg-primary text-white">
-      <q-toolbar>
-        <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
-        <q-toolbar-title class="header">
-          ACTSCAPELAB
-        </q-toolbar-title>
+      <q-toolbar class="text-white rounded-borders">
+        <q-toolbar-title>ActScapeLab</q-toolbar-title>
+        <q-space />
+        <!--
+          notice shrink property since we are placing it
+          as child of QToolbar
+        -->
+        <q-tabs shrink>
+          <q-tab name="home" label="HOME" />
+          <q-tab name="news" label="NEWS" />
+          <q-tab name="member" label="MEMBER" />
+          <q-tab name="research" label="RESEARCH" />
+          <q-tab name="publication" label="PUBLICATION" />
+          <q-tab name="contact" label="CONTACT" />
+        </q-tabs>
       </q-toolbar>
     </q-header>
-
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-2" width="230">
-      <q-list>
-        <q-item-label header>Essential Links</q-item-label>
-
-        <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->
-        <MenuItemVue link="/"            avatar="school"       label="HOME"/>
-        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
-        <MenuItemVue link="/news"        avatar="newspaper"    label="NEWS"/>
-        <MenuItemVue link="/research"    avatar="biotech"      label="RESEARCH"/>
-        <MenuItemVue link="/publication" avatar="auto_stories" label="PUBLICATION"/>
-        <MenuItemVue link="/contact"     avatar="call"         label="CONTACT"/>
-      </q-list>
-    </q-drawer>
-
+    
     <q-page-container>
       <router-view></router-view>
     </q-page-container>
@@ -46,13 +42,54 @@ const leftDrawerOpen = ref(false)
 </template>
 
 <style>
-  div.q-toolbar__title,  .footer{
-    font-family: "Roboto", sans-serif;
+  @font-face {
+    font-family:'Abel';
+    src: url("font/Abel-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  div.q-toolbar__title:first-child{
+    padding-left: 150px;
+  }
+
+  div.q-toolbar__title.ellipsis{
+    color: #5068A9;
     font-size: 20px;
+    display: block;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: "Abel", sans-serif;
+    letter-spacing: .1em;
+  }
+  
+  div.q-toolbar__title.ellipsis.footer{
+    font-size: 16px;
     font-weight: 300;
-    color: black;
   }
-  .q-drawer--left{
-    width: 200px;
+
+  div.q-list{
+    font-family: "Abel", sans-serif;
+    letter-spacing: .1em;
+
   }
+
+  header.fixed-top{
+    padding-top: 100px;
+    position: absolute;
+  }
+
+  footer.fixed-bottom{
+    padding-bottom: 30px;
+    position: relative;
+  }
+
+  footer.q-layout__section--marginal{
+    background-color: white;
+  }
+
+  div.q-tab {
+    padding: 5px;
+  }
+
 </style>
