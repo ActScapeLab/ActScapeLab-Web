@@ -21,16 +21,18 @@ const props = defineProps<Props>();
 <style>
 div.selection{
   font-family: "Roboto", "Noto Sans JP", sans-serif;
+  padding-left: 10px;
 }
 
 div.q-timeline__subtitle{
   font-size: 15px;
   font-weight: 300;
+  text-transform: capitalize;
 }
 
 h6.q-timeline__title{
   font-size: 15px;
-  font-weight: 200;
+  font-weight: 300;
 }
 
 </style>
