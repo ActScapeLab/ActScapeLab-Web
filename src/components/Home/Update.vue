@@ -31,3 +31,10 @@
 import pageTitle from "@/components/parts/pageTitle.vue"
 import selectionItem from "@/components/parts/selectionItem.vue"
 </script>
+
+<style>
+.q-timeline__dot:before{
+  color: gray;
+}
+
+</style>

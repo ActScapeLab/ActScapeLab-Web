@@ -9,11 +9,11 @@ const leftDrawerOpen = ref(false)
 </script>
 
 <template>
-  <q-layout view="lHh Lpr lFf" class="header">
+  <q-layout view="lHh Lpr lFf">
     <q-header elevated class="bg-primary text-white">
       <q-toolbar>
         <q-btn flat dense round @click="leftDrawerOpen = !leftDrawerOpen" aria-label="Menu" icon="menu" />
-        <q-toolbar-title>
+        <q-toolbar-title class="header">
           ACTSCAPELAB
         </q-toolbar-title>
       </q-toolbar>
@@ -39,25 +39,20 @@ const leftDrawerOpen = ref(false)
 
     <q-footer elevated>
       <q-toolbar>
-        <q-toolbar-title>@ 2022 ActScapeLab</q-toolbar-title>
+        <q-toolbar-title class="footer">@ 2022 ActScapeLab</q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
 </template>
 
 <style>
-  @font-face {
-    font-family:'Abel';
-    src: url("../src/font/Abel-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-  .header{
-    font-size: 15px;
-    font-family: "Abel", sans-serif;
-    line-height: 1.8;
+  div.q-toolbar__title,  .footer{
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
     font-weight: 300;
-    color: #0157e1;
+    color: black;
   }
-  </style>
+  .q-drawer--left{
+    width: 200px;
+  }
+</style>

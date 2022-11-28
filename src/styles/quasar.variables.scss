@@ -1,33 +1,17 @@
 // It's highly recommended to change the default colors
 // to match your app's branding.
 
-@font-face {
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    src: url("../font/icomoon.eot");
-    src: url("../font/icomoon.eot") format("embedded-opentype"), url("../font/icomoon.ttf") format("truetype"), url("../font/icomoon.woff") format("woff"), url("../font/icomoon.svg") format("svg");
-    font-weight: normal;
-    font-style: normal;
-  }
-
-$font      : 'Abel', 'Noto Sans JP', sans-serif;
 $primary   : #b2b8c2;
 $secondary : #26A69A;
 $accent    : #9C27B0;
 
-$dark      : #1D1D1D;
+$pageTitle : #4a525d;
+$comment   : #222222;
 
 $positive  : #21BA45;
 $negative  : #C10015;
 $info      : #31CCEC;
 $warning   : #F2C037;
-
-
-.comment{
-    font-size: 15px;
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    // line-height: 1.8;
-    color: #222222;
-}
 
 
 @import '~quasar-variables-styl'
