@@ -19,7 +19,7 @@ const leftDrawerOpen = ref(false)
       </q-toolbar>
     </q-header>
 
-    <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-2">
+    <q-drawer v-model="leftDrawerOpen" show-if-above bordered class="bg-grey-2" width="230">
       <q-list>
         <q-item-label header>Essential Links</q-item-label>
 
