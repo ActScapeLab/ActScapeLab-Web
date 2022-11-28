@@ -33,8 +33,17 @@ import selectionItem from "@/components/parts/selectionItem.vue"
 </script>
 
 <style>
-.q-timeline__dot:before{
+div.q-timeline__dot:before{
   color: gray;
+  height: 7px;
+  width: 7px;
+  top: 7px;
+}
+li{
+  padding-left: 15px !important;
 }
 
+li.q-timeline__entry{
+  padding-left: 10px;
+}
 </style>
