@@ -36,7 +36,7 @@ const autoplay = ref(true)
         <q-carousel-slide :name="1" img-src="@/assets/Home/bench.png" />
         <q-carousel-slide :name="2" img-src="@/assets/Home/murakami.png" />
         <q-carousel-slide :name="3" img-src="@/assets/Home/tsukechi.png" />
-        <q-carousel-slide :name="4" img-src="@/assets/Home/tojo.png" />
+        <q-carousel-slide :name="4" img-src="@/assets/Home/tojo.svg" />
       </q-carousel>
     </div>
   
