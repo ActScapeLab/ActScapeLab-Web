@@ -55,10 +55,11 @@ const autoplay = ref(true)
   }
 }
 
-
-.q-pa-md {/*横幅94%で左右に余白を持たせて中央寄せ*/
+.q-pa-md {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
   width:500px;
-   margin:0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .q-pa-md img {
