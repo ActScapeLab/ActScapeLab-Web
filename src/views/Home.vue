@@ -36,7 +36,7 @@ const autoplay = ref(true)
         <q-carousel-slide :name="1" img-src="@/assets/Home/bench.png" />
         <q-carousel-slide :name="2" img-src="@/assets/Home/murakami.png" />
         <q-carousel-slide :name="3" img-src="@/assets/Home/tsukechi.png" />
-        <q-carousel-slide :name="4" img-src="@/assets/Home/tojo.png" />
+        <q-carousel-slide :name="4" img-src="@/assets/Home/tojo.svg" />
       </q-carousel>
     </div>
   
@@ -55,10 +55,11 @@ const autoplay = ref(true)
   }
 }
 
-
-.q-pa-md {/*横幅94%で左右に余白を持たせて中央寄せ*/
+.q-pa-md {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
   width:500px;
-   margin:0 auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .q-pa-md img {

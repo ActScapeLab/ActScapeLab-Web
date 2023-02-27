@@ -10,32 +10,51 @@ const leftDrawerOpen = ref(false)
 
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header elevated class="bg-primary text-white">
+    <q-header flat class="bg-primary text-white">
       <q-toolbar class="text-white rounded-borders">
-        <q-toolbar-title>ActScapeLab</q-toolbar-title>
+        <q-btn flat label="ActScape Lab." />
         <q-space />
         <!--
           notice shrink property since we are placing it
           as child of QToolbar
         -->
-        <q-tabs shrink>
-          <q-tab name="home" label="HOME" />
-          <q-tab name="news" label="NEWS" />
-          <q-tab name="member" label="MEMBER" />
-          <q-tab name="research" label="RESEARCH" />
-          <q-tab name="publication" label="PUBLICATION" />
-          <q-tab name="contact" label="CONTACT" />
+        <q-tabs shrink class="gt-sm">
+            <q-tab name="home" label="HOME" />
+            <q-tab name="news" label="NEWS" />
+            <q-tab name="member" label="MEMBER" />
+            <q-tab name="research" label="RESEARCH" />
+            <q-tab name="publication" label="PUBLICATION" />
+            <q-tab name="contact" label="CONTACT" />
         </q-tabs>
+        <div class="lt-md">
+          <q-btn
+          flat dense round
+          @click="leftDrawerOpen = !leftDrawerOpen"
+          icon="menu"
+          aria-label="Menu"
+          />
+        </div>
       </q-toolbar>
     </q-header>
-    
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
+      <q-list>
+        <q-item-label header>Menu</q-item-label>
+        <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->
+        <MenuItemVue link="/"            avatar="home"       label="HOME"/>
+        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
+        <MenuItemVue link="/news"        avatar="newspaper"    label="NEWS"/>
+        <MenuItemVue link="/research"    avatar="school"      label="RESEARCH"/>
+        <MenuItemVue link="/publication" avatar="auto_stories" label="PUBLICATION"/>
+        <MenuItemVue link="/contact"     avatar="call"         label="CONTACT"/>
+      </q-list>
+    </q-drawer>
     <q-page-container>
       <router-view></router-view>
     </q-page-container>
 
-    <q-footer elevated>
+    <q-footer flat>
       <q-toolbar>
-        <q-toolbar-title class="footer">@ 2022 ActScapeLab</q-toolbar-title>
+        <q-toolbar-title class="footer">@ 2023 ActScapeLab</q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -49,11 +68,36 @@ const leftDrawerOpen = ref(false)
     font-style: normal;
   }
 
+  div.q-toolbar {
+    /* ヘッダーのフォント指定 */
+    font-family:'Abel', 'sans-serif';
+    color: #a4abb6;
+    font-weight: 400;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* 下記はメニューバーのみに適用されている */
+    letter-spacing: .1em;
+  }
+
+  span.block{
+    /* 研究室名を調整 */
+    color: #5068A9;
+    font-size: 20px;
+    letter-spacing: .1em;
+    font-weight: 900;
+  }
+
+  div.q-tab{
+    padding: auto;
+  }
+
   div.q-toolbar__title:first-child{
+    /* フッターのX軸を調整 */
     padding-left: 150px;
   }
 
   div.q-toolbar__title.ellipsis{
+    /* フッターの文字フォントを調整 */
     color: #5068A9;
     font-size: 20px;
     display: block;
@@ -68,28 +112,21 @@ const leftDrawerOpen = ref(false)
     font-weight: 300;
   }
 
-  div.q-list{
-    font-family: "Abel", sans-serif;
-    letter-spacing: .1em;
-
-  }
-
   header.fixed-top{
+    /* ヘッダーの上に空白を付ける */
     padding-top: 100px;
     position: absolute;
   }
 
   footer.fixed-bottom{
+    /* フッターを自動追跡させない */
     padding-bottom: 30px;
     position: relative;
   }
 
   footer.q-layout__section--marginal{
+    /* フッターの背景を白色 */
     background-color: white;
-  }
-
-  div.q-tab {
-    padding: 5px;
   }
 
 </style>
