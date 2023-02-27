@@ -12,19 +12,21 @@ const leftDrawerOpen = ref(false)
   <q-layout view="lHh Lpr lFf">
     <q-header flat class="bg-primary text-white">
       <q-toolbar class="text-white rounded-borders">
-        <q-btn flat label="ActScape Lab." />
+        <q-btn flat label="ActScape Lab." to="/" />
         <q-space />
         <!--
           notice shrink property since we are placing it
           as child of QToolbar
         -->
         <q-tabs shrink class="gt-sm">
-            <q-tab name="home" label="HOME" />
-            <q-tab name="news" label="NEWS" />
-            <q-tab name="member" label="MEMBER" />
-            <q-tab name="research" label="RESEARCH" />
-            <q-tab name="publication" label="PUBLICATION" />
-            <q-tab name="contact" label="CONTACT" />
+            <q-route-tab name="home" label="HOME" to="/" />
+            <!-- <QRouteTab name="home" label="HOME"/> -->
+            <!-- <q-tab name="home" label="HOME" /> -->
+            <q-route-tab name="news" label="NEWS" to="/news"/>
+            <q-route-tab name="member" label="MEMBER" to="/member"/>
+            <q-route-tab name="research" label="RESEARCH" to="/research"/>
+            <q-route-tab name="publication" label="PUBLICATION" to="/publication"/>
+            <q-route-tab name="contact" label="CONTACT" to="/contact"/>
         </q-tabs>
         <div class="lt-md">
           <q-btn
@@ -41,8 +43,8 @@ const leftDrawerOpen = ref(false)
         <q-item-label header>Menu</q-item-label>
         <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->
         <MenuItemVue link="/"            avatar="home"       label="HOME"/>
-        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
         <MenuItemVue link="/news"        avatar="newspaper"    label="NEWS"/>
+        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
         <MenuItemVue link="/research"    avatar="school"      label="RESEARCH"/>
         <MenuItemVue link="/publication" avatar="auto_stories" label="PUBLICATION"/>
         <MenuItemVue link="/contact"     avatar="call"         label="CONTACT"/>
@@ -87,8 +89,17 @@ const leftDrawerOpen = ref(false)
     font-weight: 900;
   }
 
-  div.q-tab{
-    padding: auto;
+  a.q-tab{
+    padding: 0px;
+  }
+
+  div.relative-position{
+    padding: 0 10px;
+
+  }
+
+  .q-tab__label{
+    letter-spacing: .1em;
   }
 
   div.q-toolbar__title:first-child{
