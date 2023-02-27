@@ -10,16 +10,14 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <div class="selection">
-    <q-timeline-entry
-      :title="description"
-      :subtitle="date"
-    />
-  </div>
+  <q-timeline-entry class="selection"
+        :title="description"
+        :subtitle="date"
+      />
 </template>
 
 <style>
-div.selection{
+.selection{
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   padding-left: 10px;
 }
@@ -30,7 +28,7 @@ div.q-timeline__subtitle{
   text-transform: capitalize;
 }
 
-h6.q-timeline__title{
+.q-timeline__title{
   font-size: 15px;
   font-weight: 300;
 }
