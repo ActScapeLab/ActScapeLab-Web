@@ -18,17 +18,36 @@ const leftDrawerOpen = ref(false)
           notice shrink property since we are placing it
           as child of QToolbar
         -->
-        <q-tabs shrink>
-          <q-tab name="home" label="HOME" />
-          <q-tab name="news" label="NEWS" />
-          <q-tab name="member" label="MEMBER" />
-          <q-tab name="research" label="RESEARCH" />
-          <q-tab name="publication" label="PUBLICATION" />
-          <q-tab name="contact" label="CONTACT" />
+        <q-tabs shrink class="gt-sm">
+            <q-tab name="home" label="HOME" />
+            <q-tab name="news" label="NEWS" />
+            <q-tab name="member" label="MEMBER" />
+            <q-tab name="research" label="RESEARCH" />
+            <q-tab name="publication" label="PUBLICATION" />
+            <q-tab name="contact" label="CONTACT" />
         </q-tabs>
+        <div class="lt-md">
+          <q-btn
+          flat dense round
+          @click="leftDrawerOpen = !leftDrawerOpen"
+          icon="menu"
+          aria-label="Menu"
+          />
+        </div>
       </q-toolbar>
     </q-header>
-    
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
+      <q-list>
+        <q-item-label header>Menu</q-item-label>
+        <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->
+        <MenuItemVue link="/"            avatar="home"       label="HOME"/>
+        <MenuItemVue link="/member"      avatar="people"       label="MEMBER"/>
+        <MenuItemVue link="/news"        avatar="newspaper"    label="NEWS"/>
+        <MenuItemVue link="/research"    avatar="school"      label="RESEARCH"/>
+        <MenuItemVue link="/publication" avatar="auto_stories" label="PUBLICATION"/>
+        <MenuItemVue link="/contact"     avatar="call"         label="CONTACT"/>
+      </q-list>
+    </q-drawer>
     <q-page-container>
       <router-view></router-view>
     </q-page-container>
