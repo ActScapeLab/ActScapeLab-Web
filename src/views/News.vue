@@ -1,11 +1,6 @@
 <script setup lang="ts">
 import pageTitle from "@/components/parts/pageTitle.vue"
 import selectionItem from "@/components/parts/selectionItem.vue"
-import { ref } from "vue";
-
-const slide = ref(1)
-const autoplay = ref(true)
-
 </script>
 
 <template>
@@ -52,15 +47,6 @@ const autoplay = ref(true)
 </template>
 
 <style>
-.slide {
-  max-height: 300px;
-}
-@media (max-width: 992px) {
-  .slide {
-    max-height: 250px;
-  }
-}
-
 .q-pa-md {
   /*横幅94%で左右に余白を持たせて中央寄せ*/
   width:500px;
@@ -74,7 +60,6 @@ const autoplay = ref(true)
 }
 
 /*slickのJSで書かれるタグ内、スライド左右の余白調整*/
-
 .q-pa-md .slick-slide {
    margin:0 10px;
 }
@@ -85,6 +70,7 @@ div.q-timeline__dot:before{
   width: 7px;
   top: 7px;
 }
+
 li{
   padding-left: 15px !important;
 }
