@@ -10,10 +10,18 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-timeline-entry class="selection"
-        :title="description"
-        :subtitle="date"
-      />
+  <q-timeline-entry class="selection">
+    <template v-slot:title>
+      <q-item flat clickable :to="link" class="title">
+        {{ description }}
+      </q-item>
+    </template>
+    <template v-slot:subtitle>
+      <div class="title capitalize">
+        {{ date }}
+      </div>
+    </template>
+  </q-timeline-entry>
 </template>
 
 <style>
@@ -22,15 +30,13 @@ const props = defineProps<Props>();
   padding-left: 10px;
 }
 
-div.q-timeline__subtitle{
+.title {
   font-size: 15px;
   font-weight: 300;
-  text-transform: capitalize;
 }
 
-.q-timeline__title{
-  font-size: 15px;
-  font-weight: 300;
+.capitalize {
+  text-transform: capitalize;
 }
 
 </style>
