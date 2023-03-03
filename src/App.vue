@@ -62,7 +62,7 @@ const leftDrawerOpen = ref(false)
   </q-layout>
 </template>
 
-<style>
+<style lang="scss" scoped>
   @font-face {
     font-family:'Abel';
     src: url("font/Abel-Regular.ttf") format("truetype");

@@ -10,7 +10,7 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-timeline-entry class="selection">
+  <q-timeline-entry class="base">
     <template v-slot:title>
       <q-item flat clickable :href="link" target="_blank" class="title">
         {{ description }}
@@ -24,8 +24,9 @@ const props = defineProps<Props>();
   </q-timeline-entry>
 </template>
 
-<style>
-.selection{
+<style lang="scss" scoped>
+/* TODO: 点のサイズを小さくして，色をグレーにする */
+.base {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
   padding-left: 10px;
 }

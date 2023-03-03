@@ -28,7 +28,7 @@ const prop = defineProps<Props>();
 
 </script>
 
-<style>
+<style lang="scss" scoped>
 h1.pageTitle {
     background: #ffffff;
     font-family: "Abel", "Noto Sans JP", sans-serif;

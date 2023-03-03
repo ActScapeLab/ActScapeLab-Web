@@ -45,7 +45,7 @@ const autoplay = ref(true)
 
 </template>
 
-<style>
+<style lang="scss" scoped>
 .slide {
   max-height: 300px;
 }

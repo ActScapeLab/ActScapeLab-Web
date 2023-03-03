@@ -45,7 +45,7 @@ const props = defineProps<Props>();
 
 </template>
 
-<style>
+<style lang="scss" scoped>
 
 p.self-contents-title {
   width: 10em;
