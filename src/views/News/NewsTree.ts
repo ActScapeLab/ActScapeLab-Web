@@ -43,3 +43,10 @@ export function getLink(link:string, year:string) {
     return `news/${year}/${link}`
   }
 }
+
+/**
+ * 日付を取得する
+ */
+export function setDate(year:string, month:string, date:string) {
+  return `${month} ${date}, ${year}`
+}
