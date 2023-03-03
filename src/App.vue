@@ -12,7 +12,7 @@ const leftDrawerOpen = ref(false)
   <q-layout view="lHh Lpr lFf">
     <q-header flat class="bg-primary text-white">
       <q-toolbar class="text-white rounded-borders">
-        <q-btn flat label="ActScape Lab." to="/" />
+        <q-btn flat label="ActScape Lab." to="/" class="logo"/>
         <q-space />
         <!--
           notice shrink property since we are placing it
@@ -81,7 +81,7 @@ const leftDrawerOpen = ref(false)
     letter-spacing: .1em;
   }
 
-  span.block{
+  .logo {
     /* 研究室名を調整 */
     color: #5068A9;
     font-size: 20px;
