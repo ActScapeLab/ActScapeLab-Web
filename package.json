@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "python src/router/buildRouter.py && vue-cli-service serve",
+    "build": "python src/router/buildRouter.py && vue-cli-service build"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

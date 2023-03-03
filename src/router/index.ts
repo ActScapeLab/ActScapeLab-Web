@@ -5,6 +5,7 @@ import News from '../views/News.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
 import Contact from '../views/Contact.vue'
+import SummerSchool from '../views/News/2022/SummerSchool.vue'
 
 // ページを追加する際にはここに記述する
 const routes: Array<RouteRecordRaw> = [
@@ -37,7 +38,11 @@ const routes: Array<RouteRecordRaw> = [
     path: '/contact',
     name: 'contact',
     component: Contact
-  }
+  },
+  {
+    path: '/news/2022/summerschool',
+    component: SummerSchool
+  },
 ]
 
 const router = createRouter({
