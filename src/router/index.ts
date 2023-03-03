@@ -1,46 +1,40 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
+import Contact from '../views/Contact.vue'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import News from '../views/News.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
-import Contact from '../views/Contact.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 
 // ページを追加する際にはここに記述する
 const routes: Array<RouteRecordRaw> = [
   {
-    path: '/',
-    name: 'home',
-    component: Home
-  },
-  {
-    path: '/member',
-    name: 'member',
-    component: Member
-  },
-  {
-    path: '/news',
-    name: 'news',
-    component: News
-  },
-  {
-    path: '/publication',
-    name: 'publication',
-    component: Publication
-  },
-  {
-    path: '/research',
-    name: 'research',
-    component: Research
-  },
-  {
-    path: '/contact',
-    name: 'contact',
+    path: '/Contact',
     component: Contact
   },
   {
-    path: '/news/2022/summerschool',
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/Member',
+    component: Member
+  },
+  {
+    path: '/News',
+    component: News
+  },
+  {
+    path: '/Publication',
+    component: Publication
+  },
+  {
+    path: '/Research',
+    component: Research
+  },
+  {
+    path: '/news/2022/SummerSchool',
     component: SummerSchool
   },
 ]

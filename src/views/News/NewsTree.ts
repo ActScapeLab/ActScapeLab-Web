@@ -21,7 +21,7 @@ export const tree = [
     month: 'September',
     date: '23-25',
     description: '行動モデル夏の学校＠東大で総合一位になりました!',
-    link: 'summerschool'
+    link: 'SummerSchool'
   },
   {
     year: '2021',
