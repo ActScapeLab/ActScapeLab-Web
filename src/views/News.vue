@@ -14,7 +14,7 @@ import { getLink, setDate, tree } from "./News/NewsTree";
           <selectionItem
             :date="setDate(page.year, page.month, page.date)"
             :description="page.description"
-            :link="getLink(page.link, page.year)"/>
+            :link="getLink(page.year, page.link)"/>
         </template>
       </q-timeline>
     </div>

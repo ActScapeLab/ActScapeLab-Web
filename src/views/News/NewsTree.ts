@@ -6,8 +6,7 @@ export const tree = [
     year: '2022',
     month: 'November',
     date: '12-13',
-    description: '土木計画学秋大会に参加してきました',
-    link: 'jscefall'
+    description: '土木計画学秋大会に参加してきました'
   },
   {
     year: '2022',
@@ -35,7 +34,10 @@ export const tree = [
 /**
  * リンクを取得する
  */
-export function getLink(link:string, year:string) {
+export function getLink(year:string, link?:string) {
+  if (link == undefined) {
+    return undefined
+  }
   if (link.substring(0, 4) == 'http') {
     return link
   }

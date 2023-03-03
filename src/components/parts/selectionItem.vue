@@ -3,16 +3,18 @@
 interface Props {
   date: string,
   description: string,
-  link: string
+  link?: string
 }
 
 const props = defineProps<Props>();
+
+const hasLink = props.link !== undefined
 </script>
 
 <template>
   <q-timeline-entry class="base">
     <template v-slot:title>
-      <q-item flat clickable :href="link" target="_blank" class="title">
+      <q-item flat :clickable="hasLink" :href="link" target="_blank" class="title">
         {{ description }}
       </q-item>
     </template>
