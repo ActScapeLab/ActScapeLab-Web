@@ -12,7 +12,7 @@ const props = defineProps<Props>();
 <template>
   <q-timeline-entry class="selection">
     <template v-slot:title>
-      <q-item flat clickable :to="link" class="title">
+      <q-item flat clickable :href="link" target="_blank" class="title">
         {{ description }}
       </q-item>
     </template>
