@@ -1,45 +1,23 @@
-
 // Noto Sans JPフォントの定義
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
 // ヘッダー Abel，本文 Noto Sans JP，本文英語 Abel
 /* srcがいっぱいあるのは,各ブラウザに対応しているフォントを自動で検出するため */
 @font-face {
-    font-family:'Abel', 'Noto Sans JP', sans-serif;
-    src: url("../font/Abel-Regular.ttf") format("truetype") url("../font/NotoSansJP-Thin.otf") format("truetype") ;
-    font-weight: normal;
-    font-style: normal;
-  }
-
-// PC版の特殊設定
-@media (min-width: 992px) {
-    div.outline {
-        margin-left: 25%;
-        width: 50%;
-    }
-}
-
-p.comment{
-    font-size: 15px;
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    // line-height: 1.8;
-    color: $comment;
-  }
-
-div.outline {
-    padding: 4em 1em;
+  font-family: 'Abel', 'Noto Sans JP', sans-serif;
+  src: url("../font/Abel-Regular.ttf") format("truetype") url("../font/NotoSansJP-Thin.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    font-family: "Roboto", 'Noto Sans JP', sans-serif;
-    margin: 0px;
-}
-
-div {
-    color: $comment;
+  font-family: "Roboto", 'Noto Sans JP', sans-serif;
+  font-size: 15px;
+  margin: 0px;
 }
 
 

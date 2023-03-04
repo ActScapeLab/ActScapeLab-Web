@@ -10,7 +10,7 @@ const showCounts = 3
 
 <template>
   <pageTitle main="Updates"/>
-  <div class="q-px-lg q-pb-md">
+  <div class="q-px-lg">
     <q-timeline color="secondary">
       <template v-for="(page, index) in tree.slice(0, showCounts)" :key="index">
         <selectionItem
