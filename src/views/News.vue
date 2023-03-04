@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pageTitle from "@/components/parts/pageTitle.vue"
-import selectionItem from "@/components/parts/selectionItem.vue"
+import selectionItem from "@/components/News/selectionItem.vue"
 import { getLink, setDate, tree } from "./News/NewsTree";
 </script>
 
