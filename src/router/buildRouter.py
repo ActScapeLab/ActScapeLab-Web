@@ -2,21 +2,45 @@
 # Newsに追加した記事を自動でRouterに追加する
 #
 
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
+from typing import ClassVar
 
 @dataclass
-class Page:
-    fileName:str
+class BasePage:
+    importName:str
+    importPath:str
+    routePath:str
+    spaceCount:ClassVar[int] = 0
 
     def __repr__(self) -> str:
-        return self.path
+        return self.routePath
 
     def importer(self):
-        return f"import {self.fileName} from '../views/{self.fileName}.vue'"
+        return f"import {self.importName} from '{self.importPath}'"
 
     def router(self):
-        return '  {\n'+f"    path: '{self.path}',\n    component: {self.fileName}\n"+'  },'
+        return self.baseSpaces+'  {\n'+self.baseSpaces+f"    path: '{self.routePath}',\n{self.baseSpaces}    component: {self.importName}\n"+self.baseSpaces+'  },'
+    
+    def setSpaceCount(self, count:int):
+        self.spaceCount = count
+        return self
+
+    @property
+    def baseSpaces(self):
+        return ' ' * self.spaceCount
+
+@dataclass
+class Page(BasePage):
+    fileName:str
+    importName:str = field(init=False)
+    importPath:str = field(init=False)
+    routePath:str  = field(init=False)
+
+    def __post_init__(self) -> None:
+        self.importName = self.fileName
+        self.importPath = f'../views/{self.fileName}.vue'
+        self.routePath  = self.path
 
     @property
     def path(self):
@@ -25,25 +49,62 @@ class Page:
 
 
 @dataclass
-class NewsPage(Page):
-    year: str
+class ChildPage(Page):
+    parentName:str
 
-    def importer(self):
-        return f"import {self.fileName} from '../views/News/{self.year}/{self.fileName}.vue'"
+    def __post_init__(self) -> None:
+        super().__post_init__()
+        self.importPath = f'../views/{self.parentName}/{self.fileName}.vue'
 
     @property
     def path(self):
-        return f'/news/{self.year}/{self.fileName}'
+        return self.fileName
+
+
+@dataclass
+class NewsPage(ChildPage):
+    parentName:str = field(default='News', init=False)
+    year: str
+
+    def __post_init__(self) -> None:
+        super().__post_init__()
+        self.importPath = f'../views/News/{self.year}/{self.fileName}.vue'
+
+    @property
+    def path(self):
+        return f'{self.year}/{self.fileName}'
+
+
+@dataclass
+class ParentPage(Page):
+    childPages: list[ChildPage]
+    basePage: BasePage
+
+    def __post_init__(self) -> None:
+        super().__post_init__()
+        self.childPages.insert(0, self.basePage)
+
+    def importer(self):
+        parent = super().importer()
+        children = '\n'.join(map(lambda child: child.importer(), self.childPages))
+        return parent + '\n' + children
+
+    def router(self):
+        first = '  {\n'+f"    path: '{self.path}',\n    component: {self.fileName},\n"
+        childrenTop = '    children: [\n'
+        children = '\n'.join(map(lambda cp: cp.setSpaceCount(4).router(), self.childPages))
+        childrenEnd = '\n    ]\n  },'
+        return first+childrenTop+children+childrenEnd
 
 
 def readViewPages(source:Path):
     """
     viewsフォルダに入っているVueファイル一覧を取得する
     """
-    pages = []
+    pages:dict[str, Page] = {}
     for filePath in source.iterdir():
         if not filePath.is_file(): continue
-        pages.append(Page(filePath.stem))
+        pages[filePath.stem] = Page(filePath.stem)
 
     return pages
 
@@ -62,7 +123,7 @@ def readNewsPages(source:Path):
     return pages
 
 
-def creater(viewPages:list[Page], newsPages:list[NewsPage]):
+def creater(viewPages:dict[str, Page]):
     """
     index.tsのスクリプトを生成する
     """
@@ -77,12 +138,9 @@ const routes: Array<RouteRecordRaw> = [
 """
 
     # view
-    viewImports = '\n'.join(map(lambda page: page.importer(), viewPages))
-    view = '\n'.join(map(lambda page: page.router(), viewPages))
-    
-    # news
-    newsImports = '\n'.join(map(lambda page: page.importer(), newsPages))
-    news = '\n'.join(map(lambda page: page.router(), newsPages))
+    pages = list(viewPages.values())
+    viewImports = '\n'.join(map(lambda page: page.importer(), pages))
+    view = '\n'.join(map(lambda page: page.router(), pages))
 
     end = \
         """
@@ -96,12 +154,18 @@ const router = createRouter({
 export default router
 """
 
-    return firstImport+viewImports+'\n'+newsImports + routers+view+'\n'+news + end
+    return firstImport+viewImports + routers+view + end
 
 
 if __name__ == "__main__":
+    # route pagesの読み込み
     viewPages = readViewPages(Path(__file__).parents[1]/'views')
-    newsPages = readNewsPages(Path(__file__).parents[1]/'views'/'News')
 
+    # newsにChild要素を追加する
+    newsBasePage = BasePage('NewsTop', f'../views/News/Top.vue', '')
+    newsPages = readNewsPages(Path(__file__).parents[1]/'views'/'News')
+    viewPages['News'] = ParentPage(viewPages['News'].fileName, newsPages, newsBasePage)
+    
+    # index.tsへ書き出し
     with open(Path(__file__).parent/'index.ts', 'w', encoding='utf-8') as f:
-        f.write(creater(viewPages, newsPages))
+        f.write(creater(viewPages))

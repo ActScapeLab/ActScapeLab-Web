@@ -4,9 +4,9 @@ import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
+import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
-import SummerSchool from '../views/News/2022/SummerSchool.vue'
 
 // ページを追加する際にはここに記述する
 const routes: Array<RouteRecordRaw> = [
