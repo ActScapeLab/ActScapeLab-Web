@@ -4,10 +4,30 @@
 
 1. 以下のテンプレートや，作成済みの記事のVueファイルを参考にして記事を執筆する
 
+    - ArticleTemplateを用いることで，全ての記事が統一された見た目で描画されるようになる
+
+    - 開始年と終了年が同じ場合は`endYear`を，開始月と終了月が同じ場合は`endMonth`を，1日のイベントの場合は`endDate`を省略することができる
+
     ```vue
+    <script setup lang="ts">
+    import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
+    </script>
+
     <template>
-        TOOD: ここにテンプレを記載
-    <template>
+      <ArticleTemplate
+        title="記事のタイトル"
+        :startYear="2023"
+        :startMonth="1"
+        :startDate="1"
+        :endYear="2023"
+        :endMonth="2"
+        :endDate="1"
+        authorGrade="D1"
+        authorName="John Doe"
+      >
+        // ここに記事の内容を記述する
+      </ArticleTemplate>
+    </template>
     ```
 
 1. `NewsTree.ts`に追加したい記事の情報を追記

@@ -93,7 +93,7 @@ const leftDrawerOpen = ref(false)
   .logo {
     /* 研究室名を調整 */
     color: $secondary;
-    font-size: 20pt;
+    font-size: 20px;
     letter-spacing: .1em;
     font-weight: 900;
   }

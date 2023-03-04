@@ -1,13 +1,10 @@
 <script setup lang="ts">
-import pageTitle from "@/components/parts/pageTitle.vue"
 import selectionItem from "@/components/News/selectionItem.vue"
 import { getLink, setDate, tree } from "@/views/News/NewsTree";
 </script>
 
 <template>
-  <pageTitle main="News" sub="ニュース" />
-
-  <div class="q-px-lg q-pb-md">
+  <div class="q-px-lg">
     <q-timeline color="secondary">
       <template v-for="(page, index) in tree" :key="index">
         <selectionItem
