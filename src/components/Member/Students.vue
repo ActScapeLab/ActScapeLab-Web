@@ -1,0 +1,16 @@
+<script setup lang="ts">
+import pageTitle from "@/components/parts/pageTitle.vue"
+import member from "@/components/Member/member.vue";
+</script>
+
+<template>
+  <pageTitle main="Students" sub="学生" />
+  
+  <member 
+    name="村上総一郎/M2"
+    url="@/assets/Member/murakami.png"
+    keywards="マルチモーダルNDP・街路空間再配分・都市デザイン"
+    from="埼玉県"
+    hobby="ポケモン・ヒップホップ・麻雀"
+  />
+</template>
