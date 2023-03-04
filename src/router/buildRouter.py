@@ -129,13 +129,7 @@ def creater(viewPages:dict[str, Page]):
     """
 
     firstImport = "import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'\n"
-
-    routers = \
-        """
-
-// ページを追加する際にはここに記述する
-const routes: Array<RouteRecordRaw> = [
-"""
+    routerHead = '\n\nconst routes: Array<RouteRecordRaw> = [\n'
 
     # view
     pages = list(viewPages.values())
@@ -154,7 +148,7 @@ const router = createRouter({
 export default router
 """
 
-    return firstImport+viewImports + routers+view + end
+    return firstImport+viewImports + routerHead+view + end
 
 
 if __name__ == "__main__":

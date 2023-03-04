@@ -8,7 +8,6 @@ import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
 
-// ページを追加する際にはここに記述する
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/Contact',
