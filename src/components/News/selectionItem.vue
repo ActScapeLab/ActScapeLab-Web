@@ -9,12 +9,13 @@ interface Props {
 const props = defineProps<Props>();
 
 const hasLink = props.link !== undefined
+const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 </script>
 
 <template>
-  <q-timeline-entry class="base">
+  <q-timeline-entry color="orange" icon="emoji_events" class="base">
     <template v-slot:title>
-      <q-item flat :clickable="hasLink" :href="link" target="_blank" class="title">
+      <q-item flat :clickable="hasLink" :href="link" :target="target" class="q-pa-none title">
         {{ description }}
       </q-item>
     </template>
@@ -27,10 +28,8 @@ const hasLink = props.link !== undefined
 </template>
 
 <style lang="scss" scoped>
-/* TODO: 点のサイズを小さくして，色をグレーにする */
 .base {
   font-family: "Roboto", "Noto Sans JP", sans-serif;
-  padding-left: 10px;
 }
 
 .title {
