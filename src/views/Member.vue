@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pageTitle from "@/components/parts/pageTitle.vue"
-import member from "@/components/App/member.vue";
+import member from "@/components/Member/member.vue";
 </script>
 
 <template>
