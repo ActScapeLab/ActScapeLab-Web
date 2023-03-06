@@ -10,8 +10,8 @@ const leftDrawerOpen = ref(false)
 
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header flat reveal class="bg-primary absolute-top">
-      <q-toolbar>
+    <q-header flat reveal class="bg-primary absolute-top ">
+      <q-toolbar class="header-menu">
         <q-btn flat label="ActScape Lab." to="/" class="logo abel"/>
         <q-space/>
         <!--
@@ -85,8 +85,12 @@ const leftDrawerOpen = ref(false)
     margin: 4em auto;
     margin-bottom: 0;
   }
+  .header-menu {
+    margin-top: 100px;
+  }
 
   .headerTabs {
+    // 二つ定義する場合は一つ目が上下,二つ目が左右
     margin: 30px 0;
   }
 
@@ -96,9 +100,11 @@ const leftDrawerOpen = ref(false)
     font-size: 20px;
     letter-spacing: .1em;
     font-weight: 900;
+    margin-left: min(100px, 10%);
   }
 
   .footer {
+    font-size: 15px;
     text-align: right;
     margin: 10px 0;
   }
