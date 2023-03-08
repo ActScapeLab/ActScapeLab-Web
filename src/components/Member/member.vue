@@ -11,6 +11,10 @@ const props = defineProps<Props>();
 
 const rows = [
   {
+    name: props.name,
+    calories: undefined
+  },
+  {
     name: '<研究キーワード>',
     calories: props.keywards
   },
@@ -36,11 +40,10 @@ const src = props.url
     <q-img src="@/assets/Member/murakami.png" class="self-photo"/>
     <!-- </q-item-section> -->
     <!-- 名前・出身・趣味の設定 -->
-    <q-item-section>
+    <q-item-section class="table-content">
       <q-item-label>
-        <div class="q-pa-md" style="max-width: 1000px;">
+        <div class="q-pa-md content-font">
           <q-table
-            :title="memberName"
             :rows="rows"
             row-key="name"
             hide-header
@@ -48,6 +51,7 @@ const src = props.url
             flat
             dense
             separator="none"
+            class="title-name table-content"
           />
         </div>
       </q-item-label>
@@ -62,6 +66,10 @@ const src = props.url
   border-radius: 50%;
   width: 150px;
   height: 150px;
+}
+
+.table-content{
+  text-align: left;
 }
 
 </style>
