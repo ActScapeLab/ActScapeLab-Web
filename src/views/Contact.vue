@@ -5,14 +5,14 @@ import pageTitle from '@/components/parts/pageTitle.vue';
 <template>
   <pageTitle main="Contact"/>
   <q-item>
-  <q-item-section avatar>
-    <q-icon name="school" />
-  </q-item-section>
-  <q-item-section>
-    芝浦工業大学 土木工学科 都市環境設計研究室
-    Activity Landscape Design Laboratory
-    Shibaura Institute of Technology, Department of Civil Engineering
-</q-item-section>
+    <q-item-section avatar>
+      <q-icon name="school" />
+    </q-item-section>
+    <q-item-section>
+      芝浦工業大学 土木工学科 都市環境設計研究室
+      Activity Landscape Design Laboratory
+      Shibaura Institute of Technology, Department of Civil Engineering
+    </q-item-section>
   </q-item>
   <q-item>
   <q-item-section avatar>

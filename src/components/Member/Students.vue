@@ -5,7 +5,7 @@ import member from "@/components/Member/member.vue";
 
 <template>
   <pageTitle main="Students" sub="学生" />
-  
+  <div class="q-pa-md">
   <member
     url="@/assets/Member/murakami.png"
     name="村上総一郎/M2"
@@ -97,4 +97,5 @@ import member from "@/components/Member/member.vue";
     from="東京都"
     hobby="ゲーム・将棋・テニス"
   />
+</div>
 </template>

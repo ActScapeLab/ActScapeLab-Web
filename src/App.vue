@@ -10,7 +10,7 @@ const leftDrawerOpen = ref(false)
 
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header flat reveal class="bg-primary absolute-top ">
+    <q-header flat reveal class="title-font bg-primary absolute-top ">
       <q-toolbar class="header-menu">
         <q-btn flat label="ActScape Lab." to="/" class="logo abel"/>
         <q-space/>
@@ -19,17 +19,16 @@ const leftDrawerOpen = ref(false)
           as child of QToolbar
         -->
         <q-tabs
-          dense
-          active-color="secondary"
-          indicator-color="transparent"
-          class="gt-sm text-grey headerTabs"
+        active-color="secondary"
+        indicator-color="transparent"
+        class="gt-sm text-grey tab"
         >
-            <q-route-tab name="home"        label="HOME"        to="/"/>
-            <q-route-tab name="news"        label="NEWS"        to="/news"/>
-            <q-route-tab name="member"      label="MEMBER"      to="/member"/>
-            <q-route-tab name="research"    label="RESEARCH"    to="/research"/>
-            <q-route-tab name="publication" label="PUBLICATION" to="/publication"/>
-            <q-route-tab name="contact"     label="CONTACT"     to="/contact"/>
+            <q-route-tab name="home"        label="HOME"        to="/" class="menubar"/>
+            <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar"/>
+            <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar"/>
+            <q-route-tab name="research"    label="RESEARCH"    to="/research" class="menubar"/>
+            <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar" />
+            <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar"/>
           </q-tabs>
           <div class="lt-md text-black">
             <q-btn
@@ -72,14 +71,7 @@ const leftDrawerOpen = ref(false)
   @font-face {
     font-family:'Abel';
     src: url("font/Abel-Regular.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
   }
-
-  .abel {
-    font-family:'Abel', 'sans-serif';
-  }
-
   .outline {
     width: min(900px, 90%);
     margin: 4em auto;
@@ -94,13 +86,22 @@ const leftDrawerOpen = ref(false)
     margin: 30px 0;
   }
 
+  .menubar{
+    width: 100px;
+  }
+
   .logo {
     /* 研究室名を調整 */
     color: $secondary;
     font-size: 20px;
     letter-spacing: .1em;
     font-weight: 900;
-    margin-left: min(100px, 10%);
+    margin-left: 10%;
+    // display: flex;
+  }
+
+  .tab{
+    margin-right: 10%;
   }
 
   .footer {

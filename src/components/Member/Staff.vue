@@ -7,9 +7,12 @@ import pageTitle from "@/components/parts/pageTitle.vue"
   <div class="q-pa-md">
     <div class="q-gutter-md">
       <q-img src="@/assets/Member/oyamajacket.jpeg" class="self-photo"/>
-      <p>大山雄己/准教授</p>
-      <div class="q-my-md">
-        芝浦工業大学工学部土木工学科 准教授．都市環境設計研究室主宰．主な研究関心は，都市空間上の人間行動およびネットワークのモデリング・デザイン． 
+      <p>
+        大山雄己/准教授
+        <a href="https://yuki-oyama.github.io/index.html">>>> personal webpage</a>
+      </p>
+      <div class="q-my-md content-font">
+        愛知県出身．主な研究関心は，都市空間上の人間行動およびネットワークのモデリング・デザイン． 
         2017年に，移動体通信情報に基づく移動・活動軌跡分析の枠組みを提示する内容で，東京大学都市工学専攻にて博士（工学）の学位を取得． 
         その後，日本学術振興会特別研究員PDとして東工大建築学系で土地利用モデルの研究を行う． 2017年10月から，EPFLのTransport and Mobility Laboratoryで，
         研究・教育助教として主に行動モデルと交通ネットワーク最適化に関する研究・教育， PM活動に従事．
