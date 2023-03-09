@@ -7,7 +7,6 @@ import Alumni from "@/components/Member/Alumni/Alumni.vue";
 <template>
   <Staff/>
   <Students/>
-  <Alumni/>
   <q-btn
   flat
   label=">>> Alumni"

@@ -1,26 +1,15 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Contact from '../views/Contact.vue'
-import Home from '../views/Home.vue'
-import Member from '../views/Member.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Publication from '../views/Publication.vue'
+import Member from '../views/Member.vue'
+import Home from '../views/Home.vue'
+import Contact from '../views/Contact.vue'
 import Research from '../views/Research.vue'
+import Alumni from '../components/Member/Alumni/Alumni.vue'
 
 const routes: Array<RouteRecordRaw> = [
-  {
-    path: '/Contact',
-    component: Contact
-  },
-  {
-    path: '/',
-    component: Home
-  },
-  {
-    path: '/Member',
-    component: Member
-  },
   {
     path: '/News',
     component: News,
@@ -40,8 +29,24 @@ const routes: Array<RouteRecordRaw> = [
     component: Publication
   },
   {
+    path: '/Member',
+    component: Member
+  },
+  {
+    path: '/',
+    component: Home
+  },
+  {
+    path: '/Contact',
+    component: Contact
+  },
+  {
     path: '/Research',
     component: Research
+  },
+  {
+    path: '/Alumni',
+    component: Alumni
   },
 ]
 
