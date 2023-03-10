@@ -11,7 +11,7 @@ const leftDrawerOpen = ref(false)
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header flat reveal class="bg-primary absolute-top">
-      <q-toolbar>
+      <q-toolbar style="width: min(900pt, 100%); margin: auto;">
         <q-btn flat label="ActScape Lab." to="/" class="logo abel"/>
         <q-space/>
         <!--
