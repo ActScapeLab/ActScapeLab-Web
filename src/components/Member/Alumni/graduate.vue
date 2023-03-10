@@ -1,7 +1,10 @@
 <script setup lang="ts">
 
 interface Props{
-  name : string
+  firstName : string
+  lastName : string
+  grade : string
+  thesisType: string
   title : string
 }
 
@@ -12,8 +15,8 @@ const props = defineProps<Props>();
 <template>
   <q-item>
   <q-item-section class="content-font">
-    <p class="self-name">{{ name }}</p>
-    <p>{{ title }}</p>
+    <p class="self-name">{{ firstName + lastName + '/' +grade }}</p>
+    <p>{{ thesisType + ':' +title }}</p>
   </q-item-section>
   </q-item>
 </template>
