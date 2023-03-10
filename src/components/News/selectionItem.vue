@@ -15,7 +15,7 @@ const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 </script>
 
 <template>
-  <q-timeline-entry :color="color" :icon="icon" class="base">
+  <q-timeline-entry :color="color" :icon="icon" class="content-font">
     <template v-slot:title>
       <q-item flat :clickable="hasLink" :href="link" :target="target" class="q-pa-none title">
         {{ description }}
@@ -30,9 +30,6 @@ const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 </template>
 
 <style lang="scss" scoped>
-.base {
-  font-family: "Roboto", "Noto Sans JP", sans-serif;
-}
 
 .title {
   font-size: 15px;

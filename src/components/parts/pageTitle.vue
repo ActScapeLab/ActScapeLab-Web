@@ -1,6 +1,6 @@
 <!-- 「Members | メンバー」のような各ページの先頭にあるタイトルを定義 -->
 <template>
-  <h1 class="pageTitle">
+  <h1 class="pageTitle title-font">
     {{main}}<span class="pageTitle">{{getSub(sub)}}</span>
   </h1>
 </template>
@@ -31,7 +31,6 @@ const prop = defineProps<Props>();
 <style lang="scss" scoped>
 h1.pageTitle {
     background: #ffffff;
-    font-family: "Abel", "Noto Sans JP", sans-serif;
     font-size: 20px;
     line-height: 1.2;
     font-weight: 300;
