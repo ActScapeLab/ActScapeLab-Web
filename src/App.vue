@@ -68,10 +68,6 @@ const leftDrawerOpen = ref(false)
 </template>
 
 <style lang="scss" scoped>
-  @font-face {
-    font-family:'Abel';
-    src: url("font/Abel-Regular.ttf") format("truetype");
-  }
   .outline {
     width: min(900px, 90%);
     margin: 4em auto;
@@ -83,13 +79,12 @@ const leftDrawerOpen = ref(false)
 
   .logo {
     /* 研究室名を調整 */
-    font-family: "Abel", 'Noto Sans JP', sans-serif;
+    font-family: 'Abel';
     color: $secondary;
     font-size: 20px;
     letter-spacing: .1em;
     font-weight: 900;
     margin-left: 10%;
-    // display: flex;
   }
 
   .tab{
