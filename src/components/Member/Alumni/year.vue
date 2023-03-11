@@ -1,15 +1,15 @@
 <script setup lang="ts">
-
 interface Props{
   year : string
 }
+defineProps<Props>();
 
-const props = defineProps<Props>();
 </script>
+
 
 <template>
   <q-item>
-  <q-item-section class="content-font">
+  <q-item-section class="year">
     {{ year }}
   </q-item-section>
   </q-item>
@@ -17,7 +17,7 @@ const props = defineProps<Props>();
 
 
 <style lang="scss" scoped>
-  .content-font{
-    font-size: 20px;
-  }
+.year{
+  font-size: 20px;
+}
 </style>

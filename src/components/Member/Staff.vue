@@ -11,7 +11,7 @@ import pageTitle from "@/components/parts/pageTitle.vue"
         大山雄己/准教授
         <a href="https://yuki-oyama.github.io/index.html">>>> personal webpage</a>
       </p>
-      <div class="q-my-md content-font">
+      <div class="q-my-md">
         愛知県出身．主な研究関心は，都市空間上の人間行動およびネットワークのモデリング・デザイン． 
         2017年に，移動体通信情報に基づく移動・活動軌跡分析の枠組みを提示する内容で，東京大学都市工学専攻にて博士（工学）の学位を取得． 
         その後，日本学術振興会特別研究員PDとして東工大建築学系で土地利用モデルの研究を行う． 2017年10月から，EPFLのTransport and Mobility Laboratoryで，

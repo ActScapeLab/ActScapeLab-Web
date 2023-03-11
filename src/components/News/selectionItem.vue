@@ -15,7 +15,7 @@ const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 </script>
 
 <template>
-  <q-timeline-entry :color="color" :icon="icon" class="content-font">
+  <q-timeline-entry :color="color" :icon="icon">
     <template v-slot:title>
       <q-item flat :clickable="hasLink" :href="link" :target="target" class="q-pa-none title">
         {{ description }}

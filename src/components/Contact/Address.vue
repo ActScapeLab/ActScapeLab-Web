@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md content-font">
+  <div class="q-pa-md">
     <q-item>
       <q-item-section avatar>
         <q-icon name="school" />
