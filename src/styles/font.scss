@@ -1,0 +1,11 @@
+// Noto Sans JPフォントの定義
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap');
+
+// ヘッダー Abel，本文 Noto Sans JP，本文英語 Abel
+/* srcがいっぱいあるのは,各ブラウザに対応しているフォントを自動で検出するため */
+@font-face {
+  font-family: 'Abel', 'Noto Sans JP', sans-serif;
+  src: url("../font/Abel-Regular.ttf") format("truetype") url("../font/NotoSansJP-Thin.otf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
