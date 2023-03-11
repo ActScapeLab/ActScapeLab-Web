@@ -11,6 +11,8 @@ interface Props {
 const props = defineProps<Props>();
 
 const hasLink = props.link !== undefined
+// 三項演算子 を使ってる （?:True，コロン:False）となる
+// _blank が新しいページ，_selfが自分自身を更新するという約束語
 const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 </script>
 
