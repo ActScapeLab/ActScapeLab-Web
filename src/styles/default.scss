@@ -1,18 +1,11 @@
-a {
-  text-decoration: none;
-}
-
-.title-font {
-  // font-family: "Roboto", 'Noto Sans JP', sans-serif;
-  font-family: "Abel", 'Noto Sans JP', sans-serif;
-  font-size: 15px;
-  margin: 0px;
-}
-
-.content-font {
+* {
   font-size: 15px;
   font-family: "Roboto", 'Noto Sans JP', sans-serif;
   line-height: 1.5;
   font-weight: 300;
   color: #383838;
+}
+
+a {
+  text-decoration: none;
 }

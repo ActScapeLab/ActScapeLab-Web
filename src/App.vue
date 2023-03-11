@@ -77,23 +77,13 @@ const leftDrawerOpen = ref(false)
     margin: 4em auto;
     margin-bottom: 0;
   }
-  .header-menu {
-    margin-top: 100px;
-    width: min(900pt, 100%);
-    // margin: auto;
-  }
-
-  .headerTabs {
-    // 二つ定義する場合は一つ目が上下,二つ目が左右
-    margin: 30px 0;
-  }
-
   .menubar{
     width: 100px;
   }
 
   .logo {
     /* 研究室名を調整 */
+    font-family: "Abel", 'Noto Sans JP', sans-serif;
     color: $secondary;
     font-size: 20px;
     letter-spacing: .1em;
