@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 interface Props {
   url  : string;
   name: string;
@@ -7,69 +6,29 @@ interface Props {
   from : string;
   hobby : string;
 }
-const props = defineProps<Props>();
+defineProps<Props>();
 
-const rows = [
-  {
-    name: props.name,
-    calories: undefined
-  },
-  {
-    name: '<研究キーワード>',
-    calories: props.keywards
-  },
-  {
-    name: '<出身>',
-    calories: props.from
-  },
-  {
-    name: '<趣味>',
-    calories: props.hobby
-  }
-]
-
-const memberName = props.name
-const src = props.url
-
+function loadAvatar(name:string) {
+  return require(`@/assets/Member/${name}.png`)
+}
 </script>
 
 <template>
-  <q-item class="intro-table">
-    <!-- 写真の設定 -->
-    <!-- <q-item-section avatar class="photo-box"> -->
-    <q-img src="@/assets/Member/murakami.png" class="self-photo"/>
-    <!-- </q-item-section> -->
-    <!-- 名前・出身・趣味の設定 -->
-    <q-item-section class="table-content">
-      <q-item-label>
-        <div class="q-pa-md content-font">
-          <q-table
-            :rows="rows"
-            row-key="name"
-            hide-header
-            hide-bottom
-            flat
-            dense
-            separator="none"
-            class="title-name table-content"
-          />
-        </div>
-      </q-item-label>
+  <q-item clickable class="q-pa-md">
+    <q-item-section side>
+      <q-avatar size="100px">
+        <q-img :src="loadAvatar(url)"/>
+      </q-avatar>
+    </q-item-section>
+    <q-item-section>
+      <p class="title">{{ name }}</p>
+      <p>{{ keywards }}</p>
     </q-item-section>
   </q-item>
-
 </template>
 
 <style lang="scss" scoped>
-
-.self-photo{
-  border-radius: 50%;
-  width: 150px;
-  height: 150px;
+.title {
+  font-size: large;
 }
-
-.table-content{
-  text-align: left;
-}
-
 </style>
