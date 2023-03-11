@@ -9,7 +9,7 @@ interface Props {
 defineProps<Props>();
 
 function loadAvatar(name:string) {
-  return require(`@/assets/Member/${name}.png`)
+  return require(`@/assets/Member/${name}`)
 }
 </script>
 
