@@ -1,5 +1,4 @@
 <script setup lang="ts">
-
 interface Props{
   firstName : string
   lastName : string
@@ -7,14 +6,12 @@ interface Props{
   thesisType: string
   title : string
 }
-
-const props = defineProps<Props>();
-
+defineProps<Props>();
 </script>
 
 <template>
   <q-item>
-  <q-item-section class="content-font">
+  <q-item-section>
     <p class="self-name">{{ firstName + lastName + '/' +grade }}</p>
     <p>{{ thesisType + ':' +title }}</p>
   </q-item-section>
@@ -22,13 +19,11 @@ const props = defineProps<Props>();
 </template>
 
 <style lang="scss" scoped>
-
-p{
+p {
   margin: 0px;
 }
 
 .self-name::before{
   content: "・";
 }
-
 </style>

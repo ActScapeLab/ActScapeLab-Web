@@ -10,9 +10,9 @@ const leftDrawerOpen = ref(false)
 
 <template>
   <q-layout view="lHh Lpr lFf">
-    <q-header flat reveal class="title-font bg-primary absolute-top ">
-      <q-toolbar class="header-menu">
-        <q-btn flat label="ActScape Lab." to="/" class="logo abel"/>
+    <q-header flat reveal class="bg-primary absolute-top">
+      <q-toolbar>
+        <q-btn flat label="ActScape Lab." to="/" class="logo"/>
         <q-space/>
         <!--
           notice shrink property since we are placing it
@@ -59,7 +59,7 @@ const leftDrawerOpen = ref(false)
       </div>
     </q-page-container>
 
-    <q-footer flat class="bg-primary absolute-bottom abel">
+    <q-footer flat class="bg-primary absolute-bottom">
       <q-toolbar>
         <q-toolbar-title class="footer text-secondary">@ 2023 ActScapeLab</q-toolbar-title>
       </q-toolbar>
@@ -68,45 +68,32 @@ const leftDrawerOpen = ref(false)
 </template>
 
 <style lang="scss" scoped>
-  @font-face {
-    font-family:'Abel';
-    src: url("font/Abel-Regular.ttf") format("truetype");
-  }
-  .outline {
-    width: min(900px, 90%);
-    margin: 4em auto;
-    margin-bottom: 0;
-  }
-  .header-menu {
-    margin-top: 100px;
-  }
+.outline {
+  width: min(900px, 90%);
+  margin: 4em auto;
+  margin-bottom: 0;
+}
+.menubar{
+  width: 100px;
+}
 
-  .headerTabs {
-    // 二つ定義する場合は一つ目が上下,二つ目が左右
-    margin: 30px 0;
-  }
+.logo {
+  /* 研究室名を調整 */
+  font-family: 'Abel';
+  color: $secondary;
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 900;
+  margin-left: 10%;
+}
 
-  .menubar{
-    width: 100px;
-  }
+.tab{
+  margin-right: 10%;
+}
 
-  .logo {
-    /* 研究室名を調整 */
-    color: $secondary;
-    font-size: 20px;
-    letter-spacing: .1em;
-    font-weight: 900;
-    margin-left: 10%;
-    // display: flex;
-  }
-
-  .tab{
-    margin-right: 10%;
-  }
-
-  .footer {
-    font-size: 15px;
-    text-align: right;
-    margin: 10px 0;
-  }
+.footer {
+  font-size: 15px;
+  text-align: right;
+  margin: 10px 0;
+}
 </style>

@@ -1,0 +1,11 @@
+// ヘッダー Abel，本文 Noto Sans JP，本文英語 Abel
+/* srcがいっぱいあるのは,各ブラウザに対応しているフォントを自動で検出するため */
+@font-face {
+  font-family:'Abel';
+  src: url("../font/Abel-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  src: url("../font/NotoSansJP-Thin.otf") format("truetype");
+}
