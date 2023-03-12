@@ -10,7 +10,7 @@ const autoplay = ref(true)
 <template>
   <pageTitle main="大山研究室" sub="芝浦工業大学 土木工学科" />
 
-  <p>より良い都市環境の設計に向けて,空間と人の行動とのポジティブな相互作用について研究しています.</p>
+  <p class="comment">より良い都市環境の設計に向けて,空間と人の行動とのポジティブな相互作用について研究しています.</p>
 
   <div class="slide">
     <q-carousel
@@ -35,6 +35,11 @@ const autoplay = ref(true)
 </template>
 
 <style lang="scss" scoped>
+
+.comment{
+  font-size: 18px;
+}
+
 .slide {
   width: min(600px, 100%);
   margin: 0 auto;
