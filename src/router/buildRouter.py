@@ -74,6 +74,19 @@ class NewsPage(ChildPage):
     def path(self):
         return f'{self.year}/{self.fileName}'
 
+@dataclass
+class MemberPage(ChildPage):
+    parentName:str = field(default='Member', init=False)
+    kinds: str
+
+    def __post_init__(self) -> None:
+        super().__post_init__()
+        self.importPath = f'../views/Member/{self.kinds}/{self.fileName}.vue'
+
+    @property
+    def path(self):
+        return f'{self.kinds}/{self.fileName}'
+
 
 @dataclass
 class ParentPage(Page):
@@ -122,6 +135,19 @@ def readNewsPages(source:Path):
 
     return pages
 
+def readMemberPages(source:Path):
+    """
+    Memberフォルダに入っているVueファイル一覧を取得する
+    """
+    pages = []
+    for yearPath in source.iterdir():
+        if not yearPath.is_dir():
+            continue
+        for filePath in yearPath.iterdir():
+            pages.append(MemberPage(filePath.stem, yearPath.stem))
+
+    return pages
+
 
 def creater(viewPages:dict[str, Page]):
     """
@@ -154,11 +180,24 @@ export default router
 if __name__ == "__main__":
     # route pagesの読み込み
     viewPages = readViewPages(Path(__file__).parents[1]/'views')
+    # print(viewPages)
+    # print()
 
     # newsにChild要素を追加する
     newsBasePage = BasePage('NewsTop', f'../views/News/Top.vue', '')
     newsPages = readNewsPages(Path(__file__).parents[1]/'views'/'News')
     viewPages['News'] = ParentPage(viewPages['News'].fileName, newsPages, newsBasePage)
+    # print(f'変更後 {viewPages}')
+    # print()
+    
+    # memberにChild要素を追加する
+    newsBasePage = BasePage('MemberTop', f'../views/Member/Top.vue', '')
+    newsPages = readMemberPages(Path(__file__).parents[1]/'views'/'Member')
+    viewPages['Member'] = ParentPage(viewPages['Member'].fileName, newsPages, newsBasePage)
+    print(f'変更後 {viewPages}')
+    print()
+    viewPages.pop('.DS_Store')
+    
     
     # index.tsへ書き出し
     with open(Path(__file__).parent/'index.ts', 'w', encoding='utf-8') as f:
