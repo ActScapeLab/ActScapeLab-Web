@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
 import graduate from '@/components/Member/Alumni/graduate.vue';
-import { tree, getThesisType } from './AlumniTree';
+import { tree, getThesisType } from '../Alumni/AlumniTree';
 </script>
 
 <template>
