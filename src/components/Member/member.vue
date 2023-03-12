@@ -9,14 +9,18 @@ interface Props {
 }
 const props = defineProps<Props>();
 
+
+const hasLink = props.link !== undefined
+const target = '_self'
+
 function loadAvatar(name:string) {
   return require(`@/assets/Member/${name}`)
 }
-
-const hasLink = props.link !== undefined
-// 三項演算子 を使ってる （?:True，コロン:False）となる
-// _blank が新しいページ，_selfが自分自身を更新するという約束語
-const target = '_self'
+function addTransMark(hasLink:boolean) {
+  if (hasLink) {
+    return ">>>"
+  }
+}
 </script>
 
 <template>
@@ -29,6 +33,9 @@ const target = '_self'
     <q-item-section>
       <p class="title">{{ name }}</p>
       <p class="theme">{{ keywards }}</p>
+    </q-item-section>
+    <q-item-section>
+      {{ addTransMark(hasLink) }}
     </q-item-section>
   </q-item>
 </template>
