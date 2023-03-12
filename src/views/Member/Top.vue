@@ -13,7 +13,7 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
     :name="page.firstName + page.lastName"
     :from="page.from"
     :hobby="page.hobby" 
-    :link="getLink(page.link)"/>
+    :link="getLink(page.link, page.kind)"/>
   </template>
 
 
@@ -25,13 +25,13 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
     :keywards="page.keywards"
     :from="page.from"
     :hobby="page.hobby" 
-    :link="getLink(page.link)"/>
+    :link="getLink(page.link, page.kind)"/>
   </template>
   <q-btn
     clickable
     class="Alumni"
     borderd
-    to="/Alumni">
+    to="/member/alumni/alumni">
       Alumni
   </q-btn>
 </template>
