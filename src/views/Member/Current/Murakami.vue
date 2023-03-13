@@ -4,7 +4,7 @@ import question from '@/components/Member/question.vue';
 </script>
 
 <template>
-  <pageTitle main="村上総一郎" sub="mukakami " />
+  <pageTitle main="村上颯一朗" sub="mukakami " />
   <div class="img">
   <q-img src="@/assets/Member/murakami.png" class="img"/>
   </div>

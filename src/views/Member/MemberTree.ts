@@ -15,7 +15,7 @@ export const student = [
     {
       figPath: "murakami.png",
       firstName: "村上",
-      lastName: "総一郎",
+      lastName: "颯一朗",
       grade: "M2",
       keywards: "マルチモーダルNDP・街路空間再配分・都市デザイン",
       from: "埼玉県",
