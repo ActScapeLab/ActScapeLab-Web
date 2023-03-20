@@ -1,19 +1,27 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
 import question from '@/components/Member/question.vue';
+import relevantArticle from '@/components/Member/relevantArticle.vue';
 </script>
 
 <template>
-  <pageTitle main="村上総一郎" sub="mukakami " />
+  <div class="q-pd-md">
+  <pageTitle main="村上総一郎" sub="mukakami souichiro" />
   <div class="img">
   <q-img src="@/assets/Member/murakami.png" class="img"/>
   </div>
-  <pageTitle main="プロフィール" sub="profile" />
-  <p class="profile">
+  <pageTitle main="プロフィール" sub="profile" class="title"/>
+  <p class="content">
     埼玉県川越市出身．研究テーマは最適な歩行者街路空間設計手法の開発．趣味は麻雀・ヒップホップからポケモンと幅広い，
     最近の楽しみは土日に一歳になる娘と公園で遊ぶこと．
   </p>
+  <pageTitle main="研究成果" sub="output" class="title"/>
+  <div class="content">
+    <li>村上颯一朗, 大山雄己 (2022) マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画 -川越市街地における歩行者街路網の創出を例として-. 都市計画論文集 57(3): 622-629.</li>
+    <li>村上 颯一朗, 大山 雄己 (2022) 市街地交通ネットワークにおける歩行者ゾーンの最適設計. 第65回土木計画学研究発表会(秋大会).</li>
+  </div>
 
+  <pageTitle main="インタビュー" sub="interview" class="title"/>
   <question 
   question="どうして大山研を選んだんですか？"
   result="地元を変えたかったから"
@@ -38,14 +46,16 @@ import question from '@/components/Member/question.vue';
   浮かんでくることがよくあります．考え続けていると日常の見え方が変わります．特に我々は人の行動，ひいては都市を
   相手に研究やらせてもらってるので，日常にヒントが隠れてることは多いですね．"
   />
-
-  <pageTitle main="関連記事" />
-
+  </div>
 </template>
 
-<style>
+<style lang="scss" scoped>
 
-.profile{
+.title{
+  margin-top: 5%;
+}
+
+.content{
   width: 90%;
   font-size: 18px;
   color: #4a525d;
