@@ -1,94 +1,72 @@
 // linkには「HP内の記事」or「外部へのURL」が入ります
 // 「HP内の記事」の場合，linkは「当該記事のファイル名」とすることでリンクが生成されます
 
-// コンテンツのタイプに応じてアイコンと色を指定する
-// iconはここから一覧で調べられる（https://fonts.google.com/icons）
-const articleType: { [name: string]: {icon: string, color: string} } = {
-  'award': {
-    icon: 'emoji_events',
-    color: 'orange'
-  },
-  'meeting': {
-    icon: 'group',
-    color: 'black',
-  },
-  'publish': {
-    icon: 'description',
-    color: 'black',
-  },
-  'event': {
-    icon: 'celebration',
-    color: 'secondary'
-  }
-}
-
 // 表示する記事の一覧
 export const tree = [
   {
-    type: 'meeting',
+    people: 'Oyama, Y.',
     year: '2022',
-    month: 'November',
-    date: '12-13',
-    description: '土木計画学秋大会に参加してきました'
+    title: 'A prism-constrained recursive logit model to analyze positive utilities in pedestrian route choice behavior',
+    journal: 'The 16th International Conference on Travel Behaviour research (IATBR), Santiago, Chile.'
   },
   {
-    type: 'publish',
+    people: 'Parady, G., Suzuki, K., Oyama, Y., Chikaraishi, M.',
     year: '2022',
-    month: 'November',
-    date: '10',
-    description: '論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました',
-    link: 'https://authors.elsevier.com/c/1g3SE,oML19xKG'
+    title: 'Understanding the joint decision-making process of leisure destination choices: Exploring new methodologies',
+    journal: 'The 16th International Conference on Travel Behaviour research (IATBR), Santiago, Chile.'
   },
   {
-    type: 'award',
-    year: '2022',
-    month: 'September',
-    date: '23-25',
-    description: '行動モデル夏の学校＠東大で総合一位になりました!',
-    link: 'SummerSchool'
+    people: 'Oyama, Y., Scarinci, R., Bierlaire, M.',
+    year: '2018',
+    title: 'Optimal capacity location problem of parking and accelerated moving walkways to design a car-free city center',
+    journal: 'The 7th symposium arranged by European Association for Research in Transportation (hEART), Athens, Greece.'
   },
   {
-    type: 'publish',
-    year: '2021',
-    month: 'November',
-    date: '30',
-    description: 'Oyama, Hara and Akamatsu (2022) Markovian traffic equilibrium assignment based on network generalized extreme value model がTransportation Research Part Bで公開されました',
-    link: 'https://www.sciencedirect.com/science/article/pii/S0191261521001934'
+    people: 'Oyama, Y., Hato, E., Scarinci, R., Bierlaire, M. ',
+    year: '2017',
+    title: 'Markov assignment for a pedestrian activity-based network design problem',
+    journal: 'The 6th symposium arranged by European Association for Research in Transportation (hEART), Haifa, Israel.'
+  },
+  {
+    people: 'Oyama, Y., Hato, E.',
+    year: '2016',
+    title: 'Pedestrian activity model based on implicit path enumeration',
+    journal: 'Proceedings of the 21st International Conference of Hong Kong for Transportation Studies (HKSTS).'
+  },
+  {
+    people: 'Oyama, Y., Hato, E.',
+    year: '2016',
+    title: 'A link-based map matching algorithm with structural estimation method',
+    journal: 'The 5th symposium arranged by European Association for Research in Transportation (hEART), Delft, Netherland.'
+  },
+  {
+    people: 'Oyama, Y., Hato, E. ',
+    year: '2016',
+    title: 'Incorporating destination choices into microscopic land-use dynamics modeling using longitudinal data',
+    journal: 'The 9th Triennial Symposium on Transportation Analysis (TRISTAN), Oranjestad, Aruba.'
+  },
+  {
+    people: 'Oyama, Y., Chikamatsu, K., Shoji, Y., Hato, E., Koga, M. ',
+    year: '2016',
+    title: 'Trajectory-oriented traffic management using sequential discount rate: a case study of the Great East Japan Earthquake',
+    journal: 'The 11th ITS European Congress (ERTICO), Glasgow, Scotland.'
+  },
+  {
+    people: 'Oyama, Y., Hato, E.',
+    year: '2015',
+    title: 'Incorporating context-dependent energy into the pedestrian dynamic scheduling model with GPS data',
+    journal: 'The 14th International Conference on Travel Behaviour research (IATBR), Windsor, England.'
+  },
+  {
+    people: 'Kokubun, A., Hato, E., Oyama, Y.',
+    year: '2013',
+    title: 'Modeling Transformation in Neighborhood with Urban Redevelopment in Built-up Area of Tokyo Incorporating Effect of Interaction',
+    journal: 'Proceedings of International Conference on Computers in Urban Planning and Urban Management (CUPUM), Utrecht, Netherland.'
+  },
+  {
+    people: 'Oyama, Y., Hato, E',
+    year: '2013',
+    title: 'Mobility Design: Incorporating "Private" Public Space onto the Street for the City Conversion',
+    journal: ' Proceedings of 5th International Congress of International Association of Societies of Design Research (IASDR).'
   }
 ]
-
-/**
- * リンクを取得する
- */
-export function getLink(year:string, link?:string) {
-  if (link == undefined) {
-    return undefined
-  }
-  if (link.substring(0, 4) == 'http') {
-    return link
-  }
-  else {
-    return `news/${year}/${link}`
-  }
-}
-
-/**
- * 日付を取得する
- */
-export function setDate(year:string, month:string, date:string) {
-  return `${month} ${date}, ${year}`
-}
-
-/**
- * イベントのアイコンを取得
- */
-export function getSymbolIcon(type:string) {
-  return articleType[type].icon
-}
-
-/**
- * イベントの色を取得
- */
-export function getSymbolColor(type:string) {
-  return articleType[type].color
-}

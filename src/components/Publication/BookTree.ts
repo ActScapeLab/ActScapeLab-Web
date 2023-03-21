@@ -4,17 +4,10 @@
 // 表示する記事の一覧
 export const tree = [
   {
-    people: 'Oyama,Y',
-    year: '2023',
-    title: ' Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.',
-    journal: 'Transportation Research Part C: Emerging Technologies',
-    link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
-  },
-  {
-    people: 'Oyama,Y',
-    year: '2023',
-    title: ' Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.',
-    journal: 'Transportation Research Part C: Emerging Technologies',
-    link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
+    people: 'Bierlaire, M., Scarinci, R., Nikolic, M., Oyama, Y., Molyneaux, N., Wang, Z. ',
+    year: '2020',
+    title: 'Methodologies for Understanding and Improving Pedestrian Mobility. In: Jensen, O.B., Lassen, C., Kaufmann, V., Freudendal-Pedersen, M., Lange, I.',
+    journal: 'Handbook of Urban Mobilities',
+    link: 'https://www.taylorfrancis.com/books/edit/10.4324/9781351058759/handbook-urban-mobilities-ole-jensen-claus-lassen-vincent-kaufmann-malene-freudendal-pedersen-ida-sofie-g%C3%B8tzsche-lange'
   }
 ]

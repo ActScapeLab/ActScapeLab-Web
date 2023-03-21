@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
-import Background from '@/components/Member/Background.vue';
 </script>
 
 <template>

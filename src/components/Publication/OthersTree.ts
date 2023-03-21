@@ -1,94 +1,60 @@
 // linkには「HP内の記事」or「外部へのURL」が入ります
 // 「HP内の記事」の場合，linkは「当該記事のファイル名」とすることでリンクが生成されます
 
-// コンテンツのタイプに応じてアイコンと色を指定する
-// iconはここから一覧で調べられる（https://fonts.google.com/icons）
-const articleType: { [name: string]: {icon: string, color: string} } = {
-  'award': {
-    icon: 'emoji_events',
-    color: 'orange'
-  },
-  'meeting': {
-    icon: 'group',
-    color: 'black',
-  },
-  'publish': {
-    icon: 'description',
-    color: 'black',
-  },
-  'event': {
-    icon: 'celebration',
-    color: 'secondary'
-  }
-}
-
 // 表示する記事の一覧
 export const tree = [
   {
-    type: 'meeting',
+    people: '大山 雄己',
     year: '2022',
-    month: 'November',
-    date: '12-13',
-    description: '土木計画学秋大会に参加してきました'
+    title: '大域的経路選好と局所的反応を考慮したネットワーク行動モデル',
+    journal: '第65回土木計画学研究発表会(秋大会).'
   },
   {
-    type: 'publish',
+    people: '村上 颯一朗, 大山 雄己',
     year: '2022',
-    month: 'November',
-    date: '10',
-    description: '論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました',
-    link: 'https://authors.elsevier.com/c/1g3SE,oML19xKG'
+    title: '市街地交通ネットワークにおける歩行者ゾーンの最適設計',
+    journal: '第65回土木計画学研究発表会(秋大会).'
   },
   {
-    type: 'award',
+    people: '松村 健太, 大山 雄己',
     year: '2022',
-    month: 'September',
-    date: '23-25',
-    description: '行動モデル夏の学校＠東大で総合一位になりました!',
-    link: 'SummerSchool'
+    title: '容量制約付きネットワークにおける経路予約型MaaSの課金方策の検討',
+    journal: '第65回土木計画学研究発表会(秋大会).'
   },
   {
-    type: 'publish',
+    people: '藤條 嵩大, 大山 雄己, 杉山 航太郎',
+    year: '2022',
+    title: 'ミクロ土地利用分析に向けた建物用途推定モデルの開発',
+    journal: '第35回人工知能学会全国大会.'
+  },
+  {
+    people: '大山 雄己',
+    year: '2022',
+    title: 'Recursive Logitモデルにおける正の効用の推定可能性',
+    journal: '第65回土木計画学研究発表会(春大会).'
+  },
+  {
+    people: '村上 颯一朗, 大山 雄己',
+    year: '2020',
+    title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置',
+    journal: '第65回土木計画学研究発表会(春大会).'
+  },
+  {
+    people: '村上 颯一朗, 大山 雄己',
     year: '2021',
-    month: 'November',
-    date: '30',
-    description: 'Oyama, Hara and Akamatsu (2022) Markovian traffic equilibrium assignment based on network generalized extreme value model がTransportation Research Part Bで公開されました',
-    link: 'https://www.sciencedirect.com/science/article/pii/S0191261521001934'
+    title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画',
+    journal: '令和3年度土木学会全国大会'
+  },
+  {
+    people: '池上 哲広, 大山 雄己',
+    year: '2021',
+    title: '公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案',
+    journal: '令和3年度土木学会全国大会'
+  },
+  {
+  people: '高崎 弾, 小川 芳樹, 今泉 允聡, 沖 拓弥, 大山 雄己',
+  year: '2021',
+  title: 'グラフニューラルネットワークとデータ同化を統合したデータ駆動型避難者分布予測モデルの構築.',
+  journal: '第34回人工知能学会全国大会.'
   }
 ]
-
-/**
- * リンクを取得する
- */
-export function getLink(year:string, link?:string) {
-  if (link == undefined) {
-    return undefined
-  }
-  if (link.substring(0, 4) == 'http') {
-    return link
-  }
-  else {
-    return `news/${year}/${link}`
-  }
-}
-
-/**
- * 日付を取得する
- */
-export function setDate(year:string, month:string, date:string) {
-  return `${month} ${date}, ${year}`
-}
-
-/**
- * イベントのアイコンを取得
- */
-export function getSymbolIcon(type:string) {
-  return articleType[type].icon
-}
-
-/**
- * イベントの色を取得
- */
-export function getSymbolColor(type:string) {
-  return articleType[type].color
-}

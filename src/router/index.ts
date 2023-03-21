@@ -2,6 +2,11 @@ import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
 import Contact from '../views/Contact.vue'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
+import MemberTop from '../views/Member/Top.vue'
+import Alumni from '../views/Member/Alumni/Alumni.vue'
+import Matsumura from '../views/Member/Current/Matsumura.vue'
+import Murakami from '../views/Member/Current/Murakami.vue'
+import Oyama from '../views/Member/Staff/Oyama.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
@@ -19,7 +24,29 @@ const routes: Array<RouteRecordRaw> = [
   },
   {
     path: '/Member',
-    component: Member
+    component: Member,
+    children: [
+      {
+        path: '',
+        component: MemberTop
+      },
+      {
+        path: 'Alumni/Alumni',
+        component: Alumni
+      },
+      {
+        path: 'Current/Matsumura',
+        component: Matsumura
+      },
+      {
+        path: 'Current/Murakami',
+        component: Murakami
+      },
+      {
+        path: 'Staff/Oyama',
+        component: Oyama
+      },
+    ]
   },
   {
     path: '/News',
