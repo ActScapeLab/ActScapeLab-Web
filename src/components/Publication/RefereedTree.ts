@@ -16,5 +16,5 @@ export const tree = [
     title: ' Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach.',
     journal: 'Transportation Research Part C: Emerging Technologies',
     link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
-  },
+  }
 ]

@@ -4,41 +4,18 @@ import { getLink, getSymbolColor, getSymbolIcon, setDate, tree } from "@/compone
 </script>
 
 <template>
-  <pageTitle main="Other Presentations" sub="学会発表(査読なし)" />
-  <div class="q-pa-md">
-    <q-item>
-      <q-item-section avatar>
-        <q-icon name="school" />
-      </q-item-section>
-      <q-item-section>
-        芝浦工業大学 土木工学科 都市環境設計研究室
-        <span>Activity Landscape Design Laboratory
-        Shibaura Institute of Technology, Department of Civil Engineering</span>
-      </q-item-section>
-    </q-item>
-    <q-item>
-    <q-item-section avatar>
-      <q-icon name="mail" />
-    </q-item-section>
-    <q-item-section>oyama[at]shibaura-it.ac.jp</q-item-section>
-    </q-item>
-    <q-item>
-    <q-item-section avatar>
-      <q-icon name="phone" />
-    </q-item-section>
-    <q-item-section>03-5859-9560</q-item-section>
-    </q-item>
-    <q-item>
-    <q-item-section avatar>
-      <q-icon name="place" />
-    </q-item-section>
-    <q-item-section>
-      135-8548 東京都江東区豊洲3-7-5 研究棟9階I-32 3-7-5
-      <span>Toyosu, Koto-ku, Tokyo 135-8548, Japan</span>
-    </q-item-section>
-    </q-item>
+  <pageTitle main="Refereed Journal Papers" sub="審査付き雑誌論文" />
+  <div class="q-px-lg">
+      <template v-for="(page, index) in tree" :key="index">
+        <journallist
+          :people="page.people"
+          :year="page.year"
+          :title="page.title"
+          :journal="page.journal"
+          :pages="page.pages"
+          :link="page.link" />
+      </template>
   </div>
-
 </template>
 
 <style lang="scss" scoped>
