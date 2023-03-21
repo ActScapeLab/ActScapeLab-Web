@@ -16,7 +16,6 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
     :link="getLink(page.link, page.kind)"/>
   </template>
 
-
   <pageTitle main="Student" sub="学生"/>
   <template v-for="(page) in student">
     <member
@@ -25,7 +24,8 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
     :keywards="page.keywards"
     :from="page.from"
     :hobby="page.hobby" 
-    :link="getLink(page.link, page.kind)"/>
+    :link="getLink(page.link, page.kind)"
+    :kind="page.kind"/>
   </template>
   <q-btn
     clickable

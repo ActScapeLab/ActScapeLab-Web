@@ -6,29 +6,45 @@ interface Props {
   from : string;
   hobby : string;
   link?: string
+  kind?: string
 }
 const props = defineProps<Props>();
+
+
+const hasLink = props.link !== undefined
+const target = '_self'
 
 function loadAvatar(name:string) {
   return require(`@/assets/Member/${name}`)
 }
 
-const hasLink = props.link !== undefined
-// 三項演算子 を使ってる （?:True，コロン:False）となる
-// _blank が新しいページ，_selfが自分自身を更新するという約束語
-const target = '_self'
+function addTransMark(hasLink:boolean) {
+  if (hasLink) {
+    return ">>>"
+  }
+}
+
+function addResarchWard(kind:string, keywards:string){
+  if (kind=='student'){
+    return "研究キーワード：" + keywards
+  }
+}
+
 </script>
 
 <template>
-  <q-item :clickable="hasLink" :href="link" :target="target" class="q-pa-md">
+  <q-item :clickable="hasLink" :href="link" :target="target" :kind="kind" class="q-pa-md">
     <q-item-section side>
-      <q-avatar size="100px">
+      <q-avatar size="130px">
         <q-img :src="loadAvatar(url)"/>
       </q-avatar>
     </q-item-section>
     <q-item-section>
-      <p class="title">{{ name }}</p>
-      <p class="theme">{{ keywards }}</p>
+      <span class="title">{{ name }}</span>
+      <p class="theme">{{ addResarchWard(kind, keywards) }}</p>
+    </q-item-section>
+    <q-item-section v-if="hasLink==true" class="detail-mark">
+      {{ addTransMark(hasLink) }}
     </q-item-section>
   </q-item>
 </template>
@@ -37,4 +53,9 @@ const target = '_self'
 .title {
   font-size: large;
 }
+
+.detail-mark{
+  text-align: center;
+}
+
 </style>

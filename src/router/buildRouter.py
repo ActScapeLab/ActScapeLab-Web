@@ -117,6 +117,7 @@ def readViewPages(source:Path):
     pages:dict[str, Page] = {}
     for filePath in source.iterdir():
         if not filePath.is_file(): continue
+        if filePath.suffix != '.vue': continue
         pages[filePath.stem] = Page(filePath.stem)
 
     return pages
@@ -196,7 +197,6 @@ if __name__ == "__main__":
     viewPages['Member'] = ParentPage(viewPages['Member'].fileName, newsPages, newsBasePage)
     print(f'変更後 {viewPages}')
     print()
-    viewPages.pop('.DS_Store')
     
     
     # index.tsへ書き出し

@@ -12,7 +12,8 @@ const leftDrawerOpen = ref(false)
   <q-layout view="lHh Lpr lFf">
     <q-header flat reveal class="bg-primary absolute-top">
       <q-toolbar>
-        <q-btn flat label="ActScape Lab." to="/" class="logo"/>
+        <q-btn flat label="ActScape Lab." to="/" class="logo gt-sm"/>
+        <q-btn flat label="ActScape Lab." to="/" class="logo-response lt-md"/>
         <q-space/>
         <!--
           notice shrink property since we are placing it
@@ -85,6 +86,14 @@ const leftDrawerOpen = ref(false)
   letter-spacing: .1em;
   font-weight: 900;
   margin-left: 10%;
+}
+.logo-response {
+  /* 研究室名を調整 */
+  font-family: 'Abel';
+  color: $secondary;
+  font-size: 20px;
+  letter-spacing: .1em;
+  font-weight: 900;
 }
 
 .tab{
