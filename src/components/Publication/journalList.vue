@@ -16,7 +16,7 @@ const props = defineProps<Props>();
 <template>
   <div class="q-pa-md">
     <q-item>
-      <li>{{ people }}({{ year }})<a href= {{props.link}} target="_blank">{{ title }}</a>.
+      <li>{{ people }}({{ year }})<a href= {{link}} target="_blank">{{ title }}</a>.
         {{ journal }}.</li>
     </q-item>
   </div>
