@@ -6,24 +6,28 @@ import { alumni, alumni_num, getThesisType } from '../MemberTree';
 
 <template>
   <pageTitle main="Alumni" sub="卒業生" />
-  <div class="q-pa-md">
+  <div class="q-px-lg">
     <template v-for="(year) in alumni_num" :key="index">
       <pageTitle :main="(year.year)" class="title"/>
       <template v-for="(student) in alumni" :key="index">
         <div v-if="year.year == student.year">
-        <graduate 
-        :firstName="student.firstName"
-        :lastName="student.lastName"
-        :grade="student.grade"
-        :thesisType="getThesisType(student.grade)"
-        :title="student.title" />
-      </div>
+          <graduate 
+          :firstName="student.firstName"
+          :lastName="student.lastName"
+          :grade="student.grade"
+          :thesisType="getThesisType(student.grade)"
+          :title="student.title" />
+        </div>
       </template>
     </template>
   </div>
 </template>
 
 <style lang="scss" scoped>
+.title::after{
+    content: '年度';
+  }
+
 .title{
   margin-top: 2%;
   margin-bottom: 0%;

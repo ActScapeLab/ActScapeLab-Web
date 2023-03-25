@@ -7,16 +7,16 @@ import { tree } from "@/components/Publication/InternationalTree";
 
 <template>
   <pageTitle main="International Conferences" sub="国際会議(査読あり)" />
-  <div class="q-px-lg">
-      <template v-for="(page, index) in tree" :key="index">
-        <journallist
-          :people="page.people"
-          :year="page.year"
-          :title="page.title"
-          :journal="page.journal"
-          :link="page.link" />
-      </template>
-  </div>
+  <ol>
+    <template v-for="(page, index) in tree" :key="index">
+      <journallist
+        :people="page.people"
+        :year="page.year"
+        :title="page.title"
+        :journal="page.journal"
+        :link="page.link" />
+    </template>
+  </ol>
 </template>
 
 <style lang="scss" scoped>
