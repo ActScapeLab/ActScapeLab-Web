@@ -25,6 +25,35 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
 // 表示する記事の一覧
 export const tree = [
   {
+    type: 'event',
+    year: '2023',
+    month: 'Feburary',
+    date: '15',
+    description: '新B4が配属されました!!'
+  },
+  {
+    type: 'event',
+    year: '2023',
+    month: 'Febrary',
+    date: '8-9',
+    description: '卒論発表会が行われました'
+  },
+  {
+    type: 'publish',
+    year: '2023',
+    month: 'January',
+    date: '12',
+    description: '論文がTransportation Research Part C: Emerging Technologiesに掲載されました',
+    link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
+  },
+  {
+    type: 'meeting',
+    year: '2022',
+    month: 'December',
+    date: '3-4',
+    description: '都市計画学会に参加してきました'
+  },
+  {
     type: 'meeting',
     year: '2022',
     month: 'November',
@@ -32,15 +61,30 @@ export const tree = [
     description: '土木計画学秋大会に参加してきました'
   },
   {
-    type: 'publish',
+    type: 'meeting',
     year: '2022',
-    month: 'November',
-    date: '10',
-    description: '論文がElsevier社の雑誌Travel Behaviour and Societyで公開されました',
-    link: 'https://authors.elsevier.com/c/1g3SE,oML19xKG'
+    month: 'Decemmber',
+    date: '3-4',
+    description: '都市計画学会に参加してきました'
   },
   {
-    type: 'award',
+    type: 'meeting',
+    year: '2022',
+    month: 'October',
+    date: '27',
+    description: 'A new paper has been accepted for publication on Travel Behaviour & Society',
+    link: '[arXiv preprint]'
+  },
+  {
+    type: 'publish',
+    year: '2022',
+    month: 'October',
+    date: '26',
+    description: '都市計画論集で3本の論文が公開されました',
+    link:' [その1] [その2] [その3]'
+  },
+  {
+    type: 'meeting',
     year: '2022',
     month: 'September',
     date: '23-25',
@@ -54,6 +98,70 @@ export const tree = [
     date: '30',
     description: 'Oyama, Hara and Akamatsu (2022) Markovian traffic equilibrium assignment based on network generalized extreme value model がTransportation Research Part Bで公開されました',
     link: 'https://www.sciencedirect.com/science/article/pii/S0191261521001934'
+  },
+  {
+    type: 'event',
+    year: '2021',
+    month: 'November',
+    date: '27',
+    description: '12月1日(水)5限の土木工学キャリアセミナーで国土交通省の吉田調整官を招いて「土木・建築をつなぐ都市・地域計画の仕事」という題の講演をいただきました'
+  },
+  {
+    type: 'publish',
+    year: '2022',
+    month: 'September',
+    date: '23-25',
+    description: '池上・大山 (2021) "公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案" が都市計画論集で出版されました',
+    link: ''
+  },
+  {
+    type: 'event',
+    year: '2021',
+    month: 'April',
+    description: '2021年度基礎ゼミを打ち上げ,豊洲公園でピクニックしました'
+  },
+  {
+    type: 'event',
+    year: '2021',
+    month: 'April',
+    description: '卒大宮で自動運転バスの実証実験に参加しました'
+  },
+  {
+    type: 'award',
+    year: '2021',
+    month: 'March',
+    date: '17',
+    description: '村上君の卒論が高く評価され，土木賞を受賞しました．おめでとうございます！',
+    link: 'SummerSchool'
+  },
+  {
+    type: 'award',
+    year: '2021',
+    month: 'March',
+    date: '1',
+    description: '砂田君，藤島君，國分君が，(株)丸八テント商会様とのチームで参加した芝浦ビジネスモデルコンペティション(SBMC)で，ビジネス賞を受賞しました．おめでとうございます！'
+  },
+  {
+    type: 'event',
+    year: '2021',
+    month: 'Febrary',
+    date: '16',
+    description: '新しく9人の卒論生が研究室に配属されました.これからよろしくお願いします',
+    link:' Member'
+  },
+  {
+    type: 'event',
+    year: '2021',
+    month: 'January',
+    date: '21',
+    description: 'ホームページ (暫定版) を公開しました'
+  },
+  {
+    type: 'event',
+    year: '2020',
+    month: 'April',
+    date: '1',
+    description: '大山が芝浦工業大学土木工学科に助教として着任し,都市環境設計研究室が立ち上がりました.Oyama started working at Shibaura Institute of Technology as an Assistant Professor and the director of the Activity Landscape Design (ActScape) Laboratory.'
   }
 ]
 
