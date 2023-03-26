@@ -14,7 +14,7 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-item flat color="white" :clickable="link !== void 0" :href="link">
+  <q-item flat color="white" :clickable="link !== void 0" :href="link" target="_blank">
     <q-item-section>
       <li>
       {{ people }}({{ year }})<span style="color: blue;">{{ title }}</span>.
