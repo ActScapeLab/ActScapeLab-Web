@@ -63,13 +63,6 @@ export const tree = [
   {
     type: 'meeting',
     year: '2022',
-    month: 'Decemmber',
-    date: '3-4',
-    description: '都市計画学会に参加してきました'
-  },
-  {
-    type: 'meeting',
-    year: '2022',
     month: 'October',
     date: '27',
     description: 'A new paper has been accepted for publication on Travel Behaviour & Society',
