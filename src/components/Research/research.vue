@@ -12,8 +12,8 @@ import pageTitle from '../parts/pageTitle.vue';
   (3)土地利用の相互作用マネジメント，(4)モビリティ・物流サービスの最適設計， の4つをテーマを基本として研究し，空間と人の行動とのポジティブな関係性について 考えます．
   <div class="themes">
   <q-list>
-    <q-btn round flat class="btn image_mouseover_1">
-      <q-avatar size="350px">
+    <q-btn flat class="btn image_mouseover_1">
+      <q-avatar square size="350px">
         <img src="@/assets/Home/bench.png">
       </q-avatar>
       <div class="absolute-center text-center theme">
