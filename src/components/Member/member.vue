@@ -23,13 +23,6 @@ function addTransMark(hasLink:boolean) {
     return ">>>"
   }
 }
-
-function addResarchWard(kind:string, keywards:string){
-  if (kind=='student'){
-    return "研究キーワード：" + keywards
-  }
-}
-
 </script>
 
 <template>
@@ -41,7 +34,7 @@ function addResarchWard(kind:string, keywards:string){
     </q-item-section>
     <q-item-section>
       <span class="title">{{ name }}</span>
-      <p class="theme">{{ addResarchWard(kind, keywards) }}</p>
+      <p v-show="keywards !== void 0" class="theme">研究キーワード：{{ keywards }}</p>
     </q-item-section>
     <q-item-section v-if="hasLink==true" class="detail-mark">
       {{ addTransMark(hasLink) }}
