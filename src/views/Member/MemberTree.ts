@@ -260,11 +260,15 @@ export const alumni = [
 
 // 卒論 or 修論を判別
 export function getThesisType(grade:string) {
-  if (grade == 'B4'){
-    return '卒論'
-  }
-  else {
-    return '修論'
+  switch (grade) {
+    case 'B4':
+      return '卒論'
+    case 'M2':
+      return '修論'
+    case 'D3':
+      return '博論'
+    default:
+      return 'unknown'
   }
 }
 
