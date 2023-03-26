@@ -13,7 +13,7 @@ import journalList from "./journalList.vue";
         :year="page.year"
         :title="page.title"
         :journal="page.journal"
-        :link="page.link" />
+        :link="page.link"/>
     </template>
   </ol>
 </template>

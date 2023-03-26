@@ -2,7 +2,7 @@
 // 「HP内の記事」の場合，linkは「当該記事のファイル名」とすることでリンクが生成されます
 
 // 表示する記事の一覧
-export const tree = [
+export const tree: {people:string, year:string, title:string, journal:string, link?:string}[] = [
   {
     people: '大山 雄己',
     year: '2022',
