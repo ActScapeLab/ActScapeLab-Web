@@ -1,9 +1,9 @@
 <script setup lang="ts">
+import { getThesisType } from '@/views/Member/MemberTree';
 interface Props{
   firstName : string
   lastName : string
   grade : string
-  thesisType: string
   title : string
 }
 defineProps<Props>();
@@ -13,7 +13,7 @@ defineProps<Props>();
   <q-item>
   <q-item-section>
     <p class="self-name">{{ firstName + lastName + '/' +grade }}</p>
-    <p>{{ thesisType + ':' +title }}</p>
+    <p>{{ getThesisType(grade) + ':' + title }}</p>
   </q-item-section>
   </q-item>
 </template>

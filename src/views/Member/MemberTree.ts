@@ -6,8 +6,7 @@ export const staff = [
       grade: "准教授",
       from: "埼玉県",
       hobby: "ポケモン・ヒップホップ・麻雀",
-      link: "Oyama",
-      kind: 'staff'
+      link: "Oyama"
     }
 ]
 
@@ -20,8 +19,7 @@ export const student = [
       keywards: "マルチモーダルNDP・街路空間再配分・都市デザイン",
       from: "埼玉県",
       hobby: "ポケモン・ヒップホップ・麻雀",
-      link: "Murakami",
-      kind: 'student'
+      link: "Murakami"
     },
     {
       figPath: "tamaki.jpg",
@@ -30,8 +28,7 @@ export const student = [
       grade: "M2",
       keywards: "マルチモーダルNDP・街路空間再配分・都市デザイン",
       from: "神奈川県",
-      hobby: "野球・車・バンド",
-      kind: 'student'
+      hobby: "野球・車・バンド"
     },
     {
       figPath: "tayama.jpg",
@@ -40,8 +37,7 @@ export const student = [
       grade: "M2",
       keywards: "土地利用・鉄道駅・都市集積・因果推論",
       from: "神奈川県",
-      hobby: "カメラ・ドライブ・Jリーグ",
-      kind: 'student'
+      hobby: "カメラ・ドライブ・Jリーグ"
     },
     {
       figPath: "sugiyama.jpg",
@@ -50,8 +46,7 @@ export const student = [
       grade: "M2",
       keywards: "人のいる空間・ファジィ理論・公共空間設計",
       from: "静岡県",
-      hobby: "静岡県",
-      kind: 'student'
+      hobby: "静岡県"
     },
     {
       figPath: "matsumura-03.jpg",
@@ -61,7 +56,6 @@ export const student = [
       keywards: "MaaS・最適化・経路推薦",
       from: "山口県",
       hobby: "研究室のHPを見ること・高校野球・落語鑑賞",
-      kind: 'student',
       link: "Matsumura"
     },
     {
@@ -71,8 +65,7 @@ export const student = [
       grade: "M2",
       keywards: "物流・歩行者空間",
       from: "広島県",
-      hobby: "野球・カフェ巡り・筋トレ",
-      kind: 'student'
+      hobby: "野球・カフェ巡り・筋トレ"
     },
     {
       figPath: "okazaki.jpg",
@@ -81,8 +74,7 @@ export const student = [
       grade: "M1",
       keywards: "物流最適化・配送計画・需要マネジメント",
       from: "愛知県",
-      hobby: "研究",
-      kind: 'student'
+      hobby: "研究"
     },
     {
       figPath: "sakurai.jpg",
@@ -91,8 +83,7 @@ export const student = [
       grade: "M1",
       keywards: "災害・リスク認知・避難所選択",
       from: "宮城県",
-      hobby: "ディズニー・旅行・スポーツ観戦",
-      kind: 'student'
+      hobby: "ディズニー・旅行・スポーツ観戦"
     },
     {
       figPath: "tada.jpg",
@@ -101,8 +92,7 @@ export const student = [
       grade: "M1",
       keywards: "マルチモーダルNDP・駐車場配置・LRT",
       from: "栃木県",
-      hobby: "水泳・サッカー観戦・ビアバー巡り",
-      kind: 'student'
+      hobby: "水泳・サッカー観戦・ビアバー巡り"
     },
     {
       figPath: "tetsusaki.jpg",
@@ -111,8 +101,7 @@ export const student = [
       grade: "M1",
       keywards: "街路景観・景観認知・街路空間設計",
       from: "東京都",
-      hobby: "散歩・美術館巡り・旅行",
-      kind: 'student'
+      hobby: "散歩・美術館巡り・旅行"
     },
     {
       figPath: "imamura.jpg",
@@ -121,8 +110,7 @@ export const student = [
       grade: "B4",
       keywards: "経路選択行動・街路",
       from: "東京都",
-      hobby: "水泳・野球・LEGO",
-      kind: 'student'
+      hobby: "水泳・野球・LEGO"
     },
     {
       figPath: "yoshimura.jpg",
@@ -131,8 +119,7 @@ export const student = [
       grade: "B4",
       keywards: "都市開発・インサイト分析・地域活性化",
       from: "和歌山県",
-      hobby: "食事・盛り上げ・食事",
-      kind: 'student'
+      hobby: "食事・盛り上げ・食事"
     },
     {
       figPath: "wada.jpg",
@@ -141,8 +128,7 @@ export const student = [
       grade: "B4",
       keywards: "行動モデル",
       from: "東京都",
-      hobby: "ゲーム・将棋・テニス",
-      kind: 'student'
+      hobby: "ゲーム・将棋・テニス"
     }]
 
 // exportは他のページでimportしたいときに必要になる
@@ -274,11 +260,15 @@ export const alumni = [
 
 // 卒論 or 修論を判別
 export function getThesisType(grade:string) {
-  if (grade == 'B4'){
-    return '卒論'
-  }
-  else {
-    return '修論'
+  switch (grade) {
+    case 'B4':
+      return '卒論'
+    case 'M2':
+      return '修論'
+    case 'D3':
+      return '博論'
+    default:
+      return 'unknown'
   }
 }
 

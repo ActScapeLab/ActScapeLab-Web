@@ -5,7 +5,7 @@ interface Props {
   year: string,
   title: string,
   journal: string,
-  link: string
+  link?: string
   pages?: string,
 }
 
@@ -14,10 +14,10 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-item>
+  <q-item flat color="white" :clickable="link !== void 0" :href="link" target="_blank">
     <q-item-section>
       <li>
-      {{ people }}({{ year }})<a href= {{link}} target="_blank">{{ title }}</a>.
+      {{ people }}({{ year }})<span style="color: blue;">{{ title }}</span>.
         {{ journal }}.
       </li>
     </q-item-section>
