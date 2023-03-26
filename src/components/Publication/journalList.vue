@@ -5,8 +5,8 @@ interface Props {
   year: string,
   title: string,
   journal: string,
+  link?: string
   pages?: string,
-  link: string
 }
 
 const props = defineProps<Props>();
@@ -14,23 +14,21 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <div class="q-pa-md">
-    <q-item>
-      <li>{{ people }}({{ year }})<a href= {{props.link}} target="_blank">{{ title }}</a>.
-        {{ journal }}.</li>
-    </q-item>
-  </div>
+  <q-item flat color="white" :clickable="link !== void 0" :href="link">
+    <q-item-section>
+      <li>
+      {{ people }}({{ year }})<span style="color: blue;">{{ title }}</span>.
+        {{ journal }}.
+      </li>
+    </q-item-section>
+  </q-item>
 </template>
 
 <style lang="scss" scoped>
 
-.title {
-  font-size: 15px;
-  font-weight: 300;
-}
-
-.capitalize {
-  text-transform: capitalize;
+li::before {
+  width: 6px;
+  height: 6px;
 }
 
 </style>

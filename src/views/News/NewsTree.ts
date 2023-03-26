@@ -58,7 +58,7 @@ export const tree = [
     year: '2022',
     month: 'November',
     date: '12-13',
-    description: '土木計画学秋大会に参加してきました'
+    description: '土木計画学秋大会に参加してきました',
   },
   {
     type: 'meeting',
@@ -89,7 +89,7 @@ export const tree = [
     month: 'September',
     date: '23-25',
     description: '行動モデル夏の学校＠東大で総合一位になりました!',
-    link: 'SummerSchool'
+    link: 'SummerSchool',
   },
   {
     type: 'publish',

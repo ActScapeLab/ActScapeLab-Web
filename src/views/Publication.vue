@@ -7,16 +7,10 @@ import others from "@/components/Publication/Others.vue";
 
 
 <template>
-  <refereed/>
-  <book/>
-  <international/>
-  <others/>
+  <div class="q-px-xl">
+    <refereed/>
+    <book/>
+    <international/>
+    <others/>
+  </div>
 </template>
-
-
-<style lang="scss" scoped>
-.button-style {
-  margin-left: 70%;
-  color: $secondary;
-}
-</style>

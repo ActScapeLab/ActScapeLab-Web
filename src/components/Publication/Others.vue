@@ -1,26 +1,19 @@
 <script setup lang="ts">
 import pageTitle from "@/components/parts/pageTitle.vue"
-import { getLink, getSymbolColor, getSymbolIcon, setDate, tree } from "@/components/Publication/OthersTree";
+import { tree } from "@/components/Publication/OthersTree";
+import journalList from "./journalList.vue";
 </script>
 
 <template>
-  <pageTitle main="Refereed Journal Papers" sub="審査付き雑誌論文" />
-  <div class="q-px-lg">
-      <template v-for="(page, index) in tree" :key="index">
-        <journallist
-          :people="page.people"
-          :year="page.year"
-          :title="page.title"
-          :journal="page.journal"
-          :pages="page.pages"
-          :link="page.link" />
-      </template>
-  </div>
+  <pageTitle main="Other Presentations" sub="学会発表(査読なし)" />
+  <ol class="papers">
+    <template v-for="(page, index) in tree" :key="index">
+      <journalList
+        :people="page.people"
+        :year="page.year"
+        :title="page.title"
+        :journal="page.journal"
+        :link="page.link"/>
+    </template>
+  </ol>
 </template>
-
-<style lang="scss" scoped>
-.button-style {
-  margin-left: 70%;
-  color: $secondary;
-}
-</style>

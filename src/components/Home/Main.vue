@@ -14,22 +14,32 @@ const autoplay = ref(true)
 
   <div class="slide">
     <q-carousel
-      animated
       v-model="slide"
-      navigation
-      infinite
-      :autoplay="autoplay"
-      arrows
       transition-prev="slide-right"
       transition-next="slide-left"
-      @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true"
+      animated
+      control-color="secondary"
+      navigation
+      padding
+      arrows
+      infinite
       height="100%"
-    >
-      <q-carousel-slide :name="1" img-src="@/assets/Home/bench.png" />
-      <q-carousel-slide :name="2" img-src="@/assets/Home/murakami.png" />
-      <q-carousel-slide :name="3" img-src="@/assets/Home/tsukechi.png" />
-      <q-carousel-slide :name="4" img-src="@/assets/Home/tojo.svg" />
+      :autoplay="autoplay"
+      @mouseenter="autoplay = false"
+      @mouseleave="autoplay = true">
+      
+      <q-carousel-slide :name="1" >
+          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/bench.png" />
+      </q-carousel-slide>
+      <q-carousel-slide :name="2" >
+          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/murakami.png" />
+      </q-carousel-slide>
+      <q-carousel-slide :name="3" >
+          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/tsukechi.png" />
+      </q-carousel-slide>
+      <q-carousel-slide :name="4" >
+          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/tojo.svg" />
+      </q-carousel-slide>
     </q-carousel>
   </div>
 </template>
