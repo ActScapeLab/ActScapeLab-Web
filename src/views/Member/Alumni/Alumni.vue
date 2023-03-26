@@ -8,7 +8,7 @@ import { alumni, alumni_num } from '../MemberTree';
   <pageTitle main="Alumni" sub="卒業生" />
   <div class="q-px-lg">
     <template v-for="year in alumni_num" :key="index">
-      <pageTitle :main="year.year.toString()" class="title"/>
+      <pageTitle :main="`${year.year}年度`" class="title"/>
       <template v-for="student in alumni" :key="index">
         <div v-if="year.year == student.year">
           <graduate 
@@ -24,10 +24,6 @@ import { alumni, alumni_num } from '../MemberTree';
 </template>
 
 <style lang="scss" scoped>
-.title::after{
-    content: '年度';
-  }
-
 .title{
   margin-top: 2%;
   margin-bottom: 0%;
