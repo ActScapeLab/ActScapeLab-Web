@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
 import member from '@/components/Member/member.vue';
-import {staff, student, getLink} from '@/views/Member/MemberTree';
+import member_new from '@/components/Member/member_new.vue';
+import {staff, student} from '@/views/Member/MemberTree';
 </script>
 
 <template>
@@ -13,25 +14,25 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
     :name="page.firstName + page.lastName"
     :from="page.from"
     :hobby="page.hobby" 
-    :link="getLink(page.link, page.kind)"/>
+    :link="page.link"/>
   </template>
 
   <pageTitle main="Student" sub="学生"/>
   <template v-for="(page) in student">
-    <member
-    :url="page.figPath"
+    <member_new
+    :img-path="page.figPath"
     :name="page.firstName + page.lastName"
     :keywards="page.keywards"
     :from="page.from"
     :hobby="page.hobby" 
-    :link="getLink(page.link, page.kind)"
-    :kind="page.kind"/>
+    :journal="page.journal"/>
   </template>
+
   <q-btn
     clickable
-    class="Alumni"
     borderd
-    to="/member/alumni/alumni">
+    to="/member/alumni/alumni"
+    class="Alumni">
       Alumni
   </q-btn>
 </template>
@@ -39,5 +40,6 @@ import {staff, student, getLink} from '@/views/Member/MemberTree';
 <style lang="scss" scoped>
 .Alumni{
   width: 100%;
+  margin-top: 5%;
 }
 </style>
