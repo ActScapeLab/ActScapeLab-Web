@@ -17,7 +17,7 @@ const props = defineProps<Props>();
   <q-item flat color="white" :clickable="link !== void 0" :href="link" target="_blank">
     <q-item-section>
       <li>
-      {{ people }}({{ year }})<span style="color: blue;">{{ title }}</span>.
+      {{ people }}({{ year }})<span class="title">{{ title }}</span>.
         {{ journal }}.
       </li>
     </q-item-section>
@@ -25,10 +25,8 @@ const props = defineProps<Props>();
 </template>
 
 <style lang="scss" scoped>
-
-li::before {
-  width: 6px;
-  height: 6px;
+.title{
+  color: $secondary;
 }
 
 </style>
