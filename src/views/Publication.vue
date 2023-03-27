@@ -7,10 +7,17 @@ import others from "@/components/Publication/Others.vue";
 
 
 <template>
-  <div class="q-px-xl">
+  <div class="q-px-xl layout">
     <refereed/>
     <book/>
     <international/>
     <others/>
   </div>
 </template>
+
+<style lang="scss" scoped>
+.layout{
+  padding: 0 10%;
+}
+
+</style>
