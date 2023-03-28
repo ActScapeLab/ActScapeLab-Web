@@ -3,6 +3,7 @@
     imgPath  : string;
     name: string;
     keywards : string;
+    grade: string;
     from : string;
     hobby : string;
     journal?: string
@@ -28,7 +29,7 @@
           </q-avatar>
         </q-item-section>
         <q-item-section>
-          <span class="title">{{ name }}</span>
+          <span class="title">{{ name }} / {{ grade }}</span>
           <p v-show="keywards !== void 0" class="theme">研究キーワード：{{ keywards }}</p>
         </q-item-section>
       </template>
