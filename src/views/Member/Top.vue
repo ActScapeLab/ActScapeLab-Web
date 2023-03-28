@@ -23,6 +23,7 @@ import {staff, student} from '@/views/Member/MemberTree';
     :img-path="page.figPath"
     :name="page.firstName + page.lastName"
     :keywards="page.keywards"
+    :grade="page.grade"
     :from="page.from"
     :hobby="page.hobby" 
     :journal="page.journal"/>
