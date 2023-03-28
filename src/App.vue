@@ -14,31 +14,29 @@ const leftDrawerOpen = ref(false)
       <q-toolbar>
         <q-btn flat label="ActScape Lab." to="/" class="logo gt-sm"/>
         <q-btn flat label="ActScape Lab." to="/" class="logo-response lt-md"/>
-        <q-space/>
+        <q-space />
         <!--
           notice shrink property since we are placing it
           as child of QToolbar
         -->
         <q-tabs
-        active-color="secondary"
-        indicator-color="transparent"
-        class="gt-sm text-grey tab"
-        >
-            <q-route-tab name="home"        label="HOME"        to="/" class="menubar q-pa-none"/>
-            <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar q-pa-none"/>
-            <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar q-pa-none"/>
-            <q-route-tab name="research"    label="RESEARCH"    to="/research" class="menubar q-pa-none"/>
-            <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar q-pa-none" />
-            <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar q-pa-none"/>
-          </q-tabs>
-          <div class="lt-md text-black">
-            <q-btn
+          active-color="secondary"
+          indicator-color="transparent"
+          class="gt-sm text-grey">
+          <q-route-tab name="home"        label="HOME"        to="/" class="menubar"/>
+          <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar"/>
+          <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar"/>
+          <q-route-tab name="research"    label="RESEARCH"    to="/research" class="menubar"/>
+          <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar" />
+          <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar"/>
+        </q-tabs>
+        <div class="lt-md text-black">
+          <q-btn
             flat dense round
             @click="leftDrawerOpen = !leftDrawerOpen"
             icon="menu"
-            aria-label="Menu"
-            />
-          </div>
+            aria-label="Menu"/>
+        </div>
       </q-toolbar>
     </q-header>
     <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
@@ -75,6 +73,10 @@ const leftDrawerOpen = ref(false)
   margin-bottom: 5%;
 }
 
+.menubar{
+  padding: 0 10px;
+}
+
 .logo {
   /* 研究室名を調整 */
   font-family: 'Abel';
@@ -91,10 +93,6 @@ const leftDrawerOpen = ref(false)
   font-size: 20px;
   letter-spacing: .1em;
   font-weight: 900;
-}
-
-.tab{
-  margin-right: 10%;
 }
 
 .footer {
