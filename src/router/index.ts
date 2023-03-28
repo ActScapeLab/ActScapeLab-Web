@@ -4,8 +4,6 @@ import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import MemberTop from '../views/Member/Top.vue'
 import Alumni from '../views/Member/Alumni/Alumni.vue'
-import Matsumura from '../views/Member/Current/Matsumura.vue'
-import Murakami from '../views/Member/Current/Murakami.vue'
 import Oyama from '../views/Member/Staff/Oyama.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
@@ -33,14 +31,6 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: 'Alumni/Alumni',
         component: Alumni
-      },
-      {
-        path: 'Current/Matsumura',
-        component: Matsumura
-      },
-      {
-        path: 'Current/Murakami',
-        component: Murakami
       },
       {
         path: 'Staff/Oyama',
