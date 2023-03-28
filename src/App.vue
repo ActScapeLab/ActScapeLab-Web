@@ -24,12 +24,12 @@ const leftDrawerOpen = ref(false)
         indicator-color="transparent"
         class="gt-sm text-grey tab"
         >
-            <q-route-tab name="home"        label="HOME"        to="/" class="menubar"/>
-            <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar"/>
-            <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar"/>
-            <q-route-tab name="research"    label="RESEARCH"    to="/research" class="menubar"/>
-            <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar" />
-            <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar"/>
+            <q-route-tab name="home"        label="HOME"        to="/" class="menubar q-pa-none"/>
+            <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar q-pa-none"/>
+            <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar q-pa-none"/>
+            <q-route-tab name="research"    label="RESEARCH"    to="/research" class="menubar q-pa-none"/>
+            <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar q-pa-none" />
+            <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar q-pa-none"/>
           </q-tabs>
           <div class="lt-md text-black">
             <q-btn
@@ -62,7 +62,7 @@ const leftDrawerOpen = ref(false)
 
     <q-footer flat class="bg-primary absolute-bottom">
       <q-toolbar>
-        <q-toolbar-title class="footer text-secondary">@ 2023 ActScapeLab</q-toolbar-title>
+        <q-toolbar-title class="text-secondary footer">@ 2023 ActScapeLab</q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
@@ -72,10 +72,7 @@ const leftDrawerOpen = ref(false)
 .outline {
   width: min(900px, 90%);
   margin: 4em auto;
-  margin-bottom: 0;
-}
-.menubar{
-  width: 100px;
+  margin-bottom: 5%;
 }
 
 .logo {
@@ -103,6 +100,6 @@ const leftDrawerOpen = ref(false)
 .footer {
   font-size: 15px;
   text-align: right;
-  margin: 10px 0;
+  margin-top: 20px;
 }
 </style>

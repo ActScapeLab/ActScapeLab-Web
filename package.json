@@ -1,5 +1,5 @@
 {
-  "name": "vueapp",
+  "name": "ActScapeLab",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,6 +8,7 @@
     "deploy": "npm run build && gh-pages -d dist"
   },
   "dependencies": {
+    "@fawmi/vue-google-maps": "^0.9.79",
     "@quasar/extras": "^1.0.0",
     "core-js": "^3.8.3",
     "quasar": "^2.0.0",
