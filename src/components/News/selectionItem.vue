@@ -10,7 +10,6 @@ interface Props {
 
 const props = defineProps<Props>();
 
-const hasLink = props.link !== undefined
 // 三項演算子 を使ってる （?:True，コロン:False）となる
 // _blank が新しいページ，_selfが自分自身を更新するという約束語
 const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
@@ -19,7 +18,7 @@ const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 <template>
   <q-timeline-entry :color="color" :icon="icon">
     <template v-slot:title>
-      <q-item flat :clickable="hasLink" :href="link" :target="target" class="q-pa-none title">
+      <q-item flat :clickable="link !== void 0" :href="link" :target="target" class="q-pa-none title">
         {{ description }}
       </q-item>
     </template>
