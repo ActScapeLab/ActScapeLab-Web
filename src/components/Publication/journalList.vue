@@ -1,5 +1,7 @@
 <!-- リストとして表示するアイテムの体裁を定義 -->
 <script setup lang="ts">
+import { TextModes } from '@vue/compiler-core';
+
 interface Props {
   people: string,
   year: string,
@@ -17,7 +19,9 @@ const props = defineProps<Props>();
   <q-item flat color="white" :clickable="link !== void 0" :href="link" target="_blank">
     <q-item-section>
       <li>
-      {{ people }}({{ year }})<span class="title">{{ title }}</span>.
+        {{ people }}({{ year }})
+        <span v-if="link !== void 0" class="linkTitle">{{ title }}</span>.
+        <span v-if="link === void 0">{{ title }}</span>.
         {{ journal }}.
       </li>
     </q-item-section>
@@ -25,8 +29,7 @@ const props = defineProps<Props>();
 </template>
 
 <style lang="scss" scoped>
-.title{
+.linkTitle{
   color: $secondary;
 }
-
 </style>
