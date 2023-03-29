@@ -25,7 +25,9 @@ const props = defineProps<Props>();
         {{ people }}({{ year }})
         <span v-if="link !== void 0" class="linkTitle">{{ title }}</span>.
         <span v-if="link === void 0">{{ title }}</span>.
-        {{ journal }}, {{ chapter }}, p.{{ pages }},
+        {{ journal }}
+        <span v-show="chapter !== void 0">,{{ chapter }}</span>
+        <span v-show="pages !== void 0">,p.{{ pages }}</span>
         <ion-icon name="ribbon-outline"></ion-icon>
       </li>
         <p v-show="award !== void 0" class="award" margin="0px">
