@@ -15,8 +15,7 @@ import { tree } from "@/components/Publication/BookTree";
         :title="page.title"
         :journal="page.journal"
         :link="page.link" 
-        :chapter="page.chapter"
-        :award="page.award" />
+        :chapter="page.chapter"/>
     </template>
   </ol>
 </template>
