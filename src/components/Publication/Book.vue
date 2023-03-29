@@ -14,7 +14,9 @@ import { tree } from "@/components/Publication/RefereedTree";
         :year="page.year"
         :title="page.title"
         :journal="page.journal"
-        :link="page.link" />
+        :link="page.link" 
+        :chapter="page.chapter"
+        :award="page.award" />
     </template>
   </ol>
 </template>
