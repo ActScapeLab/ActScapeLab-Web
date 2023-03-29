@@ -39,7 +39,7 @@ const leftDrawerOpen = ref(false)
         </div>
       </q-toolbar>
     </q-header>
-    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2">
+    <q-drawer v-model="leftDrawerOpen" bordered content-class="bg-grey-2" side="right">
       <q-list>
         <q-item-label header>Menu</q-item-label>
         <!-- avatarの一覧 -> https://fonts.google.com/icons?selected=Material+Icons -->

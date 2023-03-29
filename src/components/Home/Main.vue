@@ -54,7 +54,7 @@ const autoplay = ref(true)
 }
 
 .slide {
-  width: min(600px, 100%);
+  width: min(700px, 100%);
   margin: 0 auto;
   aspect-ratio: 3 / 2;
 }
