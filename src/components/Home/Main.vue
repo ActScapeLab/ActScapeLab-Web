@@ -28,7 +28,8 @@ const autoplay = ref(true)
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true">
       <template v-slot:navigation-icon="{ active, btnProps, onClick }">
-        <q-btn size="7px" :icon="btnProps.icon" color="secondary" flat round dense @click="onClick"></q-btn>
+        <q-btn v-if="active" size="7px" :icon="btnProps.icon" color="secondary" flat round dense @click="onClick"></q-btn>
+        <q-btn v-else size="7px" :icon="btnProps.icon" color="grey-4" flat round dense @click="onClick"></q-btn>
       </template>
       <q-carousel-slide :name="1" >
           <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/bench.png" />
