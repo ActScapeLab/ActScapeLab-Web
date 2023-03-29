@@ -195,9 +195,6 @@ if __name__ == "__main__":
     newsBasePage = BasePage('MemberTop', f'../views/Member/Top.vue', '')
     newsPages = readMemberPages(Path(__file__).parents[1]/'views'/'Member')
     viewPages['Member'] = ParentPage(viewPages['Member'].fileName, newsPages, newsBasePage)
-    print(f'変更後 {viewPages}')
-    print()
-    
     
     # index.tsへ書き出し
     with open(Path(__file__).parent/'index.ts', 'w', encoding='utf-8') as f:
