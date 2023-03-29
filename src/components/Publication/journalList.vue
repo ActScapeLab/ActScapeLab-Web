@@ -49,4 +49,8 @@ margin: 0px;
 .q-chip {
 background-color: #ffdfca;
 }
+
+.q-item {
+    padding: 8px 26px;
+}
 </style>
