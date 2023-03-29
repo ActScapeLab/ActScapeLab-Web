@@ -47,6 +47,6 @@ margin: 0px;
 }
 
 .q-chip {
-background-color: #ffd3b6;
+background-color: #ffdfca;
 }
 </style>
