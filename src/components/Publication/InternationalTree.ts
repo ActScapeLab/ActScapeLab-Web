@@ -31,7 +31,8 @@ export const tree = [
     people: 'Oyama, Y., Hato, E.',
     year: '2016',
     title: 'Pedestrian activity model based on implicit path enumeration',
-    journal: 'Proceedings of the 21st International Conference of Hong Kong for Transportation Studies (HKSTS).'
+    journal: 'Proceedings of the 21st International Conference of Hong Kong for Transportation Studies (HKSTS).',
+    pages: 'pp.331-338'
   },
   {
     people: 'Oyama, Y., Hato, E.',
@@ -67,6 +68,7 @@ export const tree = [
     people: 'Oyama, Y., Hato, E',
     year: '2013',
     title: 'Mobility Design: Incorporating "Private" Public Space onto the Street for the City Conversion',
-    journal: ' Proceedings of 5th International Congress of International Association of Societies of Design Research (IASDR).'
+    journal: 'Proceedings of 5th International Congress of International Association of Societies of Design Research (IASDR).',
+    pages: 'pp.3235-3244'
   }
 ]

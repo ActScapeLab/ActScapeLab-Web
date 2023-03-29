@@ -1,14 +1,17 @@
 <!-- リストとして表示するアイテムの体裁を定義 -->
 <script setup lang="ts">
-import { TextModes } from '@vue/compiler-core';
+import { colors } from 'quasar';
+
 
 interface Props {
   people: string,
   year: string,
   title: string,
   journal: string,
-  link?: string
+  link?: string,
+  chapter?:string,
   pages?: string,
+  award?: string
 }
 
 const props = defineProps<Props>();
@@ -22,7 +25,7 @@ const props = defineProps<Props>();
         {{ people }}({{ year }})
         <span v-if="link !== void 0" class="linkTitle">{{ title }}</span>.
         <span v-if="link === void 0">{{ title }}</span>.
-        {{ journal }}.
+        {{ journal }} {{ chapter }} {{ pages }} {{ award }}
       </li>
     </q-item-section>
   </q-item>

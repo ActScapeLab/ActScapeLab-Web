@@ -8,6 +8,7 @@ export const tree = [
     year: '2020',
     title: 'Methodologies for Understanding and Improving Pedestrian Mobility. In: Jensen, O.B., Lassen, C., Kaufmann, V., Freudendal-Pedersen, M., Lange, I.',
     journal: 'Handbook of Urban Mobilities',
-    link: 'https://www.taylorfrancis.com/books/edit/10.4324/9781351058759/handbook-urban-mobilities-ole-jensen-claus-lassen-vincent-kaufmann-malene-freudendal-pedersen-ida-sofie-g%C3%B8tzsche-lange'
+    link: 'https://www.taylorfrancis.com/books/edit/10.4324/9781351058759/handbook-urban-mobilities-ole-jensen-claus-lassen-vincent-kaufmann-malene-freudendal-pedersen-ida-sofie-g%C3%B8tzsche-lange',
+    chapter:'Chapter 10'
   }
 ]
