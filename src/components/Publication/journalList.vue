@@ -25,8 +25,12 @@ const props = defineProps<Props>();
         {{ people }}({{ year }})
         <span v-if="link !== void 0" class="linkTitle">{{ title }}</span>.
         <span v-if="link === void 0">{{ title }}</span>.
-        {{ journal }} {{ chapter }} {{ pages }} {{ award }}
+        {{ journal }}, {{ chapter }}, p.{{ pages }},
+        <ion-icon name="ribbon-outline"></ion-icon>
       </li>
+        <p v-show="award !== void 0" class="award" margin="0px">
+          <q-chip icon="bookmark" >{{award}}</q-chip>
+        </p>
     </q-item-section>
   </q-item>
 </template>
@@ -34,5 +38,9 @@ const props = defineProps<Props>();
 <style lang="scss" scoped>
 .linkTitle{
   color: $secondary;
+}
+
+p {
+margin: 0px;
 }
 </style>

@@ -13,8 +13,7 @@ import { tree } from "@/components/Publication/InternationalTree";
         :people="page.people"
         :year="page.year"
         :title="page.title"
-        :journal="page.journal"
-        :link="page.link" />
+        :journal="page.journal"/>
     </template>
   </ol>
 </template>
