@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import pageTitle from "@/components/parts/pageTitle.vue"
 import journallist from "@/components/Publication/journalList.vue"
-import { tree } from "@/components/Publication/RefereedTree";
+import { tree } from "@/components/Publication/BookTree";
 </script>
 
 
