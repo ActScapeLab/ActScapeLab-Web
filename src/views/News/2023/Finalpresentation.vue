@@ -4,20 +4,19 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <template>
   <ArticleTemplate
-    title="行動モデル夏の学校＠東大"
-    :startYear="2022"
-    :startMonth="9"
-    :startDate="23"
-    :endDate="25"
+    title="卒論発表会が行われました"
+    :startYear="2023"
+    :startMonth="2"
+    :startDate="8"
+    :endDate="9"
     authorGrade="B4"
     authorName="鉄崎"
   >
-    <p>学部生，諸学者向けのpythonやRの行動モデリングのコーディングチュートリアルや若手研究者による， 機械学習と行動モデルの講義を受けることができる夏の学校に今年も参加してきました．</p>
-    <p>数理的政策分析演習では「街路景観に基づいた歩行者経路選択モデルの検証」をテーマにシナリオ分析を行いました．</p>
-    <p>時間的な余裕がない中，提出期限ぎりぎりまで粘って提出した発表資料でしたがそのかいもあって結果はなんと， Davis賞と総合優勝をいただくことができました．</p>
+    <p>2/8-9は土木工学科の卒論発表会が行われ，大山研の学部4年7名が壇上に立ちました.</p>
+    <p>一年間の中で研究が行き詰まり苦しいこともありましたが，緊張感に包まれながらも堂々と発表をするみなさんは とてもかっこよかったです.</p>
+    <p>発表を終え大山研で共に過ごせる時間も残り少ないですが， 一年間頑張ってきたこの経験を糧に，それぞれ頑張っていきましょう.</p>
     <div class="row justify-evenly">
-      <q-img src="@/assets/News/2022/SummerSchool/comprehensive_award.jpg" class="img-width"/>
-      <q-img src="@/assets/News/2022/SummerSchool/Davis_award.jpg" class="img-width"/>
+      <q-img src="@/assets/News/2023/sakurai.jpg" class="img-width"/>
     </div>
   </ArticleTemplate>
 </template>
