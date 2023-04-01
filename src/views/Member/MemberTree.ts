@@ -104,7 +104,11 @@ export const students: studentData[] = [
     grade: "M1",
     keywards: ["物流最適化", "配送計画", "需要マネジメント"],
     from: "愛知県",
-    hobby: ["研究"]
+    hobby: ["研究"],
+    journal: 
+    [
+      'Ryota Okazaki et.al. Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction(2023)'
+    ]
   },
   {
     figPath: "sakurai.jpg",
