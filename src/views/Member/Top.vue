@@ -1,44 +1,58 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
-import staff from '@/components/Member/staff.vue';
-import student from '@/components/Member/student.vue';
+import MemberCore from '@/components/Member/memberCore.vue';
+import studentDetail from '@/components/Member/studentDetail.vue';
 import {staffs, students} from '@/views/Member/MemberTree';
 </script>
 
 <template>
-  <!-- <Staff /> -->
   <pageTitle main="Staff" sub="教員"/>
-  <template v-for="staff in staffs">
-    <staff
-      :url="staff.figPath"
-      :name="staff.firstName + staff.lastName"
-      :grade="staff.grade"
-      :from="staff.from"
-      :hobby="staff.hobby" 
-      :link="staff.link"
-    />
-  </template>
-
+  <q-list v-for="staff in staffs">
+    <q-item clickable :href="staff.link" class="q-pa-md">
+      <MemberCore
+        :name="staff.firstName+staff.lastName"
+        :img-path="staff.figPath"
+        :grade="staff.grade"
+      />
+      <q-item-section side>
+        <q-icon name="keyboard_arrow_right" size="24px"/>
+      </q-item-section>
+    </q-item>
+  </q-list>
+    
   <pageTitle main="Student" sub="学生"/>
-  <template v-for="student in students">
-    <student
-      :img-path="student.figPath"
-      :name="student.firstName + student.lastName"
-      :keywards="student.keywards"
-      :grade="student.grade"
-      :from="student.from"
-      :hobby="student.hobby" 
-      :journal="student.journal"
-    />
-  </template>
+  <q-list v-for="student in students">
+    <q-list class="rounded-borders">
+      <q-expansion-item>
+        <!-- 画像部分 -->
+        <template v-slot:header>
+          <MemberCore
+            :name="student.firstName+student.lastName"
+            :img-path="student.figPath"
+            :grade="student.grade"
+            :keywards="student.keywards"
+          />
+        </template>
+
+        <!-- 下の拡張部分 -->
+        <studentDetail
+          :keywards="student.keywards"
+          :from="student.from"
+          :hobby="student.hobby"
+        />
+      </q-expansion-item>
+
+      <q-separator spaced/>
+    </q-list>
+  </q-list>
 
   <q-btn
+    label="Alumni"
     clickable
     borderd
     to="/member/alumni/alumni"
-    class="Alumni">
-      Alumni
-  </q-btn>
+    class="Alumni"
+  />
 </template>
 
 <style lang="scss" scoped>
