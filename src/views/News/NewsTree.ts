@@ -29,14 +29,16 @@ export const tree = [
     year: '2023',
     month: '2',
     date: '15',
-    description: '新B4が配属されました!!'
+    description: '新B4が配属されました!!',
+    link: 'Assignment'
   },
   {
     type: 'event',
     year: '2023',
     month: '2',
     date: '8-9',
-    description: '卒論発表会が行われました'
+    description: '卒論発表会が行われました',
+    link: 'Finalpresentation'
   },
   {
     type: 'publish',
@@ -51,7 +53,8 @@ export const tree = [
     year: '2022',
     month: '12',
     date: '3-4',
-    description: '都市計画学会に参加してきました'
+    description: '都市計画学会に参加してきました',
+    link: 'CPIJ'
   },
   {
     type: 'meeting',
@@ -59,6 +62,7 @@ export const tree = [
     month: '11',
     date: '12-13',
     description: '土木計画学秋大会に参加してきました',
+    link: 'JSCE_fall'
   },
   {
     type: 'meeting',

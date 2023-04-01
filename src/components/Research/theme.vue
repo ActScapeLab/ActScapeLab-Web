@@ -24,13 +24,13 @@
           <q-item-section class="theme-title">
             {{ theme }}
           </q-item-section>
-          <q-item-section side>
-            <q-avatar square size="250px">
-              <q-img :src="loadAvatar(imgPath)" style="height: 100%;"/>
-            </q-avatar>
-          </q-item-section>
         </template>
         <q-card>
+          <q-card-section class="card q-pa-none">
+            <q-avatar square size="400px" class="q-pa-none">
+              <q-img :src="loadAvatar(imgPath)"/>
+            </q-avatar>
+          </q-card-section>
           <q-card-section>
             {{ abst }}
           </q-card-section>
@@ -53,6 +53,11 @@
 
 .theme-title {
   font-size: large;
+}
+
+.card{
+  text-align: center;
+
 }
 
 </style>
