@@ -3,8 +3,7 @@ import Contact from '../views/Contact.vue'
 import Home from '../views/Home.vue'
 import Member from '../views/Member.vue'
 import MemberTop from '../views/Member/Top.vue'
-import Alumni from '../views/Member/Alumni/Alumni.vue'
-import Oyama from '../views/Member/Staff/Oyama.vue'
+import Alumni from '../views/Member/Alumni.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
 import CPIJ from '../views/News/2022/CPIJ.vue'
@@ -33,12 +32,8 @@ const routes: Array<RouteRecordRaw> = [
         component: MemberTop
       },
       {
-        path: 'Alumni/Alumni',
+        path: 'Alumni',
         component: Alumni
-      },
-      {
-        path: 'Staff/Oyama',
-        component: Oyama
       },
     ]
   },

@@ -136,19 +136,6 @@ def readNewsPages(source:Path):
 
     return pages
 
-def readMemberPages(source:Path):
-    """
-    Memberフォルダに入っているVueファイル一覧を取得する
-    """
-    pages = []
-    for yearPath in source.iterdir():
-        if not yearPath.is_dir():
-            continue
-        for filePath in yearPath.iterdir():
-            pages.append(MemberPage(filePath.stem, yearPath.stem))
-
-    return pages
-
 
 def creater(viewPages:dict[str, Page]):
     """
@@ -192,9 +179,9 @@ if __name__ == "__main__":
     # print()
     
     # memberにChild要素を追加する
-    newsBasePage = BasePage('MemberTop', f'../views/Member/Top.vue', '')
-    newsPages = readMemberPages(Path(__file__).parents[1]/'views'/'Member')
-    viewPages['Member'] = ParentPage(viewPages['Member'].fileName, newsPages, newsBasePage)
+    memberBasePage = BasePage('MemberTop', f'../views/Member/Top.vue', '')
+    alumniPage = ChildPage('Alumni', 'Member')
+    viewPages['Member'] = ParentPage(viewPages['Member'].fileName, [alumniPage], memberBasePage)
     
     # index.tsへ書き出し
     with open(Path(__file__).parent/'index.ts', 'w', encoding='utf-8') as f:
