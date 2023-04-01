@@ -27,9 +27,9 @@
         </template>
         <q-card>
           <q-card-section class="card q-pa-none">
-            <q-avatar square size="400px" class="q-pa-none">
-              <q-img :src="loadAvatar(imgPath)"/>
-            </q-avatar>
+            <!-- <q-avatar square size="400px" class="q-pa-none img-width"> -->
+            <q-img :src="loadAvatar(imgPath)" class="img-width"/>
+            <!-- </q-avatar> -->
           </q-card-section>
           <q-card-section>
             {{ abst }}
@@ -58,6 +58,11 @@
 .card{
   text-align: center;
 
+}
+
+.img-width {
+  width: min(500px, 100%);
+  margin-top: 2%;
 }
 
 </style>
