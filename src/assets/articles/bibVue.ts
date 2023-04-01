@@ -64,15 +64,15 @@ function splitNames(names: string) {
  */
 function getENname(name: string) {
   const names = name.split(' ')
+  let lastName: string
   let firstName = names[0]
-  let lastName = names[names.length-1]
   if (firstName.slice(-1) != ',') {
     firstName += ','
+    lastName   = names[names.length-1]
   }
   else {
-    const _firstName = firstName
-    firstName = lastName
-    lastName  = _firstName
+    firstName = names[names.length-1]
+    lastName  = names[0]
   }
   return `${lastName} ${firstName[0]}.`
 }
