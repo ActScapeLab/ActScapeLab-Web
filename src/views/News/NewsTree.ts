@@ -23,7 +23,15 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
 }
 
 // 表示する記事の一覧
-export const tree = [
+interface Newstree {
+  type: string
+  year: string
+  month: string
+  date?: string
+  description: string
+  link?: string
+}
+export const tree: Newstree[] = [
   {
     type: 'event',
     year: '2023',
@@ -178,8 +186,12 @@ export function getLink(year:string, link?:string) {
 /**
  * 日付を取得する
  */
-export function setDate(year:string, month:string, date:string) {
-  return `${year}年${month}月${date}日`
+export function setDate(year:string, month:string, date?:string) {
+  var formatDate = `${year}年${month}月`
+  if (date !== void 0) {
+    formatDate += `${date}日`
+  }
+  return formatDate
 }
 
 /**
