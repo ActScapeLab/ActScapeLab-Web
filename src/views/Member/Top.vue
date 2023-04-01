@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
-import staff from '@/components/Member/Staff.vue';
+import staff from '@/components/Member/staff.vue';
 import student from '@/components/Member/student.vue';
 import {staffs, students} from '@/views/Member/MemberTree';
 </script>
