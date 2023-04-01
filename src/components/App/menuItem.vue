@@ -10,7 +10,7 @@ const props = defineProps<Props>();
 </script>
 
 <template>
-  <q-item :to="link">
+  <q-item :to="link" active-class="menu-link">
     <q-item-section avatar>
       <q-icon :name="avatar" />
     </q-item-section>
@@ -20,3 +20,10 @@ const props = defineProps<Props>();
     </q-item-section>
   </q-item>
 </template>
+
+<style scoped lang="scss">
+.menu-link{
+  color: $secondary;
+}
+
+</style>
