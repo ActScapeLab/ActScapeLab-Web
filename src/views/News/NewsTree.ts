@@ -175,7 +175,7 @@ export function getLink(year:string, link?:string) {
  * 日付を取得する
  */
 export function setDate(year:string, month:string, date:string) {
-  return `${month}月${date}日, ${year}年`
+  return `${year}年${month}月${date}日`
 }
 
 /**
