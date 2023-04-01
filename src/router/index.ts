@@ -7,7 +7,8 @@ import Alumni from '../views/Member/Alumni/Alumni.vue'
 import Oyama from '../views/Member/Staff/Oyama.vue'
 import News from '../views/News.vue'
 import NewsTop from '../views/News/Top.vue'
-import InfraPlanManage from '../views/News/2022/InfraPlanManage.vue'
+import CPIJ from '../views/News/2022/CPIJ.vue'
+import JSCE_fall from '../views/News/2022/JSCE_fall.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Assignment from '../views/News/2023/Assignment.vue'
 import Finalpresentation from '../views/News/2023/Finalpresentation.vue'
@@ -50,8 +51,12 @@ const routes: Array<RouteRecordRaw> = [
         component: NewsTop
       },
       {
-        path: '2022/InfraPlanManage',
-        component: InfraPlanManage
+        path: '2022/CPIJ',
+        component: CPIJ
+      },
+      {
+        path: '2022/JSCE_fall',
+        component: JSCE_fall
       },
       {
         path: '2022/SummerSchool',
