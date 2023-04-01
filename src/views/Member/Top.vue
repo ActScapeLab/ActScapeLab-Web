@@ -50,7 +50,7 @@ import {staffs, students} from '@/views/Member/MemberTree';
     label="Alumni"
     clickable
     borderd
-    to="/member/alumni/alumni"
+    href="/Member/Alumni/Alumni"
     class="Alumni"
   />
 </template>

@@ -1,5 +1,5 @@
 <template>
-  <div class="q-px-xl info">
+  <div class="q-px-md info">
     <q-item>
       <q-item-section avatar>
         <q-icon name="school" />
@@ -37,6 +37,6 @@
 
 <style lang="scss" scoped>
 .info{
-  padding: 0 10%;
+  padding: 0 5%;
 }
 </style>

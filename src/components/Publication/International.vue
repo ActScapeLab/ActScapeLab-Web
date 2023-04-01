@@ -10,7 +10,7 @@ const InternationalKeys = Object.keys(bibInternational)
 <template>
   <pageTitle main="International Conferences" sub="国際会議(査読あり)" />
   
-  <ol>
+  <ol class="q-pa-none">
     <template v-for="key in InternationalKeys">
       <journallist :article-key="key"/>
     </template>

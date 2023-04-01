@@ -10,11 +10,11 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
   },
   'meeting': {
     icon: 'group',
-    color: 'black',
+    color: 'positive',
   },
   'publish': {
     icon: 'description',
-    color: 'black',
+    color: 'brown',
   },
   'event': {
     icon: 'celebration',
@@ -87,7 +87,7 @@ export const tree: Newstree[] = [
     description: '都市計画論集で3本の論文が公開されました',
   },
   {
-    type: 'meeting',
+    type: 'award',
     year: '2022',
     month: '9',
     date: '23-25',
@@ -127,7 +127,7 @@ export const tree: Newstree[] = [
     type: 'event',
     year: '2021',
     month: '4',
-    description: '卒大宮で自動運転バスの実証実験に参加しました'
+    description: '大宮で自動運転バスの実証実験に参加しました'
   },
   {
     type: 'award',

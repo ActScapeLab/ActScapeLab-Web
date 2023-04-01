@@ -29,6 +29,6 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <style lang="scss" scoped>
 .img-width {
-  width: min(50%, 500px)
+  width: min(500px, 100%);
 }
 </style>

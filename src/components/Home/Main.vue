@@ -18,30 +18,31 @@ const autoplay = ref(true)
       transition-prev="slide-right"
       transition-next="slide-left"
       animated
-      control-color="secondary"
-      navigation
-      padding
+      control-color="black"
       arrows
+      prev-icon="arrow_circle_left"
+      next-icon="arrow_circle_right"
+      navigation
       infinite
       height="100%"
       :autoplay="autoplay"
       @mouseenter="autoplay = false"
       @mouseleave="autoplay = true">
       <template v-slot:navigation-icon="{ active, btnProps, onClick }">
-        <q-btn v-if="active" size="7px" :icon="btnProps.icon" color="secondary" flat round dense @click="onClick"></q-btn>
+        <q-btn v-if="active" size="7px" :icon="btnProps.icon" color="event" flat round dense @click="onClick"></q-btn>
         <q-btn v-else size="7px" :icon="btnProps.icon" color="grey-4" flat round dense @click="onClick"></q-btn>
       </template>
       <q-carousel-slide :name="1" >
           <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/bench.png" />
       </q-carousel-slide>
       <q-carousel-slide :name="2" >
-          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/murakami.png" />
+          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/murakami.png" />
       </q-carousel-slide>
       <q-carousel-slide :name="3" >
-          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/tsukechi.png" />
+          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/tsukechi.png" />
       </q-carousel-slide>
       <q-carousel-slide :name="4" >
-          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/tojo.svg" />
+          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/tojo.svg" />
       </q-carousel-slide>
     </q-carousel>
   </div>
@@ -55,8 +56,12 @@ const autoplay = ref(true)
 }
 
 .slide {
-  width: min(700px, 100%);
+  width: min(800px, 100%);
   margin: 0 auto;
   aspect-ratio: 3 / 2;
+}
+
+.img{
+  width: 100%;
 }
 </style>
