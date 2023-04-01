@@ -10,7 +10,7 @@ const refereedKeys = Object.keys(bibRefereed)
 <template>
   <pageTitle main="Refereed Journal Papers" sub="審査付き雑誌論文" />
   
-  <ol>
+  <ol class="q-pa-none">
     <template v-for="key in refereedKeys">
       <journallist :article-key="key"/>
     </template>

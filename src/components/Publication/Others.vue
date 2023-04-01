@@ -9,7 +9,7 @@ const otherKeys = Object.keys(bibOther)
 <template>
   <pageTitle main="Other Presentations" sub="学会発表(査読なし)" />
   
-  <ol>
+  <ol class="q-pa-none">
     <template v-for="key in otherKeys">
       <journalList :article-key="key"/>
     </template>
