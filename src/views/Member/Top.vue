@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import pageTitle from '@/components/parts/pageTitle.vue';
-import staff from '@/components/Member/staff.vue';
+import staff from '@/components/Member/Staff.vue';
 import student from '@/components/Member/student.vue';
 import {staffs, students} from '@/views/Member/MemberTree';
 </script>
@@ -35,7 +35,7 @@ import {staffs, students} from '@/views/Member/MemberTree';
   <q-btn
     clickable
     borderd
-    to="/member/alumni/alumni"
+    href="Member/Alumni/Alumni"
     class="Alumni">
       Alumni
   </q-btn>
