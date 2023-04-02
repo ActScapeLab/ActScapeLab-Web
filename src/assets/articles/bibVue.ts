@@ -34,7 +34,7 @@ export interface bib {
  * @returns 「論文を表示するときの文字列」と「論文のURL」
  */
 export function getArticleItem(key: string): [string, string | undefined] {
-  const data = Object.assign(bibRefereed, bibBook, bibInternational, bibOther)[key]
+  const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther)[key]
   const langType = judgeLang(data.title)
   const volume = data.volume === void 0 ? '' : `, ${data.volume}`
   const number = data.number === void 0 ? '' : `(${data.number})`
