@@ -22,8 +22,7 @@ export const bibOther: bib = {
   '藤條2022_人工': {
     author: '藤條 嵩大 and 大山 雄己 and 杉山 航太郎',
     title: 'ミクロ土地利用分析に向けた建物用途推定モデルの開発',
-    journal: '第35回人工知能学会全国大会',
-    volume: '36',
+    journal: '第36回人工知能学会全国大会',
     year: '2022',
     url: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_3N4GS1002/_article/-char/ja/'
   }
