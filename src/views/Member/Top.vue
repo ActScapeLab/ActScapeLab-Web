@@ -39,6 +39,7 @@ import {staffs, students} from '@/views/Member/MemberTree';
           :keywards="student.keywards"
           :from="student.from"
           :hobby="student.hobby"
+          :journal="student.journal"
         />
       </q-expansion-item>
 
