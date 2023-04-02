@@ -4,7 +4,36 @@ import { ref } from "vue";
 
 const slide = ref(1)
 const autoplay = ref(true)
+// カルーセル画像を「/assets/Home/」に入れておけば、以下でファイル名を指定するだけで表示可能
+const carousels = ['bench.png', 'murakami.png', 'tsukechi.png', 'tojo.svg']
 
+/**
+ * スマホかPCかを判別する
+ * 
+ * スマホの時にTrueを返す
+ */
+function checkMobile() {
+  const toMatch = [
+    /Android/i,
+    /webOS/i,
+    /iPhone/i,
+    /iPad/i,
+    /iPod/i,
+    /BlackBerry/i,
+    /Windows Phone/i
+  ];
+  
+  return toMatch.some((toMatchItem) => {
+    return navigator.userAgent.match(toMatchItem);
+  });
+}
+
+/**
+ * カルーセル画像の読み込み
+ */
+function loadImg(name:string) {
+  return require(`@/assets/Home/${name}`)
+}
 </script>
 
 <template>
@@ -18,32 +47,25 @@ const autoplay = ref(true)
       transition-prev="slide-right"
       transition-next="slide-left"
       animated
-      control-color="black"
-      arrows
-      prev-icon="arrow_circle_left"
-      next-icon="arrow_circle_right"
+      control-color="secondary"
       navigation
+      padding
+      :arrows="!checkMobile()"
       infinite
-      height="100%"
+      :height="checkMobile() ? '120%' : '100%'"
       :autoplay="autoplay"
       @mouseenter="autoplay = false"
-      @mouseleave="autoplay = true">
+      @mouseleave="autoplay = true"
+    >
       <template v-slot:navigation-icon="{ active, btnProps, onClick }">
-        <q-btn v-if="active" size="7px" :icon="btnProps.icon" color="event" flat round dense @click="onClick"></q-btn>
+        <q-btn v-if="active" size="7px" :icon="btnProps.icon" color="secondary" flat round dense @click="onClick"></q-btn>
         <q-btn v-else size="7px" :icon="btnProps.icon" color="grey-4" flat round dense @click="onClick"></q-btn>
       </template>
-      <q-carousel-slide :name="1" >
-          <q-img class="rounded-borders col-6 full-height" src="@/assets/Home/bench.png" />
-      </q-carousel-slide>
-      <q-carousel-slide :name="2" >
-          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/murakami.png" />
-      </q-carousel-slide>
-      <q-carousel-slide :name="3" >
-          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/tsukechi.png" />
-      </q-carousel-slide>
-      <q-carousel-slide :name="4" >
-          <q-img class="rounded-borders col-6 full-height img" src="@/assets/Home/tojo.svg" />
-      </q-carousel-slide>
+      <template v-for="(carouselName, index) in carousels">
+        <q-carousel-slide :name="index+1">
+          <q-img class="rounded-borders col-6 full-height" :src="loadImg(carouselName)"/>
+        </q-carousel-slide>
+      </template>
     </q-carousel>
   </div>
 </template>
@@ -56,12 +78,8 @@ const autoplay = ref(true)
 }
 
 .slide {
-  width: min(800px, 100%);
+  width: min(700px, 100%);
   margin: 0 auto;
   aspect-ratio: 3 / 2;
-}
-
-.img{
-  width: 100%;
 }
 </style>
