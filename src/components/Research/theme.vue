@@ -1,19 +1,20 @@
 <script setup lang="ts">
-  interface Props {
-    theme: string,
-    result:string,
-    abst: string,
-    imgPath: string
-    journals1: string
-    journals2: string
-    journals3: string
-  }
+import { getArticleItem } from '@/assets/articles/bibVue';
 
-  const props = defineProps<Props>();
+interface Props {
+  theme: string
+  result:string
+  abst: string
+  imgPath: string
+  journalKeys: string[]
+}
+const prop = defineProps<Props>();
 
-  function loadAvatar(name:string) {
-    return require(`@/assets/Research/${name}`)
-  }
+const article2url = prop.journalKeys.map(key => getArticleItem(key))
+
+function loadAvatar(name:string) {
+  return require(`@/assets/Research/${name}`)
+}
 </script>
 
 <template>
@@ -38,9 +39,9 @@
           <q-card-section>
             <p class="q-py-none no-margin">論文</p>
             <ul class="q-py-none no-margin">
-              <li>{{ journals1 }}</li>
-              <li>{{ journals2 }}</li>
-              <li>{{ journals3 }}</li>
+              <li v-for="data in article2url">
+                <a :href="data[1]" target="_blank">{{ data[0] }}</a>
+              </li>
             </ul>
           </q-card-section>
         </q-card>
