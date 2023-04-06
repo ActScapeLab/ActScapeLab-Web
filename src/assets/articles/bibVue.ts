@@ -1,4 +1,5 @@
 import { bibBook } from "./thesisBook"
+import { bibGraduate } from "./thesisGraduate"
 import { bibInternational } from "./thesisInternational"
 import { bibOther } from "./thesisOther"
 import { bibRefereed } from "./thesisRefereed"
@@ -30,7 +31,7 @@ export interface bib {
 /**
  * 全てのbibデータ
  */
-const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther)
+const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther, bibGraduate)
 
 /**
  * 論文をWebページに記載する際の表示名を取得する
