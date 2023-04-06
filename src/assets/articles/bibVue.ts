@@ -28,18 +28,23 @@ export interface bib {
 }
 
 /**
+ * 全てのbibデータ
+ */
+const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther)
+
+/**
  * 論文をWebページに記載する際の表示名を取得する
  * `thesis.ts`に論文を事前に登録しておくことで、任意のページから常に同じフォーマットの論文データを取得可能
  * @param key `thesis.ts`に登録した論文のKey
  * @returns 「論文を表示するときの文字列」と「論文のURL」
  */
 export function getArticleItem(key: string): [string, string | undefined] {
-  const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther)[key]
-  const langType = judgeLang(data.title)
-  const volume = data.volume === void 0 ? '' : `, ${data.volume}`
-  const number = data.number === void 0 ? '' : `(${data.number})`
-  const pages = data.pages === void 0 ? '' : `, p.${data.pages}`
-  return [`${allNames(data.author, langType)} (${data.year}) ${data.title}. ${data.journal}${volume}${number}${pages}`, data.url]
+  const articleData = data[key]
+  const langType = judgeLang(articleData.title)
+  const volume = articleData.volume === void 0 ? '' : `, ${articleData.volume}`
+  const number = articleData.number === void 0 ? '' : `(${articleData.number})`
+  const pages = articleData.pages === void 0 ? '' : `, p.${articleData.pages}`
+  return [`${allNames(articleData.author, langType)} (${articleData.year}) ${articleData.title}. ${articleData.journal}${volume}${number}${pages}`, articleData.url]
 }
 
 type Language = 'JP' | 'EN'
@@ -47,7 +52,7 @@ type Language = 'JP' | 'EN'
  * 論文の言語を判定する
  */
 function judgeLang(title: string): Language {
-  const re = new RegExp('^[a-zA-Z0-9\s!-/:-@[-`{-~]+')
+  const re = new RegExp('^[ -~]+$')
   if (re.test(title)) { return 'EN' }
   else { return 'JP' }
 }
