@@ -73,8 +73,7 @@ function getENname(name: string) {
   let lastName: string
   let firstName = names[0]
   if (firstName.slice(-1) != ',') {
-    firstName += ','
-    lastName   = names[names.length-1]
+    lastName = names[names.length-1] + ','
   }
   else {
     firstName = names[names.length-1]
