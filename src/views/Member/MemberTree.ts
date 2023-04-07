@@ -28,7 +28,7 @@ interface studentData {
   keywards: string[]
   from: string
   hobby: string[]
-  journal?: string[]
+  journalKeys?: string[]
 }
 export const students: studentData[] = [
   {
@@ -39,12 +39,11 @@ export const students: studentData[] = [
     keywards: ["マルチモーダルNDP", "街路空間再配分", "都市デザイン"],
     from: "埼玉県",
     hobby: ["ポケモン", "ヒップホップ", "麻雀"],
-    journal: 
-    [
-      "村上 颯一朗, 大山 雄己 (2022) マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画 -川越市街地における歩行者街路網の創出を例として-. 都市計画論文集 57(3): 622-629.",
-      "村上 颯一朗, 大山 雄己 (2022) 市街地交通ネットワークにおける歩行者ゾーンの最適設計. 第65回土木計画学研究発表会(秋大会).",
-      "村上 颯一朗, 大山 雄己 (2022) マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置.第65回土木計画学研究発表会(春大会).",
-      "村上 颯一朗, 大山 雄己 (2021) マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画. 令和3年度土木学会全国大会"
+    journalKeys: [
+      'Murakami2022_CPIJ',
+      'Murakami2022_JSCEau',
+      'Murakami2022_JSCEsp',
+      'Murakami2021_JSCEall'
     ]
   },
   {
@@ -82,10 +81,9 @@ export const students: studentData[] = [
     keywards: ["MaaS", "最適化", "経路推薦"],
     from: "山口県",
     hobby: ["研究室のHPを見ること", "高校野球", "落語鑑賞"],
-    journal: 
-    [
-      "松村 健太, 大山 雄己 (2022) 決済方式の違いに着目した容量制約付きMaaSの効率性分析. 都市計画論文集 57(3): 666-673.",
-      "松村 健太, 大山 雄己 (2022) 容量制約付きネットワークにおける経路予約型MaaSの課金方策の検討. 第65回土木計画学研究発表会(秋大会).",
+    journalKeys: [
+      'Matsumura2022_CPIJ',
+      'Matsumura2022_JSCEau'
     ]
   },
   {
@@ -105,9 +103,9 @@ export const students: studentData[] = [
     keywards: ["物流最適化", "配送計画", "需要マネジメント"],
     from: "愛知県",
     hobby: ["研究"],
-    journal: 
+    journalKeys: 
     [
-      'Ryota Okazaki et.al. Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction(2023)'
+      'Okazaki2023'
     ]
   },
   {

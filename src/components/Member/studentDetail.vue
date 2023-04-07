@@ -1,9 +1,11 @@
 <script setup lang="ts">
+import { getArticleItem } from '@/assets/articles/bibVue';
+
 interface Props {
   keywards : string[];
   from : string;
   hobby : string[];
-  journal?: string[]
+  journalKeys?: string[]
 }
 defineProps<Props>()
 </script>
@@ -22,10 +24,14 @@ defineProps<Props>()
     <q-card-section class="q-pa-none">
       <p>趣味：{{ hobby?.join('・') }}</p>
     </q-card-section>
-    <q-card-section v-show="journal !== void 0" class="q-pa-none">
+    <q-card-section v-show="journalKeys !== void 0" class="q-pa-none">
       <p class="journal">発表論文：</p>
-      <ul v-for="paper in journal">
-        <li>{{ paper }}</li>
+      <ul>
+        <template v-for="data in journalKeys?.map(name => getArticleItem(name))">
+          <li>
+            <a :href="data[1]">{{ data[0] }}</a>
+          </li>
+        </template>
       </ul>
     </q-card-section>
   </q-card>
