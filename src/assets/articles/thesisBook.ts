@@ -1,7 +1,7 @@
 import { bib } from "./bibVue";
 
 export const bibBook: bib = {
-  'Bierlaire2020': {
+  'Bierlaire2020_HUM': {
     author: 'Bierlaire, M. and Scarinci, R. and Nikolic, M. and Oyama, Y. and Molyneaux, N. and Wang, Z.',
     title: 'Methodologies for Understanding and Improving Pedestrian Mobility. In: Jensen, O.B., Lassen, C., Kaufmann, V., Freudendal-Pedersen, M., Lange, I.',
     journal: 'Handbook of Urban Mobilities',
