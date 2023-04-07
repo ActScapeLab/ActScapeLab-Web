@@ -48,6 +48,17 @@ export function getArticleItem(key: string): [string, string | undefined] {
   return [`${allNames(articleData.author, langType)} (${articleData.year}) ${articleData.title}. ${articleData.journal}${volume}${number}${pages}`, articleData.url]
 }
 
+/**
+ * News記事の文中で使用するための論文表記
+ * @param key `thesis.ts`に登録した論文のKey
+ * @returns 「論文を表示するときの文字列」と「論文のURL」
+ */
+export function getArticle4News(key: string): [string, string | undefined] {
+  const articleData = data[key]
+  const langType = judgeLang(articleData.title)
+  return [`${articleData.title} (${allNames(articleData.author, langType)})`, articleData.url]
+}
+
 type Language = 'JP' | 'EN'
 /**
  * 論文の言語を判定する
