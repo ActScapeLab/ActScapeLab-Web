@@ -1,56 +1,56 @@
 import { bib } from "./bibVue";
 
 export const bibOther: bib = {
-  '大山2022': {
+  'Oyama2022_JSCEau': {
     author: '大山 雄己',
     title: '大域的経路選好と局所的反応を考慮したネットワーク行動モデル',
     journal: '第65回土木計画学研究発表会(秋大会)',
     year: '2022'
   },
-  '村上2022_土木秋': {
+  'Murakami2022_JSCEau': {
     author: '村上 颯一朗 and 大山 雄己',
     title: '市街地交通ネットワークにおける歩行者ゾーンの最適設計',
     journal: '第65回土木計画学研究発表会(秋大会)',
     year: '2022'
   },
-  '松村2022_土木秋': {
+  'Matsumura2022_JSCEau': {
     author: '松村 健太 and 大山 雄己',
     title: '容量制約付きネットワークにおける経路予約型MaaSの課金方策の検討',
     journal: '第65回土木計画学研究発表会(秋大会)',
     year: '2022'
   },
-  '藤條2022_人工': {
+  'Tojo2022_JSAI': {
     author: '藤條 嵩大 and 大山 雄己 and 杉山 航太郎',
     title: 'ミクロ土地利用分析に向けた建物用途推定モデルの開発',
     journal: '第36回人工知能学会全国大会',
     year: '2022',
     url: 'https://www.jstage.jst.go.jp/article/pjsai/JSAI2022/0/JSAI2022_3N4GS1002/_article/-char/ja/'
   },
-  '大山2022_土木春': {
+  'Oyama2022_JSCEsp': {
     author: '大山 雄己',
     title: 'Recursive Logitモデルにおける正の効用の推定可能性',
     journal: '第65回土木計画学研究発表会(春大会)',
     year: '2022'
   },
-  '村上2022_土木春': {
+  'Murakami2022_JSCEsp': {
     author: '村上 颯一朗 and 大山 雄己',
     title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置',
     journal: '第65回土木計画学研究発表会(春大会)',
     year: '2022'
   },
-  '村上2021': {
+  'Murakami2021_JSCEall': {
     author: '村上 颯一朗 and 大山 雄己',
-    title: 'ルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画',
+    title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画',
     journal: '令和3年度土木学会全国大会',
     year: '2021'
   },
-  '池上2021': {
+  'Ikegami2021_JSCEall': {
     author: '池上 哲弘 and 大山 雄己',
     title: '公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案',
     journal: '令和3年度土木学会全国大会',
     year: '2021'
   },
-  '高崎2021': {
+  'Takasaki2021_JSAI': {
     author: '高崎 弾 and 小川 芳樹 and 今泉 允聡 and 沖 拓弥 and 大山 雄己',
     title: 'グラフニューラルネットワークとデータ同化を統合したデータ駆動型避難者分布予測モデルの構築',
     journal: '第34回人工知能学会全国大会',
