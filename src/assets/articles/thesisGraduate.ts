@@ -1,23 +1,33 @@
+import { alumni } from "@/views/Member/AlumniTree";
 import { bib } from "./bibVue";
 
-// TODO: Keyの変更
-export const bibGraduate: bib = {
-	'2020Grad': {
-		author: '',
-		title: '街路景観の特徴量に着目したエリア認知モデルによる回遊性評価',
-		journal: '',
-		year: ''
-	},
-	'2020Grad2': {
-		author: '',
-		title: '複合的災害リスクと避難行動を考慮した緑の街路ネットワーク計画',
-		journal: '',
-		year: ''
-	},
-	'2021Grad': {
-		author: '',
-		title: 'ネットワーク自己相関を考慮した鉄道沿線の商業集積パタン分析',
-		journal: '',
-		year: ''
-	},
+export const bibGraduate: bib = AlumniTree2bibGraduate()
+
+/**
+ * view/Member/AlumniTree.tsのデータをもとにthesis.tsを作成
+ */
+function AlumniTree2bibGraduate() {
+  let articles: bib[] = []
+
+  for (const year in alumni) {
+    let _articles: bib[] = alumni[year].map(person => {
+      
+      let key = `${person.firstName}${year}`
+
+      return {[key]: {
+        author  : person.firstName + person.lastName,
+        title   : person.title,
+        journal : person.grade=='B4' ? '卒業論文' : person.grade=='M2' ? '修士論文' : '博士論文',
+        year    : year,
+        url     : person.url
+      }}
+    })
+
+    articles = articles.concat(_articles)
+  }
+
+  return articles.reduce(
+    (accumulator, currentValue) => Object.assign(accumulator, currentValue),
+    {}
+  )
 }

@@ -4,6 +4,7 @@ interface AlumniData {
     lastName: string
     grade: string
     title: string
+    url?: string
   }[]
 }
 
