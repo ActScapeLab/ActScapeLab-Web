@@ -12,7 +12,7 @@ defineProps<Props>();
 <template>
   <q-item>
   <q-item-section>
-    <p class="self-name">{{ firstName + lastName + '/' +grade }}</p>
+    <p>・{{ firstName + lastName + '/' +grade }}</p>
     <p>{{ getThesisType(grade) + ':' + title }}</p>
   </q-item-section>
   </q-item>
@@ -21,9 +21,5 @@ defineProps<Props>();
 <style lang="scss" scoped>
 p {
   margin: 0px;
-}
-
-.self-name::before{
-  content: "・";
 }
 </style>

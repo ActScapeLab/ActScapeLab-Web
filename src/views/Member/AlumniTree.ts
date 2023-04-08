@@ -1,5 +1,5 @@
 interface AlumniData {
-  [year: number]: {
+  [year: string]: {
     firstName: string
     lastName: string
     grade: string
@@ -9,7 +9,7 @@ interface AlumniData {
 }
 
 export const alumni: AlumniData = {
-  2022: [
+  '2022': [
     {
       firstName: '池上',
       lastName: '哲弘',
@@ -59,7 +59,7 @@ export const alumni: AlumniData = {
       title: '広場の滞留行動を促す基本席・補助席配置の実験と分析'
     },
   ],
-  2021: [
+  '2021': [
     {
       firstName: '金古',
       lastName: '凌真',
@@ -115,7 +115,7 @@ export const alumni: AlumniData = {
       title: '甲府における旧武家屋敷の地割と鉄道駅の立地が市街地形成に与えた影響'
     },
   ],
-  2020: [
+  '2020': [
     {
       firstName: '網代',
       lastName: '峻也',
