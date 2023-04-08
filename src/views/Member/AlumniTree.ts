@@ -156,7 +156,7 @@ export const alumni: AlumniData = {
       firstName: '鈴木',
       lastName: '隆仁',
       grade: 'B4',
-      title: '街路特性に応じたシェアードスペースの設計・評価のための事例整理 (鈴木との共同研究)'
+      title: '街路特性に応じたシェアードスペースの設計・評価のための事例整理 (渋谷との共同研究)'
     },
     {
       firstName: '村上',
