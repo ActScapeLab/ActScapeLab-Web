@@ -85,7 +85,7 @@ export const alumni: AlumniData = {
     },
     {
       firstName: '砂田',
-      lastName: '亮太',
+      lastName: '遼大',
       grade: 'B4',
       title: '歩行者空間成立のための物流動線の設計手法-欧州諸都市からのスタディ-'
     },
@@ -159,7 +159,7 @@ export const alumni: AlumniData = {
     },
     {
       firstName: '村上',
-      lastName: '総一郎',
+      lastName: '颯一朗',
       grade: 'B4',
       title: 'マルチモーダル交通量配分モデルによる歩行者街路網の最適設計'
     },

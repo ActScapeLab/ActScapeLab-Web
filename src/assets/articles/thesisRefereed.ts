@@ -20,7 +20,7 @@ export const bibRefereed: bib = {
     url: 'https://arxiv.org/ftp/arxiv/papers/2208/2208.07002.pdf'
   },
   'Murakami2022_CPIJ': {
-    author: '村上颯一郎 and 大山雄己',
+    author: '村上颯一朗 and 大山雄己',
     title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画',
     journal: '都市計画論文集',
     volume: '57(3)',
