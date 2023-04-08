@@ -22,6 +22,30 @@ export const alumni: AlumniData = {
       title: '時空間的相互作用の存在するミクロ土地利用変化の予測法開発'
     },
     {
+      firstName: '多田',
+      lastName: '和生',
+      grade: 'B4',
+      title: 'マルチモーダル均衡配分に基づく駐車場再配置施策の検討'
+    },
+    {
+      firstName: '鉄崎',
+      lastName: '詩乃',
+      grade: 'B4',
+      title: '街路景観設計に向けた歩行者の再帰的経路選択モデルの推定'
+    },
+    {
+      firstName: '櫻井',
+      lastName: '由伸',
+      grade: 'B4',
+      title: 'リスク認知に着目した津波避難場所選択行動の分析'
+    },
+    {
+      firstName: '岡崎',
+      lastName: '凌太',
+      grade: 'B4',
+      title: '顧客満足度と配送効率性を両立するDay-to-Day宅配需要マネジメント'
+    },
+    {
       firstName: '古川',
       lastName: '智浩',
       grade: 'B4',
@@ -40,6 +64,36 @@ export const alumni: AlumniData = {
       lastName: '凌真',
       grade: 'B4',
       title: '交通拠点の人流制御機能に着目した帰宅困難者シミュレーション'
+    },
+    {
+      firstName: '杉山',
+      lastName: '航太郎',
+      grade: 'B4',
+      title: 'ミクロ土地利用分析に向けた建物用途推定モデルの開発'
+    },
+    {
+      firstName: '玉木',
+      lastName: '悠太',
+      grade: 'B4',
+      title: '角度・距離選択モデルを用いた余暇時間の活動分布評価'
+    },
+    {
+      firstName: '松村',
+      lastName: '健太',
+      grade: 'B4',
+      title: '決済方式の違いに着目した容量制約付きMaaSの効率性分析'
+    },
+    {
+      firstName: '砂田',
+      lastName: '亮太',
+      grade: 'B4',
+      title: '歩行者空間成立のための物流動線の設計手法-欧州諸都市からのスタディ-'
+    },
+    {
+      firstName: '田山',
+      lastName: '航平',
+      grade: 'B4',
+      title: 'ネットワーク自己相関を考慮した鉄道沿線の商業集積パタン分析'
     },
     {
       firstName: '辻',
@@ -74,6 +128,12 @@ export const alumni: AlumniData = {
       title: '利用者属性と利用目的の多様性を考慮した公園最適配置の検討'
     },
     {
+      firstName: '池上',
+      lastName: '哲広',
+      grade: 'B4',
+      title: '活動ベースの高齢者モビリティ指標に基づく空き家発生過程の分析'
+    },
+    {
       firstName: '小島',
       lastName: '元太郎',
       grade: 'B4',
@@ -96,6 +156,12 @@ export const alumni: AlumniData = {
       lastName: '隆仁',
       grade: 'B4',
       title: '街路特性に応じたシェアードスペースの設計・評価のための事例整理 (鈴木との共同研究)'
+    },
+    {
+      firstName: '村上',
+      lastName: '総一郎',
+      grade: 'B4',
+      title: 'マルチモーダル交通量配分モデルによる歩行者街路網の最適設計'
     },
     {
       firstName: '柳瀬',
