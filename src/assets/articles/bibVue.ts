@@ -39,13 +39,13 @@ const data = Object.assign({}, bibRefereed, bibBook, bibInternational, bibOther,
  * @param key `thesis.ts`に登録した論文のKey
  * @returns 「論文を表示するときの文字列」と「論文のURL」
  */
-export function getArticleItem(key: string): [string, string | undefined] {
+export function getArticleItem(key: string): [string, string, string, string | undefined] {
   const articleData = data[key]
   const langType = judgeLang(articleData.title)
   const volume = articleData.volume === void 0 ? '' : `, ${articleData.volume}`
   const number = articleData.number === void 0 ? '' : `(${articleData.number})`
   const pages = articleData.pages === void 0 ? '' : `, p.${articleData.pages}`
-  return [`${allNames(articleData.author, langType)} (${articleData.year}) ${articleData.title}. ${articleData.journal}${volume}${number}${pages}`, articleData.url]
+  return [`${allNames(articleData.author, langType)} (${articleData.year})`, `${articleData.title}`, `${articleData.journal}${volume}${number}${pages}`, articleData.url]
 }
 
 /**

@@ -7,23 +7,36 @@ interface Props {
 }
 const props = defineProps<Props>();
 
-let strLine: string
+let writer: string
+let title:string
+let journal:string
 let url: string | undefined
-[strLine, url] = getArticleItem(props.articleKey)
+[writer, title, journal,url] = getArticleItem(props.articleKey)
 const hasLink = url !== void 0
 </script>
 
 <template>
   <q-item flat :clickable="hasLink" :href="url" target="_blank">
     <q-item-section>
-      <li>{{ strLine }}</li>
+      <li>
+        <p v-if="hasLink" class="hasLink title"> {{ title }} </p>
+        <p v-else class="title"> {{ title }} </p>
+        <p> {{ journal }} </p>
+        {{ writer }}
+      </li>
     </q-item-section>
   </q-item>
 </template>
 
 <style lang="scss" scoped>
-.linkTitle{
+.hasLink{
   color: $secondary;
+}
+
+.title{
+  font-weight: 400;
+  font-size: large;
+  margin-bottom: 2px;
 }
 
 p {

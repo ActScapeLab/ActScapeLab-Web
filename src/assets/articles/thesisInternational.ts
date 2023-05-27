@@ -1,23 +1,24 @@
 import { bib } from "./bibVue";
 
 export const bibInternational: bib = {
-  'Okazaki2023': {
-    author: 'Ryota Okazaki',
-    title: 'Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction',
-    journal: '',
-    year: '2023'
-  },
+  // 'Okazaki2023': {
+  //   author: 'Ryota Okazaki',
+  //   title: 'Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction',
+  //   journal: '',
+  //   year: '2023'
+  // },
   'Oyama2022_IATBR': {
     author: 'Oyama, Y.',
     title: 'A prism-constrained recursive logit model to analyze positive utilities in pedestrian route choice behavior',
     journal: 'The 16th International Conference on Travel Behaviour research (IATBR), Santiago, Chile.',
-    year: '2022'
+    year: '2022',
   },
   'Oyama2022_arXiv': {
     author: 'Oyama, Y.',
     title: "E-commerce users' preferences for delivery options",
     journal: 'arXiv',
-    year: '2022'
+    year: '2022',
+    url: 'https://arxiv.org/abs/2301.00666'
   },
   'Parady2022_IATBR': {
     author: 'Parady, G. and Suzuki, K. and Oyama, Y. and Chikaraishi, M.',

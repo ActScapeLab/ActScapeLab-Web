@@ -8,7 +8,7 @@ const bookKeys = Object.keys(bibBook)
 
 
 <template>
-  <pageTitle main="Book Chapters" sub="分担著書" />
+  <pageTitle main="分担著書" />
   
   <ol class="q-pa-none">
     <template v-for="key in bookKeys">
