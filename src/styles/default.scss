@@ -1,14 +1,18 @@
 // 全体に適用する場合は「*」と伝えましたが，
 // これをやるとフォントの上書きが非常に難しくなるので，「body」を使う実装に変更しました
+
 body {
   font-size: 15px;
   font-family: "Roboto", 'Noto Sans JP', sans-serif;
   line-height: 1.5;
   font-weight: 300;
   color: #383838;
+  -webkit-font-smoothing: antialiased;
+  background: #ffffff;
 }
 
 a {
+  // color: $secondary;
   text-decoration: none;
 }
 
