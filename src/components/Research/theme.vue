@@ -40,7 +40,8 @@ function loadAvatar(name:string) {
             <p class="q-py-none no-margin">論文</p>
             <ul class="q-py-none no-margin">
               <li v-for="data in article2url">
-                <a :href="data[1]" target="_blank">{{ data[0] }}</a>
+                <a v-if="data[3]"  :href="data[3]" target="_blank" class="hasLink">{{ data[1] }}，{{ data[0] }}</a>
+                <a v-else>{{ data[1] }}，{{ data[0] }}</a>
               </li>
             </ul>
           </q-card-section>
@@ -50,7 +51,10 @@ function loadAvatar(name:string) {
     </q-list>
 </template>
 
-<style scoped setup="scss">
+<style scoped lang="scss">
+.hasLink{
+  color: $secondary;
+}
 
 .theme-title {
   font-size: large;

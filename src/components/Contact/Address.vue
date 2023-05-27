@@ -27,7 +27,7 @@
       <q-icon name="place" />
     </q-item-section>
     <q-item-section>
-      135-8548 東京都江東区豊洲3-7-5 研究棟9階I-32 3-7-5
+      135-8548 東京都江東区豊洲3-7-5 研究棟9階I-32
       <span>Toyosu, Koto-ku, Tokyo 135-8548, Japan</span>
     </q-item-section>
     </q-item>

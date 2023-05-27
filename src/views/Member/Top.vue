@@ -6,7 +6,7 @@ import {staffs, students} from '@/views/Member/MemberTree';
 </script>
 
 <template>
-  <pageTitle main="Staff" sub="教員"/>
+  <pageTitle main="教員"/>
   <q-list v-for="staff in staffs">
     <q-item clickable :href="staff.link" class="q-pa-md">
       <MemberCore
@@ -20,7 +20,7 @@ import {staffs, students} from '@/views/Member/MemberTree';
     </q-item>
   </q-list>
     
-  <pageTitle main="Student" sub="学生"/>
+  <pageTitle main="学生"/>
   <q-list v-for="student in students">
     <q-list class="rounded-borders">
       <q-expansion-item>
@@ -46,14 +46,6 @@ import {staffs, students} from '@/views/Member/MemberTree';
       <q-separator spaced/>
     </q-list>
   </q-list>
-
-  <q-btn
-    label="Alumni"
-    clickable
-    borderd
-    href="Member/Alumni"
-    class="Alumni"
-  />
 </template>
 
 <style lang="scss" scoped>

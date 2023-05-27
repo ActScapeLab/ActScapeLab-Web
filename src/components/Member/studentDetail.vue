@@ -29,7 +29,8 @@ defineProps<Props>()
       <ul>
         <template v-for="data in journalKeys?.map(name => getArticleItem(name))">
           <li>
-            <a :href="data[1]">{{ data[0] }}</a>
+            <a v-if="data[3]"  :href="data[3]" target="_blank" class="hasLink">{{ data[1] }}，{{ data[0] }}</a>
+            <a v-else>{{ data[1] }}，{{ data[0] }}</a>
           </li>
         </template>
       </ul>

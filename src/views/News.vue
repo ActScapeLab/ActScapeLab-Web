@@ -3,7 +3,7 @@ import pageTitle from "@/components/parts/pageTitle.vue"
 </script>
 
 <template>
-  <pageTitle main="News" sub="ニュース" />
+  <pageTitle main="ニュース"/>
 
   <!-- 
     ここの中にはrouter.tsの中身が入ってくる

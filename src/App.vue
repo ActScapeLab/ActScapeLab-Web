@@ -11,7 +11,7 @@ const leftDrawerOpen = ref(false)
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header flat reveal class="bg-primary absolute-top">
-      <q-toolbar>
+      <q-toolbar class="header">
         <q-btn flat label="ActScape Lab." to="/" class="logo gt-sm"/>
         <q-btn flat label="ActScape Lab." to="/" class="logo-response lt-md"/>
         <q-space />
@@ -22,7 +22,7 @@ const leftDrawerOpen = ref(false)
         <q-tabs
           active-color="secondary"
           indicator-color="transparent"
-          class="gt-sm text-grey">
+          class="gt-sm text-grey tab">
           <q-route-tab name="home"        label="HOME"        to="/" class="menubar"/>
           <q-route-tab name="news"        label="NEWS"        to="/news" class="menubar"/>
           <q-route-tab name="member"      label="MEMBER"      to="/member" class="menubar"/>
@@ -30,6 +30,7 @@ const leftDrawerOpen = ref(false)
           <q-route-tab name="publication" label="PUBLICATION" to="/publication" class="menubar" />
           <q-route-tab name="contact"     label="CONTACT"     to="/contact" class="menubar"/>
         </q-tabs>
+
         <div class="lt-md text-black">
           <q-btn
             flat dense round
@@ -39,6 +40,7 @@ const leftDrawerOpen = ref(false)
         </div>
       </q-toolbar>
     </q-header>
+
     <q-drawer v-model="leftDrawerOpen" bordered side="right" active-color="secondary">
       <q-list active-color="secondary">
         <q-item-label header>Menu</q-item-label>
@@ -73,8 +75,23 @@ const leftDrawerOpen = ref(false)
   margin-bottom: 5%;
 }
 
+
+.tab{
+  font-weight: 900;
+}
+
+.header{
+  margin-top: 5%;
+}
+
+#menubar{
+  font-weight: 900;
+}
+
 .menubar{
-  padding: 0 10px;
+  font-family: 'Abel';
+  letter-spacing: .1em;
+  font-weight: 900 !important;
 }
 
 .logo {

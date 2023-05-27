@@ -33,7 +33,7 @@ const target = props.link?.slice(0, 4) == 'http' ? '_blank' : '_self'
 <style lang="scss" scoped>
 
 .title {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 

@@ -31,12 +31,12 @@ function getSub(sub?: string) {
 <style lang="scss" scoped>
 /* タイトルだけでなく，ページ全体で全て同じなら styles/quasar.variables.scss に記述しても良い */
 h1.pageTitle {
-  font-family: 'Abel';
-  font-size: 25px;
+  font-size: 20px;
   color: #4a525d;
   line-height: 1.2;
   letter-spacing: 1.5px;
   text-transform: uppercase;
+  font-weight: 300;
 }
 
 span.pageTitle {

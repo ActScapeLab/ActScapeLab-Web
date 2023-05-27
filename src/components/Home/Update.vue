@@ -9,7 +9,7 @@ const showCounts = 3
 </script>
 
 <template>
-  <pageTitle main="Updates"/>
+  <pageTitle main="最近の更新"/>
   <div class="q-px-lg">
     <q-timeline color="secondary">
       <template v-for="(page, index) in tree.slice(0, showCounts)" :key="index">

@@ -15,7 +15,7 @@ export const staffs: StaffData[] = [
     grade: "准教授",
     from: "埼玉県",
     hobby: ["ポケモン", "ヒップホップ", "麻雀"],
-    link: "https://yuki-oyama.github.io/about.html"
+    link: "https://yuki-oyama.github.io/"
   }
 ]
 
@@ -78,7 +78,7 @@ export const students: studentData[] = [
     firstName: "松村",
     lastName: "健太",
     grade: "M2",
-    keywards: ["MaaS", "最適化", "経路推薦"],
+    keywards: ["公共空間設計", "強化学習", "マルチエージェントシミュレーション"],
     from: "山口県",
     hobby: ["研究室のHPを見ること", "高校野球", "落語鑑賞"],
     journalKeys: [
@@ -103,10 +103,10 @@ export const students: studentData[] = [
     keywards: ["物流最適化", "配送計画", "需要マネジメント"],
     from: "愛知県",
     hobby: ["研究"],
-    journalKeys: 
-    [
-      'Okazaki2023'
-    ]
+    // journalKeys: 
+    // [
+    //   'Okazaki2023'
+    // ]
   },
   {
     figPath: "sakurai.jpg",

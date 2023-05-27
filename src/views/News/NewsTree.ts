@@ -35,6 +35,14 @@ export const tree: Newstree[] = [
   {
     type: 'event',
     year: '2023',
+    month: '5',
+    date: '18 - 20',
+    description: 'ゼミ合宿を開催しました!!@伊豆長岡,静岡県',
+    link: 'Izu'
+  },
+  {
+    type: 'event',
+    year: '2023',
     month: '2',
     date: '15',
     description: '新B4が配属されました!!',
@@ -44,7 +52,7 @@ export const tree: Newstree[] = [
     type: 'event',
     year: '2023',
     month: '2',
-    date: '8-9',
+    date: '8 - 9',
     description: '卒論発表会が行われました',
     link: 'Finalpresentation'
   },
@@ -53,14 +61,14 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '1',
     date: '12',
-    description: '論文がTransportation Research Part C: Emerging Technologiesに掲載されました',
+    description: '「Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach」がTransportation Research Part C: Emerging Technologiesに掲載されました',
     link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
   },
   {
     type: 'meeting',
     year: '2022',
     month: '12',
-    date: '3-4',
+    date: '3 - 4',
     description: '都市計画学会に参加してきました',
     link: 'CPIJ'
   },
@@ -68,12 +76,12 @@ export const tree: Newstree[] = [
     type: 'meeting',
     year: '2022',
     month: '11',
-    date: '12-13',
+    date: '12 - 13',
     description: '土木計画学秋大会に参加してきました',
     link: 'JSCE_fall'
   },
   {
-    type: 'meeting',
+    type: 'publish',
     year: '2022',
     month: '10',
     date: '27',
@@ -90,7 +98,7 @@ export const tree: Newstree[] = [
     type: 'award',
     year: '2022',
     month: '9',
-    date: '23-25',
+    date: '23 - 25',
     description: '行動モデル夏の学校＠東大で総合一位になりました!',
     link: 'SummerSchool',
   },
@@ -113,9 +121,8 @@ export const tree: Newstree[] = [
     type: 'publish',
     year: '2022',
     month: '9',
-    date: '23-25',
+    date: '23 - 25',
     description: '池上・大山 (2021) "公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案" が都市計画論集で出版されました',
-    link: ''
   },
   {
     type: 'event',
@@ -135,7 +142,6 @@ export const tree: Newstree[] = [
     month: '3',
     date: '17',
     description: '村上君の卒論が高く評価され，土木賞を受賞しました．おめでとうございます！',
-    link: 'SummerSchool'
   },
   {
     type: 'award',
@@ -150,7 +156,6 @@ export const tree: Newstree[] = [
     month: '2',
     date: '16',
     description: '新しく9人の卒論生が研究室に配属されました.これからよろしくお願いします',
-    link:' Member'
   },
   {
     type: 'event',
@@ -164,7 +169,7 @@ export const tree: Newstree[] = [
     year: '2020',
     month: '4',
     date: '1',
-    description: '大山が芝浦工業大学土木工学科に助教として着任し,都市環境設計研究室が立ち上がりました.Oyama started working at Shibaura Institute of Technology as an Assistant Professor and the director of the Activity Landscape Design (ActScape) Laboratory.'
+    description: '大山雄己が芝浦工業大学土木工学科に助教として着任し,都市環境設計研究室が立ち上がりました.'
   }
 ]
 
