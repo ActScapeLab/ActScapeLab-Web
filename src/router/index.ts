@@ -11,6 +11,7 @@ import JSCE_fall from '../views/News/2022/JSCE_fall.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Assignment from '../views/News/2023/Assignment.vue'
 import Finalpresentation from '../views/News/2023/Finalpresentation.vue'
+import Izu from '../views/News/2023/Izu.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
 
@@ -64,6 +65,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '2023/Finalpresentation',
         component: Finalpresentation
+      },
+      {
+        path: '2023/Izu',
+        component: Izu
       },
     ]
   },
