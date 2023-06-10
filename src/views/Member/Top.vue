@@ -6,9 +6,9 @@ import {staffs, students} from '@/views/Member/MemberTree';
 </script>
 
 <template>
-  <pageTitle main="教員"/>
+  <pageTitle main="スタッフ"/>
   <q-list v-for="staff in staffs">
-    <q-item clickable :href="staff.link" class="q-pa-md">
+    <q-item v-if="staff.link" clickable :href="staff.link" class="q-pa-md">
       <MemberCore
         :name="staff.firstName+staff.lastName"
         :img-path="staff.figPath"
@@ -18,6 +18,16 @@ import {staffs, students} from '@/views/Member/MemberTree';
         <q-icon name="keyboard_arrow_right" size="24px"/>
       </q-item-section>
     </q-item>
+
+    <q-item v-else class="q-pa-md">
+      <MemberCore
+        :name="staff.firstName+staff.lastName"
+        :img-path="staff.figPath"
+        :grade="staff.grade"
+        :address="staff.address"
+      />
+    </q-item>
+
   </q-list>
     
   <pageTitle main="学生"/>

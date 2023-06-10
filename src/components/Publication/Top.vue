@@ -17,14 +17,19 @@ const graduateKeys = Object.keys(bibGraduate)
 </script>
 
 <template>
-  <pageTitle main="研究実績"/>
+  <pageTitle main="研究実績 (2020~)"/>
+    <p class="intro q-pl-md">
+      2019年以前の実績は
+      <a href="https://yuki-oyama.github.io/publications.html">こちら</a>
+
+    </p>
   <q-list class="rounded-borders">
     <q-expansion-item
       switch-toggle-side
     >
       <template v-slot:header>
         <q-item-section class="theme-title">
-          01/審査付き雑誌論文
+          1 / 審査付き雑誌論文
         </q-item-section>
       </template>
       <q-card>
@@ -41,7 +46,7 @@ const graduateKeys = Object.keys(bibGraduate)
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          02/国際会議(査読あり)
+          2 / 国際会議発表
         </q-item-section>
       </template>
       <q-card>
@@ -58,7 +63,7 @@ const graduateKeys = Object.keys(bibGraduate)
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          03/分担著書
+          3 / 分担著書
         </q-item-section>
       </template>
       <q-card>
@@ -75,7 +80,7 @@ const graduateKeys = Object.keys(bibGraduate)
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          04/学会発表(査読なし)
+          4 / 国内学会発表
         </q-item-section>
       </template>
       <q-card>
@@ -92,21 +97,23 @@ const graduateKeys = Object.keys(bibGraduate)
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          05/学位論文
+          5 / 学位論文
         </q-item-section>
       </template>
       <q-card>
         <template v-for="year in Object.keys(alumni).reverse()">
           <ol>
-            <pageTitle :main="`${year}年度`" class="title"/>
-            <template v-for="person in alumni[year]">
-              <graduate
-                :firstName="person.firstName"
-                :lastName="person.lastName"
-                :grade="person.grade"
-                :title="person.title"
-              />
+            <pageTitle :main="`${year}年度`" class="year-bar"/>
+            <div class="alumni-block">
+              <template v-for="person in alumni[year]">
+                <graduate
+                  :firstName="person.firstName"
+                  :lastName="person.lastName"
+                  :grade="person.grade"
+                  :title="person.title"
+                />
             </template>
+          </div>
           </ol>
         </template>
       </q-card>
@@ -120,5 +127,14 @@ const graduateKeys = Object.keys(bibGraduate)
 <style lang="scss" scoped>
 .theme-title {
   font-size: large;
+}
+
+.year-bar{
+  padding-left: 19px;
+  margin: 0;
+}
+
+.alumni-block{
+  padding-bottom: 5px;
 }
 </style>

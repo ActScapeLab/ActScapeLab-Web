@@ -16,7 +16,7 @@ const props = defineProps<Props>();
     </q-item-section>
     <q-item-section>
       <q-item-label>{{label}}</q-item-label>
-      <q-item-label caption>{{label}}</q-item-label>
+      <!-- <q-item-label caption>{{label}}</q-item-label> -->
     </q-item-section>
   </q-item>
 </template>

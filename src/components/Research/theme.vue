@@ -40,8 +40,8 @@ function loadAvatar(name:string) {
             <p class="q-py-none no-margin">論文</p>
             <ul class="q-py-none no-margin">
               <li v-for="data in article2url">
-                <a v-if="data[3]"  :href="data[3]" target="_blank" class="hasLink">{{ data[1] }}，{{ data[0] }}</a>
-                <a v-else>{{ data[1] }}，{{ data[0] }}</a>
+                <a v-if="data[3]"  :href="data[3]" target="_blank" class="hasLink">{{ data[1] }}，{{ data[0] }}，{{ data[2] }}</a>
+                <a v-else>{{ data[1] }}，{{ data[0] }}，{{ data[2] }} </a>
               </li>
             </ul>
           </q-card-section>

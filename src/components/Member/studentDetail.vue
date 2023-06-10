@@ -37,3 +37,11 @@ defineProps<Props>()
     </q-card-section>
   </q-card>
 </template>
+
+<style lang="scss" scoped>
+
+.hasLink{
+  color: $secondary;
+}
+
+</style>

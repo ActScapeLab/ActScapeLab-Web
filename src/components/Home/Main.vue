@@ -5,7 +5,7 @@ import { ref } from "vue";
 const slide = ref(1)
 const autoplay = ref(true)
 // カルーセル画像を「/assets/Home/」に入れておけば、以下でファイル名を指定するだけで表示可能
-const carousels = ['syugo.png', 'sofa.png', 'logi.png', 'tojo.png']
+const carousels = ['syugo_3.png', 'sofa.png', 'logi.png', 'tojo.png']
 
 /**
  * スマホかPCかを判別する
@@ -37,7 +37,7 @@ function loadImg(name:string) {
 </script>
 
 <template>
-  <pageTitle main="都市環境設計研究室" sub="芝浦工業大学 土木工学科" />
+  <pageTitle main="都市環境設計研究室" sub="芝浦工業大学 土木工学科 大山研究室" />
 
   <p class="comment">より良い都市環境の設計に向けて，空間と人の行動とのポジティブな相互作用について研究しています．</p>
 

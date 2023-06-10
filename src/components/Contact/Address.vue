@@ -1,5 +1,11 @@
+<script setup lang="ts">
+import PageTitle from '../parts/pageTitle.vue';
+import pageTitle from '../parts/pageTitle.vue';
+</script>
+
 <template>
   <div class="q-px-md info">
+    <page-title main="連絡先"/>
     <q-item>
       <q-item-section avatar>
         <q-icon name="school" />
