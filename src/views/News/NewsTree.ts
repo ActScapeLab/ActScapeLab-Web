@@ -37,7 +37,7 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '5',
     date: '18 - 20',
-    description: 'ゼミ合宿を開催しました!!@伊豆長岡,静岡県',
+    description: 'ゼミ合宿を開催しました!! ＠伊豆長岡，静岡県',
     link: 'Izu'
   },
   {

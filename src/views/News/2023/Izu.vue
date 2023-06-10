@@ -4,7 +4,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <template>
   <ArticleTemplate
-    title="ゼミ合宿を開催しました!!@伊豆長岡,静岡県"
+    title="ゼミ合宿を開催しました!! ＠伊豆長岡，静岡県"
     :startYear="2023"
     :startMonth="5"
     :startDate="18"
@@ -12,7 +12,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
     authorGrade="M2"
     authorName="松村"
   >
-    <p>5月18日(木)~20日(土)に静岡県伊豆の国市の「コナステイ伊豆長岡」にて，論文ゼミ合宿を開催しました．1日目は朝9時に三島駅に集合し,街歩きをしました．当日の発表に備える前泊勢も何人かいました．</p>
+    <p>5月18日(木)~20日(土)に静岡県伊豆の国市の「コナステイ伊豆長岡」にて，論文ゼミ合宿を開催しました．1日目は朝9時に三島駅に集合し，街歩きをしました．当日の発表に備える前泊勢も何人かいました．</p>
     <div class="row justify-evenly image-zone">
       <q-img src="@/assets/News/2023/izu/aruku.jpg" class="img-width"/>
       <q-img src="@/assets/News/2023/izu/tamaki.jpg" class="img-width"/>
@@ -45,7 +45,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
     </div>
     <p>今回は大山研究室発足4年目にして初めての合宿でした． これを機に大山研の定例行事を増やしていきます！準備してくれたメンバーや会場を貸していただいたホテルの方々ありがとうございました！</p>
     <div class="row justify-evenly image-zone">
-      <q-img src="@/assets/News/2023/izu/syugo.png"/>
+      <q-img src="@/assets/News/2023/izu/syugo_3.png"/>
     </div>
 
   </ArticleTemplate>
