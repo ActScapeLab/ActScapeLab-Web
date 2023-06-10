@@ -3,9 +3,10 @@ interface StaffData {
   firstName: string
   lastName: string
   grade:  string
-  from: string
-  hobby: string[]
-  link: string
+  from?: string
+  hobby?: string[]
+  link?: string
+  address?: string
 }
 export const staffs: StaffData[] = [
   {
@@ -13,10 +14,15 @@ export const staffs: StaffData[] = [
     firstName: "大山",
     lastName: "雄己",
     grade: "准教授",
-    from: "埼玉県",
-    hobby: ["ポケモン", "ヒップホップ", "麻雀"],
     link: "https://yuki-oyama.github.io/"
-  }
+  },
+  {
+    figPath: "hamada.svg",
+    firstName: "濱田",
+    lastName: "真由美",
+    grade: "秘書",
+    address: 'hamada.mayumi[at]shibaura-it.ac.jp'
+  },
 ]
 
 
@@ -40,14 +46,15 @@ export const students: studentData[] = [
     from: "埼玉県",
     hobby: ["ポケモン", "ヒップホップ", "麻雀"],
     journalKeys: [
+      'Murakami2023',
       'Murakami2022_CPIJ',
       'Murakami2022_JSCEau',
       'Murakami2022_JSCEsp',
-      'Murakami2021_JSCEall'
+      'Murakami2021_JSCEall',
     ]
   },
   {
-    figPath: "tamaki.jpg",
+    figPath: "tamaki_izu.png",
     firstName: "玉木",
     lastName: "悠太",
     grade: "M2",
@@ -56,7 +63,7 @@ export const students: studentData[] = [
     hobby: ["野球", "車", "バンド"]
   },
   {
-    figPath: "tayama.jpg",
+    figPath: "tayama_izu.png",
     firstName: "田山",
     lastName: "航平",
     grade: "M2",
@@ -65,7 +72,7 @@ export const students: studentData[] = [
     hobby: ["カメラ", "ドライブ", "Jリーグ"]
   },
   {
-    figPath: "sugiyama.jpg",
+    figPath: "sugi_izu.png",
     firstName: "杉山",
     lastName: "航太郎",
     grade: "M2",
@@ -103,10 +110,11 @@ export const students: studentData[] = [
     keywards: ["物流最適化", "配送計画", "需要マネジメント"],
     from: "愛知県",
     hobby: ["研究"],
-    // journalKeys: 
-    // [
-    //   'Okazaki2023'
-    // ]
+    journalKeys: 
+    [
+      'Okazaki2023',
+      'Okazaki2023_JSCEsp'
+    ]
   },
   {
     figPath: "sakurai.jpg",
@@ -127,7 +135,7 @@ export const students: studentData[] = [
     hobby: ["水泳", "サッカー観戦", "ビアバー巡り"]
   },
   {
-    figPath: "tetsusaki.jpg",
+    figPath: "tetsu_izu.png",
     firstName: "鉄崎",
     lastName: "詩乃",
     grade: "M1",
