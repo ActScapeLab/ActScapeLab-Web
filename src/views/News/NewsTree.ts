@@ -33,6 +33,14 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'meeting',
+    year: '2023',
+    month: '6',
+    date: '3 - 4',
+    description: '土木計画学秋大会に参加してきました!! ＠福岡大学',
+    link: 'JSCE_spring'
+  },
+  {
     type: 'event',
     year: '2023',
     month: '5',
@@ -69,7 +77,7 @@ export const tree: Newstree[] = [
     year: '2022',
     month: '12',
     date: '3 - 4',
-    description: '都市計画学会に参加してきました',
+    description: '都市計画学会に参加してきました!! ＠宇都宮大学',
     link: 'CPIJ'
   },
   {
@@ -77,7 +85,7 @@ export const tree: Newstree[] = [
     year: '2022',
     month: '11',
     date: '12 - 13',
-    description: '土木計画学秋大会に参加してきました',
+    description: '土木計画学秋大会に参加してきました!! ＠琉球大学',
     link: 'JSCE_fall'
   },
   {
