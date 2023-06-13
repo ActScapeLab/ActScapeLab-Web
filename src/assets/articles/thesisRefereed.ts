@@ -61,7 +61,7 @@ export const bibRefereed: bib = {
     journal: '都市計画論文集',
     volume: '56 (3)',
     pages: '563-570',
-    year: '2022',
+    year: '2021',
     url: 'https://www.jstage.jst.go.jp/article/journalcpij/56/3/56_563/_article/-char/ja/'
   },
   // 'Oyama2019_TRPB': {
