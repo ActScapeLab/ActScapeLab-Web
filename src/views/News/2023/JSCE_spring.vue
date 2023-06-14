@@ -15,7 +15,7 @@ import ArticleList from '@/components/News/articleList.vue';
   >
     <p>6月3日，4日に福岡大学七隈キャンパスで開催された第67回土木計画学研究発表会・春大会にM1の岡崎が以下の題目で参加しました．</p>
 
-    <ArticleList :keys="['Okazaki2023_JSCEsp']"/>
+    <ArticleList :keys="['Okazaki2023_JSCEsp', 'Parady2023_JSCEsp']"/>
 
     <p>
       1時間半のセッションに割り当てられた発表者が2人であったため，発表・質疑ともに20分を越える大変充実した発表会となりました．
@@ -25,7 +25,11 @@ import ArticleList from '@/components/News/articleList.vue';
     <p>
       発表後は福岡の繁華街に繰り出し，屋台街や卓球を楽しみました！
     </p>
-    <div class="row justify-evenly">
+    <div class="row justify-evenly image-zone">
+      <q-img src="@/assets/News/2023/JSCE_spring/okazaki.png" class="img-width"/>
+      <q-img src="@/assets/News/2023/JSCE_spring/minnato.png" class="img-width"/>
+    </div>
+    <div class="row justify-evenly image-zone">
       <q-img src="@/assets/News/2023/JSCE_spring/ramen.jpg" class="img-width"/>
       <q-img src="@/assets/News/2023/JSCE_spring/table_tennis.jpg" class="img-width"/>
     </div>
@@ -35,5 +39,8 @@ import ArticleList from '@/components/News/articleList.vue';
 <style lang="scss" scoped>
 .img-width {
   width: 45%
+}
+.image-zone{
+  margin: 2% 0;
 }
 </style>

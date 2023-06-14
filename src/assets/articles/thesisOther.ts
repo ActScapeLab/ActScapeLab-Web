@@ -3,7 +3,13 @@ import { bib } from "./bibVue";
 export const bibOther: bib = {
   'Okazaki2023_JSCEsp': {
     author: '岡崎 凌太 and 大山 雄己 and 井村 直人 and 西成 活裕',
-    title: '顧客満足度を考慮した多期間配送需要マネジメント方策の評価',
+    title: '顧客満足度を考慮したday-to-day配送需要マネジメント方策の評価',
+    journal: '第67回土木計画学研究発表会 (春大会)',
+    year: '2023'
+  },
+  'Parady2023_JSCEsp': {
+    author: 'Parady, G. and Oyama, Y. and Chikaraishi, M.',
+    title: 'Text-Aided Group Decision: Making Process Observation Method (x-GDP): a Novel Methodology for Observing the Joint Decision-Making Process of Travel Choices',
     journal: '第67回土木計画学研究発表会 (春大会)',
     year: '2023'
   },
