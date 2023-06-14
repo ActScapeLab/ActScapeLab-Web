@@ -62,7 +62,7 @@ const leftDrawerOpen = ref(false)
 
     <q-footer flat class="bg-primary absolute-bottom">
       <q-toolbar>
-        <q-toolbar-title class="text-secondary footer">@ 2023 ActScapeLab</q-toolbar-title>
+        <q-toolbar-title class="text-secondary footer">©️ 2020-2023，ActScapeLab</q-toolbar-title>
       </q-toolbar>
     </q-footer>
   </q-layout>
