@@ -36,6 +36,14 @@ export const tree: Newstree[] = [
     type: 'meeting',
     year: '2023',
     month: '6',
+    date: '19 - 23',
+    description: 'カナダで開催された学会に参加してきました!! ＠モントリオール',
+    link: 'Cupum'
+  },
+  {
+    type: 'meeting',
+    year: '2023',
+    month: '6',
     date: '3 - 4',
     description: '土木計画学秋大会に参加してきました!! ＠福岡大学',
     link: 'JSCE_spring'
