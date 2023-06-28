@@ -58,7 +58,7 @@ export const students: studentData[] = [
     firstName: "玉木",
     lastName: "悠太",
     grade: "M2",
-    keywards: ["マルチモーダルNDP", "街路空間再配分", "都市デザイン"],
+    keywards: ["サードプレイス", "余暇時間", "COVID-19"],
     from: "神奈川県",
     hobby: ["野球", "車", "バンド"]
   },
@@ -76,7 +76,7 @@ export const students: studentData[] = [
     firstName: "杉山",
     lastName: "航太郎",
     grade: "M2",
-    keywards: ["人のいる空間", "ファジィ理論", "公共空間設計"],
+    keywards: ["土地利用", "時系列分析", "公共空間設計"],
     from: "静岡県",
     hobby: ["テニス", "お笑い鑑賞", "散歩"]
   },
