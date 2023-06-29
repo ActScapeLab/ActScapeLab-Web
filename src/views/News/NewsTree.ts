@@ -144,7 +144,7 @@ export const tree: Newstree[] = [
     type: 'event',
     year: '2021',
     month: '4',
-    description: '2021年度基礎ゼミを打ち上げ,豊洲公園でピクニックしました'
+    description: '2021年度基礎ゼミを打ち上げ，豊洲公園でピクニックしました'
   },
   {
     type: 'event',
@@ -171,7 +171,7 @@ export const tree: Newstree[] = [
     year: '2021',
     month: '2',
     date: '16',
-    description: '新しく9人の卒論生が研究室に配属されました.これからよろしくお願いします',
+    description: '新しく9人の卒論生が研究室に配属されましたされました．これからよろしくお願いします',
   },
   {
     type: 'event',
@@ -185,7 +185,7 @@ export const tree: Newstree[] = [
     year: '2020',
     month: '4',
     date: '1',
-    description: '大山雄己が芝浦工業大学土木工学科に助教として着任し,都市環境設計研究室が立ち上がりました.'
+    description: '大山雄己が芝浦工業大学土木工学科に助教として着任し，都市環境設計研究室が立ち上がりました．'
   }
 ]
 
