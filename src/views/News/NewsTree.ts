@@ -45,7 +45,7 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '6',
     date: '3 - 4',
-    description: '土木計画学秋大会に参加してきました!! ＠福岡大学',
+    description: '土木計画学春大会に参加してきました!! ＠福岡大学',
     link: 'JSCE_spring'
   },
   {

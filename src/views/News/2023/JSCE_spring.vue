@@ -5,7 +5,7 @@ import ArticleList from '@/components/News/articleList.vue';
 
 <template>
   <ArticleTemplate
-    title="土木計画学秋大会に参加してきました"
+    title="土木計画学春大会に参加してきました"
     :startYear="2023"
     :startMonth="6"
     :startDate="3"
