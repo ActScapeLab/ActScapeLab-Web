@@ -112,6 +112,7 @@ export const students: studentData[] = [
     hobby: ["研究"],
     journalKeys: 
     [
+      'Okazaki2023_BTR',
       'Okazaki2023',
       'Okazaki2023_JSCEsp'
     ]

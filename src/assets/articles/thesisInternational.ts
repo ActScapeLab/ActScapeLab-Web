@@ -1,6 +1,12 @@
 import { bib } from "./bibVue";
 
 export const bibInternational: bib = {
+  'Okazaki2023_BTR': {
+    author: 'Okazaki, R. and Oyama, Y. and Imura, N. and Nishinari, K.',
+    title: 'Evaluation of choice-based demand management strategies for day-to-day delivery planning',
+    journal: 'The 5th Bridging Transport Researchers (BTR5) conference',
+    year: '2023'
+  },
   'Murakami2023': {
     author: 'Murakami, S. and Oyama, Y.',
     title: 'Multimodal network design for the optimal placement of pedestrian streets in an urban congested network',
