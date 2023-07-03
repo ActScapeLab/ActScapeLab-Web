@@ -5,7 +5,7 @@ import ArticleList from '@/components/News/articleList.vue';
 
 <template>
   <ArticleTemplate
-    title="カナダで開催された学会に参加してきました!! ＠モントリオール"
+    title="カナダで開催された学会に参加してきました！！ ＠モントリオール"
     :startYear="2023"
     :startMonth="6"
     :startDate="19"

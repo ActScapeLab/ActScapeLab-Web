@@ -4,7 +4,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <template>
   <ArticleTemplate
-    title="ゼミ合宿を開催しました!! ＠伊豆長岡，静岡県"
+    title="ゼミ合宿を開催しました！！ ＠伊豆長岡，静岡県"
     :startYear="2023"
     :startMonth="5"
     :startDate="18"
