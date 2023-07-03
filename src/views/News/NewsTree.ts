@@ -33,11 +33,19 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'event',
+    year: '2023',
+    month: '6',
+    date: '30',
+    description: '基礎ゼミが終了しました！！',
+    link: 'Baseseminar'
+  },
+  {
     type: 'meeting',
     year: '2023',
     month: '6',
     date: '19 - 23',
-    description: 'カナダで開催された学会に参加してきました!! ＠モントリオール',
+    description: 'カナダで開催された学会に参加してきました！！ ＠モントリオール',
     link: 'Cupum'
   },
   {
@@ -45,7 +53,7 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '6',
     date: '3 - 4',
-    description: '土木計画学春大会に参加してきました!! ＠福岡大学',
+    description: '土木計画学春大会に参加してきました！！ ＠福岡大学',
     link: 'JSCE_spring'
   },
   {
@@ -53,7 +61,7 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '5',
     date: '18 - 20',
-    description: 'ゼミ合宿を開催しました!! ＠伊豆長岡，静岡県',
+    description: 'ゼミ合宿を開催しました！！ ＠伊豆長岡，静岡県',
     link: 'Izu'
   },
   {
@@ -61,7 +69,7 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '2',
     date: '15',
-    description: '新B4が配属されました!!',
+    description: '新B4が配属されました！！',
     link: 'Assignment'
   },
   {
@@ -85,7 +93,7 @@ export const tree: Newstree[] = [
     year: '2022',
     month: '12',
     date: '3 - 4',
-    description: '都市計画学会に参加してきました!! ＠宇都宮大学',
+    description: '都市計画学会に参加してきました！！ ＠宇都宮大学',
     link: 'CPIJ'
   },
   {
@@ -93,7 +101,7 @@ export const tree: Newstree[] = [
     year: '2022',
     month: '11',
     date: '12 - 13',
-    description: '土木計画学秋大会に参加してきました!! ＠琉球大学',
+    description: '土木計画学秋大会に参加してきました！！ ＠琉球大学',
     link: 'JSCE_fall'
   },
   {
@@ -115,7 +123,7 @@ export const tree: Newstree[] = [
     year: '2022',
     month: '9',
     date: '23 - 25',
-    description: '行動モデル夏の学校＠東大で総合一位になりました!',
+    description: '行動モデル夏の学校＠東大で総合一位になりました！',
     link: 'SummerSchool',
   },
   {
