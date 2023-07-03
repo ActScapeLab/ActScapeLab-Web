@@ -37,6 +37,14 @@ export const tree: Newstree[] = [
     year: '2023',
     month: '6',
     date: '30',
+    description: '研究室の卓球大会も終幕しました！！',
+    link: 'Tabletennis'
+  },
+  {
+    type: 'event',
+    year: '2023',
+    month: '6',
+    date: '30',
     description: '基礎ゼミが終了しました！！',
     link: 'Baseseminar'
   },
