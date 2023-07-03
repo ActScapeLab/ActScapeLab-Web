@@ -19,10 +19,10 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
     <q-img src="@/assets/News/2023/Baseseminar/happyou.jpeg" class="single_img"/>
   </div>
   <div class="row justify-evenly image-zone">
-    <q-img src="@/assets/News/2023/Baseseminar/semi_final1.png" class="single_img"/>
+    <q-img src="@/assets/News/2023/Baseseminar/ppt1.png" class="single_img"/>
   </div>
   <div class="row justify-evenly image-zone">
-    <q-img src="@/assets/News/2023/Baseseminar/semi_final2.png" class="single_img"/>
+    <q-img src="@/assets/News/2023/Baseseminar/ppt2.png" class="single_img"/>
   </div>
   
   <p>発表に向けては先輩方のお力添えのおかげで，考えを深めることができました．
