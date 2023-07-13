@@ -33,6 +33,14 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'meeting',
+    year: '2023',
+    month: '7',
+    date: '13',
+    description: '自転車の行動実験を開始しました',
+    link: 'SunadaSurvey'
+  },
+  {
     type: 'event',
     year: '2023',
     month: '6',
