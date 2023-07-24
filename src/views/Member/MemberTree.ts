@@ -44,7 +44,7 @@ export const students: studentData[] = [
     grade: "M2",
     keywards: ["マルチモーダルNDP", "街路空間再配分", "都市デザイン"],
     from: "埼玉県",
-    hobby: ["ポケモン", "ヒップホップ", "麻雀"],
+    hobby: ["ポケモン", "ヒップホップ", "スノーボード"],
     journalKeys: [
       'Murakami2023',
       'Murakami2022_CPIJ',
@@ -67,7 +67,7 @@ export const students: studentData[] = [
     firstName: "田山",
     lastName: "航平",
     grade: "M2",
-    keywards: ["土地利用", "鉄道駅", "都市集積", "因果推論"],
+    keywards: ["土地利用", "鉄道駅", "商業集積"],
     from: "神奈川県",
     hobby: ["カメラ", "ドライブ", "Jリーグ"]
   },
@@ -76,7 +76,7 @@ export const students: studentData[] = [
     firstName: "杉山",
     lastName: "航太郎",
     grade: "M2",
-    keywards: ["土地利用", "時系列分析", "公共空間設計"],
+    keywards: ["公共施設整備", "時系列分析", "因果推論"],
     from: "静岡県",
     hobby: ["テニス", "お笑い鑑賞", "散歩"]
   },
@@ -85,7 +85,7 @@ export const students: studentData[] = [
     firstName: "松村",
     lastName: "健太",
     grade: "M2",
-    keywards: ["公共空間設計", "強化学習", "マルチエージェントシミュレーション"],
+    keywards: ["公共空間設計", "逆強化学習", "マルチエージェントシミュレーション"],
     from: "山口県",
     hobby: ["研究室のHPを見ること", "高校野球", "落語鑑賞"],
     journalKeys: [
@@ -98,7 +98,7 @@ export const students: studentData[] = [
     firstName: "砂田",
     lastName: "遼大",
     grade: "M2",
-    keywards: ["物流", "歩行者空間"],
+    keywards: ["自転車走行", "路上駐車", "離散連続モデル"],
     from: "広島県",
     hobby: ["野球", "カフェ巡り", "筋トレ"]
   },
@@ -122,7 +122,7 @@ export const students: studentData[] = [
     firstName: "櫻井",
     lastName: "由伸",
     grade: "M1",
-    keywards: ["災害", "リスク認知", "避難所選択"],
+    keywards: ["災害対策", "リスク認知", "避難所配置"],
     from: "宮城県",
     hobby: ["ディズニー", "旅行", "スポーツ観戦"]
   },
@@ -149,7 +149,7 @@ export const students: studentData[] = [
     firstName: "今村",
     lastName: "啓太",
     grade: "B4",
-    keywards: ["経路選択行動", "街路"],
+    keywards: ["ラストマイル配送", "ウォーカブル推進", "路肩駐車"],
     from: "東京都",
     hobby: ["水泳", "野球", "LEGO"]
   },
@@ -167,7 +167,7 @@ export const students: studentData[] = [
     firstName: "和田",
     lastName: "聡",
     grade: "B4",
-    keywards: ["行動モデル"],
+    keywards: ["行動モデル×深層学習", "目的地選択", "非均衡データ"],
     from: "東京都",
     hobby: ["ゲーム", "将棋", "テニス"]
   }
