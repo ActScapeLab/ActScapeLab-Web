@@ -8,6 +8,10 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
     icon: 'emoji_events',
     color: 'orange'
   },
+  'presentation': {
+    icon: 'co_present',
+    color: 'orange'
+  },
   'meeting': {
     icon: 'group',
     color: 'positive',
@@ -33,11 +37,19 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'presentation',
+    year: '2023',
+    month: '7',
+    date: '22',
+    description: '修論発表 (秋入学) が終了しました',
+    link: 'MasterPresentation'
+  },
+  {
     type: 'meeting',
     year: '2023',
     month: '7',
     date: '13',
-    description: '自転車の行動実験を開始しました',
+    description: '自転車の公道調査を開始しました',
     link: 'SunadaSurvey'
   },
   {
