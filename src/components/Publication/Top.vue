@@ -59,7 +59,7 @@ const graduateKeys = Object.keys(bibGraduate)
     </q-expansion-item>
     <q-separator spaced/>
     
-    <q-expansion-item
+    <!-- <q-expansion-item
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
@@ -74,13 +74,13 @@ const graduateKeys = Object.keys(bibGraduate)
         </ol>
       </q-card>
     </q-expansion-item>
-    <q-separator spaced/>
+    <q-separator spaced/> -->
 
     <q-expansion-item
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          4 / 国内学会発表
+          3 / 国内学会発表
         </q-item-section>
       </template>
       <q-card>
@@ -97,7 +97,7 @@ const graduateKeys = Object.keys(bibGraduate)
       switch-toggle-side>
       <template v-slot:header>
         <q-item-section class="theme-title">
-          5 / 学位論文
+          4 / 学位論文
         </q-item-section>
       </template>
       <q-card>
