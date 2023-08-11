@@ -10,7 +10,7 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
   },
   'presentation': {
     icon: 'co_present',
-    color: 'orange'
+    color: 'secondary'
   },
   'meeting': {
     icon: 'group',
@@ -22,7 +22,7 @@ const articleType: { [name: string]: {icon: string, color: string} } = {
   },
   'event': {
     icon: 'celebration',
-    color: 'secondary'
+    color: 'orange'
   }
 }
 
@@ -36,6 +36,14 @@ interface Newstree {
   link?: string
 }
 export const tree: Newstree[] = [
+  {
+    type: 'presentation',
+    year: '2023',
+    month: '8',
+    date: '9 - 10',
+    description: 'Bridging Transportation Researchers (BTR) で発表しました',
+    link: 'BTR'
+  },
   {
     type: 'presentation',
     year: '2023',
@@ -69,7 +77,7 @@ export const tree: Newstree[] = [
     link: 'Baseseminar'
   },
   {
-    type: 'meeting',
+    type: 'presentation',
     year: '2023',
     month: '6',
     date: '19 - 23',
@@ -77,7 +85,7 @@ export const tree: Newstree[] = [
     link: 'Cupum'
   },
   {
-    type: 'meeting',
+    type: 'presentation',
     year: '2023',
     month: '6',
     date: '3 - 4',
@@ -117,7 +125,7 @@ export const tree: Newstree[] = [
     link: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037?via%3Dihub'
   },
   {
-    type: 'meeting',
+    type: 'presentation',
     year: '2022',
     month: '12',
     date: '3 - 4',
@@ -125,7 +133,7 @@ export const tree: Newstree[] = [
     link: 'CPIJ'
   },
   {
-    type: 'meeting',
+    type: 'presentation',
     year: '2022',
     month: '11',
     date: '12 - 13',
