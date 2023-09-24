@@ -10,8 +10,18 @@ import CPIJ from '../views/News/2022/CPIJ.vue'
 import JSCE_fall from '../views/News/2022/JSCE_fall.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Assignment from '../views/News/2023/Assignment.vue'
+import Baseseminar from '../views/News/2023/Baseseminar.vue'
+import BTR from '../views/News/2023/BTR.vue'
+import Cupum from '../views/News/2023/Cupum.vue'
 import Finalpresentation from '../views/News/2023/Finalpresentation.vue'
+import hEART from '../views/News/2023/hEART.vue'
+import Ibaraki from '../views/News/2023/Ibaraki.vue'
 import Izu from '../views/News/2023/Izu.vue'
+import JSCE_spring from '../views/News/2023/JSCE_spring.vue'
+import MasterPresentation from '../views/News/2023/MasterPresentation.vue'
+import Murakamisama from '../views/News/2023/Murakamisama.vue'
+import SunadaSurvey from '../views/News/2023/SunadaSurvey.vue'
+import Tabletennis from '../views/News/2023/Tabletennis.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
 
@@ -63,12 +73,52 @@ const routes: Array<RouteRecordRaw> = [
         component: Assignment
       },
       {
+        path: '2023/Baseseminar',
+        component: Baseseminar
+      },
+      {
+        path: '2023/BTR',
+        component: BTR
+      },
+      {
+        path: '2023/Cupum',
+        component: Cupum
+      },
+      {
         path: '2023/Finalpresentation',
         component: Finalpresentation
       },
       {
+        path: '2023/hEART',
+        component: hEART
+      },
+      {
+        path: '2023/Ibaraki',
+        component: Ibaraki
+      },
+      {
         path: '2023/Izu',
         component: Izu
+      },
+      {
+        path: '2023/JSCE_spring',
+        component: JSCE_spring
+      },
+      {
+        path: '2023/MasterPresentation',
+        component: MasterPresentation
+      },
+      {
+        path: '2023/Murakamisama',
+        component: Murakamisama
+      },
+      {
+        path: '2023/SunadaSurvey',
+        component: SunadaSurvey
+      },
+      {
+        path: '2023/Tabletennis',
+        component: Tabletennis
       },
     ]
   },
