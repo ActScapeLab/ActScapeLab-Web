@@ -39,6 +39,14 @@ export const tree: Newstree[] = [
   {
     type: 'presentation',
     year: '2023',
+    month: '9',
+    date: '5 - 8',
+    description: 'スイスで開催された学会に参加してきました！',
+    link: 'hEART'
+  },
+  {
+    type: 'presentation',
+    year: '2023',
     month: '8',
     date: '9 - 10',
     description: 'Bridging Transportation Researchers (BTR) で発表しました',
