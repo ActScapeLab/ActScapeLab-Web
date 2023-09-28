@@ -1,6 +1,13 @@
 import { bib } from "./bibVue";
 
 export const bibRefereed: bib = {
+  'Parady2023_TR': {
+    author: 'Parady, G. and Oyama, Y. and Chikaraishi, M.',
+    title: 'Text-Aided Group Decision: Making Process Observation Method (x-GDP): a Novel Methodology for Observing the Joint Decision-Making Process of Travel Choices',
+    journal: 'Transportation',
+    year: '2023',
+    url: 'https://www.sciencedirect.com/science/article/pii/S0968090X23000037'
+  },
   'Oyama2023_TRPC': {
     author: 'Yuki Oyama',
     title: 'Capturing positive network attributes during the estimation of recursive logit models: A prism-based approach',
