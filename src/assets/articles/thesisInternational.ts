@@ -13,7 +13,12 @@ export const bibInternational: bib = {
     journal: 'The 18th International Conference on Computational Urban Planning and Urban Management（CUPUM）, Montreal, Canada',
     year: '2023'
   },
-  
+  'Parady2023': {
+    author: 'Parady, G. and Oyama, Y. and Chikaraishi, M.',
+    title: 'Text-Aided Group Decision: Making Process Observation Method (x-GDP): a Novel Methodology for Observing the Joint Decision-Making Process of Travel Choices',
+    journal: 'The 11th symposium arranged by European Association for Research in Transportation (hEART), Zurich, Switzerland',
+    year: '2023'
+  },
   'Okazaki2023': {
     author: 'Okazaki, R. and Oyama, Y. and Imura, N. and Nishinari, K.',
     title: 'Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction',
