@@ -50,7 +50,7 @@ export const tree: Newstree[] = [
     month: '9',
     date: '14 - 15',
     description: '４研究室合同合宿に行ってきました',
-    link: 'Murakamisama'
+    link: 'Ibaraki'
   },
   {
     type: 'presentation',
