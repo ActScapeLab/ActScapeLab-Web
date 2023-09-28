@@ -32,8 +32,8 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
     <p>夜は山荘前の広場でBBQ，花火を行いました．他の大学と多くの交流をすることができました．
     </p>
     <div class="row justify-evenly image-zone">
-      <q-img src="@/assets/News/2023/hEART/bbq.jpeg" class="dual_img"/>
-      <q-img src="@/assets/News/2023/hEART/hanabi.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/bbq.jpeg" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/hanabi.png" class="dual_img"/>
     </div>
   </ArticleTemplate>
 </template>
