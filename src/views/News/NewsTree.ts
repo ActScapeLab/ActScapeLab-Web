@@ -45,6 +45,14 @@ export const tree: Newstree[] = [
     link: 'Murakamisama'
   },
   {
+    type: 'event',
+    year: '2023',
+    month: '9',
+    date: '14 - 15',
+    description: '４研究室合同合宿に行ってきました',
+    link: 'Murakamisama'
+  },
+  {
     type: 'presentation',
     year: '2023',
     month: '9',
