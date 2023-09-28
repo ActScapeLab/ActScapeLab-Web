@@ -4,7 +4,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <template>
   <ArticleTemplate
-    title="4研究室合同合宿に参加してきました！"
+    title="4研究室合同合宿に参加しました"
     :startYear="2023"
     :startMonth="9"
     :startDate="14"
@@ -12,34 +12,28 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
     authorGrade="B4"
     authorName="今村"
   >
-    <p>スイスのチューリッヒで9月5日~8日に開催された，11th Symposium of the European Association for Research in Transportation @ETH Zurich に大山先生とM1の岡崎が参加してきました．以下の題目で発表しました．</p>
-
-    <p>
-      1. Text-aided Group Decision-making Process Observation Method (x-GDP): A novel methodology for observing the joint decision-making process of travel choices (Giancarlos Parady, Yuki Oyama and Makoto Chikaraishi)
-    </p>
-    <p>
-      2. Day-to-day delivery demand management:Evaluation based on routing efficiency and customer satisfaction (Okazaki, R., Oyama, Y., Imura, N., Nishinari, K.)
-    </p>
-    <p>対面の国際学会への参加は初めてでしたが，久しぶりに海外に行けるということで非常にワクワクしていました．ETH ZurichのHönggerbergキャンパスは小高い山の上に位置し，気持ちの良い場所でした．</p>
-    <p>発表前夜のWelcome receptionではいきなり欧州を中心として世界中の研究者の方々と会話をする機会があり，これまで日本では経験したことのない雰囲気に戸惑いました．自分のたどたどしい英語にも優しく耳を傾けて頂けたことがとても嬉しかったです．
-       Choice modelsをはじめとする様々なテーマのセッションが開かれる中，私はLogisticsのセッションで発表しました．まだまだ自分の知識や英語力が足りず，積極的な議論を行うことができなかったことが悔しいですが，レベルアップしてまた参加できるように日々研究を頑張りたいと思います．このような貴重な機会をいただき，大山先生には大変感謝しています．</p>
+    <p></p>東大，茨城大，東大，の研究室との合同合宿にM2松村，M1岡崎，M1鉄崎，B4今村が参加しました．
+    <p>14日の午前は，常陸那珂港を見学しました．常陸那珂港は，近年自動車や建設機械を多く輸出しており，当日はコンテナと完成自動車の荷役の様子を見ることができました．</p>
     <div class="row justify-evenly image-zone">
-      <q-img src="@/assets/News/2023/hEART/heart-013.png" class="dual_img"/>
-      <q-img src="@/assets/News/2023/hEART/campus.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/kontena.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/export_car.png" class="dual_img"/>
     </div>
-    <p>
-      スイス滞在中に，ルツェルン近くの山に登りました．山の上からは湖や街並みを望むことができ，沢山の地元民と観光客で賑わっていました．ルツェルンの街並みもとても美しかったです．
-    </p>
+    <p>午後はかみすわ山荘にてゼミを行いました．山荘の脇を流れる小川のせせらぎ，森の香りなどを感じることができるとても清閑な環境でした．</p>
     <div class="row justify-evenly image-zone">
-      <q-img src="@/assets/News/2023/hEART/ropeway.png" class="dual_img"/>
-      <q-img src="@/assets/News/2023/hEART/mountain.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/name_kamisuwa.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/kamisuwa.png" class="dual_img"/>
     </div>
-    <p>
-      チューリッヒ旧市街のトランジットモールは私にとって非常に新鮮で，快適に街歩きをすることができました．また，滞在中は雲１つ無い快晴の日が続き，美しい湖も相まってとても気分が良かったです．いつかまた訪れたいと思いました．
+      
+     <p> ゼミでは，それぞれ研究内容と現在の進捗を発表しました．他の大学の先生と学生からコメントをいただき．今後の方針を考え直す良い機会となりました．</p>
+    <div class="row justify-evenly image-zone">
+      <q-img src="@/assets/News/2023/Ibaraki/matu.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/Ibaraki/tetu.png" class="dual_img"/>
+    </div>
+    <p>夜は山荘前の広場でBBQ，花火を行いました．他の大学と多くの交流をすることができました．
     </p>
     <div class="row justify-evenly image-zone">
-      <q-img src="@/assets/News/2023/hEART/LRT.png" class="dual_img"/>
-      <q-img src="@/assets/News/2023/hEART/lakeside.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/hEART/bbq.png" class="dual_img"/>
+      <q-img src="@/assets/News/2023/hEART/hanabi.png" class="dual_img"/>
     </div>
   </ArticleTemplate>
 </template>
