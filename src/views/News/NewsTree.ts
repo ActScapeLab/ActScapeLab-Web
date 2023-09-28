@@ -37,6 +37,14 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'event',
+    year: '2023',
+    month: '9',
+    date: '21',
+    description: '秋期学位記授与式が行われました',
+    link: 'Murakamisama'
+  },
+  {
     type: 'presentation',
     year: '2023',
     month: '9',
