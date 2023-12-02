@@ -1,6 +1,30 @@
 import { bib } from "./bibVue";
 
 export const bibOther: bib = {
+  'Oyama2023_JSCEau': {
+    author: '大山 雄己 and 村上 大輔 and Rico Krueger',
+    title: '個人の空間認知データ分析のための混合空間ロジットモデルとベイズ推定',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Sunada2023_JSCEau': {
+    author: '砂田 遼大 and 大山 雄己',
+    title: '動的な街路環境変数を考慮した自転車利用者の走行行動分析',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Okazaki2023_JSCEau': {
+    author: '岡崎 凌太 and 大山 雄己 and 井村 直人 and 西成 活裕',
+    title: '顧客の配送オプション選択行動の制御に基づくday-to-day宅配需要マネジメント',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Matsumura2023_JSCEau': {
+    author: '松村 健太 and 尾原 健太郎 and 柳沼 秀樹 and 大山 雄己',
+    title: 'マルチエージェント逆強化学習による公共空間上の滞在行動分析',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
   'Okazaki2023_JSCEsp': {
     author: '岡崎 凌太 and 大山 雄己 and 井村 直人 and 西成 活裕',
     title: '顧客満足度を考慮したday-to-day配送需要マネジメント方策の評価',
