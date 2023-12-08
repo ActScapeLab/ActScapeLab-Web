@@ -39,10 +39,34 @@ export const tree: Newstree[] = [
   {
     type: 'event',
     year: '2023',
+    month: '12',
+    date: '1',
+    description: '岩倉・楽研究室と野球勝負をしました！！',
+    link: 'baseball2023'
+  },
+  {
+    type: 'presentation',
+    year: '2023',
+    month: '11',
+    date: '24 - 26',
+    description: '研究発表会(秋大会)に参加してきました！',
+    link: 'JSCE_autumn2023'
+  },
+  {
+    type: 'event',
+    year: '2023',
     month: '9',
     date: '21',
     description: '秋期学位記授与式が行われました',
     link: 'Murakamisama'
+  },
+  {
+    type: 'event',
+    year: '2023',
+    month: '9',
+    date: '18 - 20',
+    description: '行動モデル夏の学校2023に参加しました',
+    link: 'SummerSchool2023'
   },
   {
     type: 'meeting',

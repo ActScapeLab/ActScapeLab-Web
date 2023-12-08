@@ -90,7 +90,8 @@ export const students: studentData[] = [
     hobby: ["研究室のHPを見ること", "高校野球", "落語鑑賞"],
     journalKeys: [
       'Matsumura2022_CPIJ',
-      'Matsumura2022_JSCEau'
+      'Matsumura2022_JSCEau',
+      'Matsumura2023_JSCEau'
     ]
   },
   {
@@ -100,7 +101,11 @@ export const students: studentData[] = [
     grade: "M2",
     keywards: ["自転車走行", "路上駐車", "離散連続モデル"],
     from: "広島県",
-    hobby: ["野球", "カフェ巡り", "筋トレ"]
+    hobby: ["野球", "カフェ巡り", "筋トレ"],
+    journalKeys: 
+    [
+      'Sunada2023_JSCEau'
+    ]
   },
   {
     figPath: "okazaki.jpg",
@@ -114,7 +119,8 @@ export const students: studentData[] = [
     [
       'Okazaki2023_BTR',
       'Okazaki2023',
-      'Okazaki2023_JSCEsp'
+      'Okazaki2023_JSCEsp',
+      'Okazaki2023_JSCEau'
     ]
   },
   {

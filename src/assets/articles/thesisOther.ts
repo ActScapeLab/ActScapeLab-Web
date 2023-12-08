@@ -1,6 +1,30 @@
 import { bib } from "./bibVue";
 
 export const bibOther: bib = {
+  'Kizaki2023_JSCEau': {
+    author: '木崎 礼雄 and 栁沼 秀樹 and 大山 雄己 and 寺部 慎太郎 and 海野 遥香 and 鈴木 雄',
+    title: '街路景観を考慮した歩行者経路選択モデルに基づく街路空間整備評価',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Fuziwara2023_JSCEau': {
+    author: '藤原 啓示 and 大山 雄己 and 力石  真 and 藤原 章正',
+    title: '動的離散選択歩行者モデルによる移動と滞在の競合性評価：数値シミュレーション分析',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Tomizawa2023_JSCEau': {
+    author: '富澤 敦 and 森山 祥文 and 松本 勝紀 and 江波戸 孝明 and 小池 和喜隆 and 山下 慎二 and ダスルベル and 森田 格 and 鈴木 達也 and 大山 雄己',
+    title: '人流シミュレーション及び社会実験型避難訓練を活用した交通防災拠点のあり方検証',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
+  'Okamura2023_JSCEau': {
+    author: '岡村 幸樹 and 大山 雄己 and 力石 真 and 高見 淳史 and パラディジアンカルロス',
+    title: '集団意思決定過程の観測に基づくグループの外食場所選択行動のモデル化－交通水準や集団の特性・個人の選好の観点に着目して－',
+    journal: '第68回土木計画学研究発表会 (秋大会)',
+    year: '2023'
+  },
   'Oyama2023_JSCEau': {
     author: '大山 雄己 and 村上 大輔 and Rico Krueger',
     title: '個人の空間認知データ分析のための混合空間ロジットモデルとベイズ推定',

@@ -10,6 +10,7 @@ import CPIJ from '../views/News/2022/CPIJ.vue'
 import JSCE_fall from '../views/News/2022/JSCE_fall.vue'
 import SummerSchool from '../views/News/2022/SummerSchool.vue'
 import Assignment from '../views/News/2023/Assignment.vue'
+import baseball2023 from '../views/News/2023/baseball2023.vue'
 import Baseseminar from '../views/News/2023/Baseseminar.vue'
 import BTR from '../views/News/2023/BTR.vue'
 import Cupum from '../views/News/2023/Cupum.vue'
@@ -17,9 +18,11 @@ import Finalpresentation from '../views/News/2023/Finalpresentation.vue'
 import hEART from '../views/News/2023/hEART.vue'
 import Ibaraki from '../views/News/2023/Ibaraki.vue'
 import Izu from '../views/News/2023/Izu.vue'
+import JSCE_autumn2023 from '../views/News/2023/JSCE_autumn2023.vue'
 import JSCE_spring from '../views/News/2023/JSCE_spring.vue'
 import MasterPresentation from '../views/News/2023/MasterPresentation.vue'
 import Murakamisama from '../views/News/2023/Murakamisama.vue'
+import SummerSchool2023 from '../views/News/2023/SummerSchool2023.vue'
 import SunadaSurvey from '../views/News/2023/SunadaSurvey.vue'
 import Tabletennis from '../views/News/2023/Tabletennis.vue'
 import Publication from '../views/Publication.vue'
@@ -73,6 +76,10 @@ const routes: Array<RouteRecordRaw> = [
         component: Assignment
       },
       {
+        path: '2023/baseball2023',
+        component: baseball2023
+      },
+      {
         path: '2023/Baseseminar',
         component: Baseseminar
       },
@@ -101,6 +108,10 @@ const routes: Array<RouteRecordRaw> = [
         component: Izu
       },
       {
+        path: '2023/JSCE_autumn2023',
+        component: JSCE_autumn2023
+      },
+      {
         path: '2023/JSCE_spring',
         component: JSCE_spring
       },
@@ -111,6 +122,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '2023/Murakamisama',
         component: Murakamisama
+      },
+      {
+        path: '2023/SummerSchool2023',
+        component: SummerSchool2023
       },
       {
         path: '2023/SunadaSurvey',
