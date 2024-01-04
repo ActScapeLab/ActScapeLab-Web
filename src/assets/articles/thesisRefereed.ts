@@ -7,7 +7,7 @@ export const bibRefereed: bib = {
     title: 'Text-Aided Group Decision: Making Process Observation Method (x-GDP): a Novel Methodology for Observing the Joint Decision-Making Process of Travel Choices',
     journal: 'Transportation',
     year: '2023',
-    url: 'https://arxiv.org/abs/2302.13463'
+    url: 'https://link.springer.com/article/10.1007/s11116-023-10426-9'
   },
   'Oyama2023_TRPC': {
     author: 'Yuki Oyama',
@@ -29,7 +29,7 @@ export const bibRefereed: bib = {
   },
   'Murakami2022_CPIJ': {
     author: '村上颯一朗 and 大山雄己',
-    title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画',
+    title: 'マルチモーダル均衡配分モデルに基づく歩行者専用道路の最適配置計画-川越市街地における歩行者街路網の創出を例として-',
     journal: '都市計画論文集',
     volume: '57 (3) ',
     pages: '622-629',
@@ -65,7 +65,7 @@ export const bibRefereed: bib = {
   },
   'Ikegami2021_CPIJ': {
     author: '池上哲弘 and 大山雄己',
-    title: '公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案',
+    title: '公共交通利便性に着目した活動ベースの高齢者モビリティ指標の提案-長崎市斜面市街地の居住実態分析への適用-',
     journal: '都市計画論文集',
     volume: '56 (3)',
     pages: '563-570',

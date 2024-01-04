@@ -16,6 +16,7 @@ import BTR from '../views/News/2023/BTR.vue'
 import Cupum from '../views/News/2023/Cupum.vue'
 import Finalpresentation from '../views/News/2023/Finalpresentation.vue'
 import hEART from '../views/News/2023/hEART.vue'
+import huyugassyuku from '../views/News/2023/huyugassyuku.vue'
 import Ibaraki from '../views/News/2023/Ibaraki.vue'
 import Izu from '../views/News/2023/Izu.vue'
 import JSCE_autumn2023 from '../views/News/2023/JSCE_autumn2023.vue'
@@ -98,6 +99,10 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '2023/hEART',
         component: hEART
+      },
+      {
+        path: '2023/huyugassyuku',
+        component: huyugassyuku
       },
       {
         path: '2023/Ibaraki',

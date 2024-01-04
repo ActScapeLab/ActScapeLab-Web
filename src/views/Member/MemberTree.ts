@@ -38,27 +38,11 @@ interface studentData {
 }
 export const students: studentData[] = [
   {
-    figPath: "murakami.png",
-    firstName: "村上",
-    lastName: "颯一朗",
-    grade: "M2",
-    keywards: ["マルチモーダルNDP", "街路空間再配分", "都市デザイン"],
-    from: "埼玉県",
-    hobby: ["ポケモン", "ヒップホップ", "スノーボード"],
-    journalKeys: [
-      'Murakami2023',
-      'Murakami2022_CPIJ',
-      'Murakami2022_JSCEau',
-      'Murakami2022_JSCEsp',
-      'Murakami2021_JSCEall',
-    ]
-  },
-  {
     figPath: "tamaki_izu.png",
     firstName: "玉木",
     lastName: "悠太",
     grade: "M2",
-    keywards: ["サードプレイス", "余暇時間", "COVID-19"],
+    keywards: ["サードプレイス", "商店街", "COVID-19"],
     from: "神奈川県",
     hobby: ["野球", "車", "バンド"]
   },
@@ -67,7 +51,7 @@ export const students: studentData[] = [
     firstName: "田山",
     lastName: "航平",
     grade: "M2",
-    keywards: ["土地利用", "鉄道駅", "商業集積"],
+    keywards: ["土地利用", "鉄道ネットワーク", "商業集積"],
     from: "神奈川県",
     hobby: ["カメラ", "ドライブ", "Jリーグ"]
   },
@@ -89,9 +73,9 @@ export const students: studentData[] = [
     from: "山口県",
     hobby: ["研究室のHPを見ること", "高校野球", "落語鑑賞"],
     journalKeys: [
+      'Matsumura2023_JSCEau',
       'Matsumura2022_CPIJ',
-      'Matsumura2022_JSCEau',
-      'Matsumura2023_JSCEau'
+      'Matsumura2022_JSCEau'
     ]
   },
   {
@@ -99,7 +83,7 @@ export const students: studentData[] = [
     firstName: "砂田",
     lastName: "遼大",
     grade: "M2",
-    keywards: ["自転車走行", "路上駐車", "離散連続モデル"],
+    keywards: ["自転車走行", "路上駐車", "調査設計"],
     from: "広島県",
     hobby: ["野球", "カフェ巡り", "筋トレ"],
     journalKeys: 
@@ -117,10 +101,10 @@ export const students: studentData[] = [
     hobby: ["研究"],
     journalKeys: 
     [
+      'Okazaki2023_JSCEau',
       'Okazaki2023_BTR',
       'Okazaki2023',
-      'Okazaki2023_JSCEsp',
-      'Okazaki2023_JSCEau'
+      'Okazaki2023_JSCEsp'
     ]
   },
   {
@@ -137,7 +121,7 @@ export const students: studentData[] = [
     firstName: "多田",
     lastName: "和生",
     grade: "M1",
-    keywards: ["マルチモーダルNDP", "駐車場配置", "LRT"],
+    keywards: ["土地利用", "駐車場配置", "LRT"],
     from: "栃木県",
     hobby: ["水泳", "サッカー観戦", "ビアバー巡り"]
   },
@@ -155,7 +139,7 @@ export const students: studentData[] = [
     firstName: "今村",
     lastName: "啓太",
     grade: "B4",
-    keywards: ["ラストマイル配送", "ウォーカブル推進", "路肩駐車"],
+    keywards: ["ラストマイル配送", "ミニハブ配置最適化", "路肩駐車"],
     from: "東京都",
     hobby: ["水泳", "野球", "LEGO"]
   },
@@ -173,7 +157,7 @@ export const students: studentData[] = [
     firstName: "和田",
     lastName: "聡",
     grade: "B4",
-    keywards: ["行動モデル×深層学習", "目的地選択", "非均衡データ"],
+    keywards: ["行動モデル×深層学習", "時間価値", "MXL"],
     from: "東京都",
     hobby: ["ゲーム", "将棋", "テニス"]
   }

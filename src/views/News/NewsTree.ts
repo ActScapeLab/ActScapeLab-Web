@@ -40,6 +40,14 @@ export const tree: Newstree[] = [
     type: 'event',
     year: '2023',
     month: '12',
+    date: '24 - 26',
+    description: 'ゼミ合宿を開催しました！！ ＠上水内郡，長野県',
+    link: 'huyugassyuku'
+  },
+  {
+    type: 'event',
+    year: '2023',
+    month: '12',
     date: '1',
     description: '岩倉・楽研究室と野球勝負をしました！！',
     link: 'baseball2023'
@@ -263,7 +271,7 @@ export const tree: Newstree[] = [
     year: '2021',
     month: '2',
     date: '16',
-    description: '新しく9人の卒論生が研究室に配属されましたされました．これからよろしくお願いします',
+    description: '新しく9人の卒論生が研究室に配属されました．これからよろしくお願いします',
   },
   {
     type: 'event',

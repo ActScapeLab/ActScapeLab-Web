@@ -9,6 +9,14 @@ interface AlumniData {
 }
 
 export const alumni: AlumniData = {
+  '2023': [
+    {
+      firstName: '村上',
+      lastName: '颯一郎',
+      grade: 'M2',
+      title: '異なる政策目標に対応する街路空間再配分のための多目的計画アルゴリズム'
+    },
+  ],
   '2022': [
     {
       firstName: '池上',

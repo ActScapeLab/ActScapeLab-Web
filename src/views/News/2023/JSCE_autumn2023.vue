@@ -29,8 +29,9 @@ import ArticleList from '@/components/News/articleList.vue';
     </div>
 
     
-  <div class="row justify-evenly image-zone">
-    <q-img src="@/assets/News/2023/JSCE_autumn2023/sunada.jpg" class="dual_img"/>
+    <div class="row justify-evenly image-zone">
+      <q-img src="@/assets/News/2023/JSCE_autumn2023/sunada.jpg" class="dual_img"/>
+      <q-img src="@/assets/News/2023/JSCE_autumn2023/oyama.jpeg" class="dual_img"/>
     </div>
 
   </ArticleTemplate>
