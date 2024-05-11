@@ -4,7 +4,7 @@ import ArticleTemplate from '@/components/News/ArticleTemplate.vue';
 
 <template>
   <ArticleTemplate
-    title="大山研究室閉室のお知らせ"
+    title="都市環境設計研究室閉室のお知らせ"
     :startYear="2024"
     :startMonth="3"
     :startDate="31"
