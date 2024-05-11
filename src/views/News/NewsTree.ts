@@ -37,6 +37,22 @@ interface Newstree {
 }
 export const tree: Newstree[] = [
   {
+    type: 'publish',
+    year: '2024',
+    month: '3',
+    date: '31',
+    description: '都市環境設計研究室閉室のお知らせ',
+    link: 'heisitu'
+  },
+  {
+    type: 'event',
+    year: '2024',
+    month: '1',
+    date: '17',
+    description: '卒論概要を提出しました',
+    link: 'gaiyou2024'
+  },
+  {
     type: 'event',
     year: '2023',
     month: '12',

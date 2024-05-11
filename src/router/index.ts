@@ -26,6 +26,8 @@ import Murakamisama from '../views/News/2023/Murakamisama.vue'
 import SummerSchool2023 from '../views/News/2023/SummerSchool2023.vue'
 import SunadaSurvey from '../views/News/2023/SunadaSurvey.vue'
 import Tabletennis from '../views/News/2023/Tabletennis.vue'
+import gaiyou2024 from '../views/News/2024/gaiyou2024.vue'
+import heisitu from '../views/News/2024/heisitu.vue'
 import Publication from '../views/Publication.vue'
 import Research from '../views/Research.vue'
 
@@ -139,6 +141,14 @@ const routes: Array<RouteRecordRaw> = [
       {
         path: '2023/Tabletennis',
         component: Tabletennis
+      },
+      {
+        path: '2024/gaiyou2024',
+        component: gaiyou2024
+      },
+      {
+        path: '2024/heisitu',
+        component: heisitu
       },
     ]
   },

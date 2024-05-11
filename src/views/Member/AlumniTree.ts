@@ -22,7 +22,7 @@ export const alumni: AlumniData = {
       firstName: '池上',
       lastName: '哲弘',
       grade: 'M2',
-      title: 'comingsoon...'
+      title: '歩行者の経路選択行動に基づく街路空間の質評価に関する研究'
     },
     {
       firstName: '藤條',
